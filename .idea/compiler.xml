@@ -6,8 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="CitiBank" />
+        <module name="Costco" />
+        <module name="ebay" />
         <module name="Generic" />
+        <module name="HBO" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Ebay" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
