@@ -19,7 +19,7 @@ public class CommonAPI {
     @BeforeMethod
     public void setUp (String url) {
         //chnage the path of chromedriver for your own module
-        System.setProperty("webdriver.chrome.driver","C:\\Program Files\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\ahmed\\Desktop\\The-A-Team\\driver\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.navigate().to(url);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
