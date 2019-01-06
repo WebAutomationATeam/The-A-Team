@@ -12,7 +12,6 @@
         <module>Generic</module>
         <module>Costco</module>
         <module>HBO</module>
-        <module>Alibaba</module>
         <module>CitiBank</module>
         <module>ebay</module>
     </modules>
@@ -71,6 +70,20 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
