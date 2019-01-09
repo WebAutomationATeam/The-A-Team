@@ -2,7 +2,6 @@
 *.iml
 *target
 *.credentials
-*Extent-Report
 *screenshots
 *.DS_Store
 git
