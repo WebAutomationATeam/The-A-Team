@@ -43,7 +43,7 @@ public class CommonAPI {
     public void setUp (@Optional("url") String url, @Optional ("browser") String browser, @Optional ("browservVersion") String browserVersion,
                        @Optional ("OS") String OS) {
         //change the path of chrome driver for your own module
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
 
         getLocalDriver(OS, browser,browserVersion);
         driver = new ChromeDriver();

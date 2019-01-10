@@ -13,7 +13,17 @@
 
     <test name = "Costco Home">
         <classes>
-            <class name="TestHome"/>
+            <!--<class name="TestHome"/>-->
+            <class name="TestLogin"/>
+            <!--<class name="TestHome"/>-->
+            <!--<class name="TestHome"/>-->
+            <!--<class name="TestHome"/>-->
+            <!--<class name="TestHome"/>-->
+            <!--<class name="TestHome"/>-->
+            <!--<class name="TestHome"/>-->
+            <!--<class name="TestHome"/>-->
+            <!--<class name="TestHome"/>-->
+            <!--<class name="TestHome"/>-->
         </classes>
     </test>
 
