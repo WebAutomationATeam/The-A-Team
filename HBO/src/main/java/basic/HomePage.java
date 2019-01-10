@@ -21,7 +21,7 @@ public  WebElement getHBO;
 public  WebElement getGetHBO() {return getHBO;}
 public void clickonGetHBO () {
     TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-    getGetHBO().click();}
+   getGetHBO().click(); }
 
 @FindBy (how = How.XPATH, using = "//div[@class='bands/MainNavigation--stickyBar']//span[@class='components/Tooltip--label']")
 public WebElement signIn;

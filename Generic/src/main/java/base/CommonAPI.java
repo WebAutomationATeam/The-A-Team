@@ -44,7 +44,6 @@ public class CommonAPI {
                        @Optional ("OS") String OS) {
         //change the path of chrome driver for your own module
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
-
         getLocalDriver(OS, browser,browserVersion);
         driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
@@ -53,17 +52,19 @@ public class CommonAPI {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
-    public WebDriver getLocalDriver(String OS, String browser, String browserVersion){
+    public WebDriver getLocalDriver(@Optional String OS, String browser, String browserVersion){
         if(browser.equalsIgnoreCase("chrome")){
             if(OS.equalsIgnoreCase("Mac")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "../The-A-Team/driver/chromedriver");
             }else if(OS.equalsIgnoreCase("Windows"))
             {
-                System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "..\\The-A-Team\\driver\\chromedriver.exe");
             }
             driver = new ChromeDriver();}
         return driver;
     }
+
+
     //type
     public void typeOnElement(String locator, String value){
         try {
@@ -175,9 +176,9 @@ public class CommonAPI {
         }
     }
     public static ExtentReports extent;
-    @BeforeSuite
+    //@BeforeSuite
     public void extentSetup(ITestContext context) { extent = ExtentManager.getInstance();}
-    @BeforeMethod
+
     public void startExtent(Method method) {
         String className = method.getDeclaringClass().getSimpleName();
         String methodName = method.getName().toLowerCase();
@@ -190,7 +191,7 @@ public class CommonAPI {
         t.printStackTrace(pw);
         return sw.toString();
     }
-    @AfterMethod
+
     public void afterEachTestMethod(ITestResult result) {
         ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
         ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getStartMillis()));
@@ -221,7 +222,7 @@ public class CommonAPI {
     public void waitToBeVisible(String xpathLocator){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathLocator)));
     }
-    @AfterSuite
+    //@AfterSuite
     public void generateReport() { extent.close();}
     private Date getTime(long millis) {
         Calendar calendar = Calendar.getInstance();
@@ -233,10 +234,10 @@ public class CommonAPI {
         str= StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(string)," ");
         return str;
     }
-    /*@AfterMethod
+    @AfterMethod
     public void cleanUp() {
         driver.close();
-    }*/
+    }
 
 }
 
