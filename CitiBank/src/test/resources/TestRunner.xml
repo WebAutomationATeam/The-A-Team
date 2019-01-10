@@ -6,6 +6,8 @@
     <test name = "CitiBank Home">
         <classes>
             <class name="TestBankingOpt"/>
+            <class name="TestCitiGoldOpt"/>
+
         </classes>
     </test>
 
