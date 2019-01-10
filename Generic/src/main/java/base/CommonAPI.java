@@ -56,10 +56,10 @@ public class CommonAPI {
     public WebDriver getLocalDriver(String OS, String browser, String browserVersion){
         if(browser.equalsIgnoreCase("chrome")){
             if(OS.equalsIgnoreCase("Mac")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
             }else if(OS.equalsIgnoreCase("Windows"))
             {
-                System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "..\\Generic\\driver\\chromedriver.exe");
             }
             driver = new ChromeDriver();}
         return driver;
