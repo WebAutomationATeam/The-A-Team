@@ -7,7 +7,10 @@
         <classes>
             <class name="TestBankingOpt"/>
             <class name="TestCitiGoldOpt"/>
-
+            <class name="TestCreditCardOpt"/>
+            <class name="TestInvestingOpt"/>
+            <class name="TestLendingOpt"/>
+            <class name="TestMainSearchOpt"/>
         </classes>
     </test>
 
