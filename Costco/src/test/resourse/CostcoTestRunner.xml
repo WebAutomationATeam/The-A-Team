@@ -15,7 +15,7 @@
         <classes>
             <!--<class name="TestHome"/>-->
             <class name="TestLogin"/>
-            <!--<class name="TestHome"/>-->
+            <!--<class name="TestMembership"/>-->
             <!--<class name="TestHome"/>-->
             <!--<class name="TestHome"/>-->
             <!--<class name="TestHome"/>-->
