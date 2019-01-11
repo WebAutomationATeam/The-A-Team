@@ -1,4 +1,5 @@
-import base.CommonAPI;
+package testCostcoSearching;
+
 import org.testng.annotations.Test;
 import search.SearchPage;
 

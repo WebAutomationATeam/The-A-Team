@@ -1,5 +1,5 @@
-import base.CommonAPI;
-import org.openqa.selenium.By;
+package testCostcoSearching;
+
 import org.testng.annotations.Test;
 import search.SearchLogin;
 
