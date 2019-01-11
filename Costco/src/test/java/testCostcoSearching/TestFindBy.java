@@ -10,18 +10,20 @@ public class TestFindBy extends SearchFindBy {
     @Test
     public void Test () {
         sfb = PageFactory.initElements(driver, SearchFindBy.class);
-        //TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        //        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         sfb.clickOnSearchButton();
     }
 
     @Test
     public void Test1() {
         sfb = PageFactory.initElements(driver,SearchFindBy.class);
+        //        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         sfb.clickonGetCostco();
     }
     @Test
     public void Test2() {
         sfb = PageFactory.initElements(driver,SearchFindBy.class);
+        //        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         sfb.clickOnSignIn();
     }
 
