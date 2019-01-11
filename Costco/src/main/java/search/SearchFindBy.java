@@ -59,6 +59,13 @@ public class SearchFindBy extends CommonAPI {
         viewwarehousesavings.click();
     }
 
+    @FindBy(xpath = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[4]/a[1]")                          //Customer Service
+    public WebElement customerservice;
+    public void clickCustomerService () {
+        customerservice.sendKeys("Game of Thrones", Keys.ENTER);
+    }
+
+
 
 
 
