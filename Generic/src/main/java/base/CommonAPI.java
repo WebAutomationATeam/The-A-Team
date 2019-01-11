@@ -203,7 +203,6 @@ public class CommonAPI {
         }
     }
 
-    public static ExtentReports extent;
     public void mouseHoverByXpath(String locator) {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
@@ -216,24 +215,7 @@ public class CommonAPI {
             action.moveToElement(element).perform();
         }
     }
-    //public static ExtentReports extent;
 
-    //@BeforeSuite
-    public void extentSetup(ITestContext context) { extent = ExtentManager.getInstance();}
-
-    public void mouseHoverByXpath(String locator) {
-        try {
-            WebElement element = driver.findElement(By.xpath(locator));
-            Actions action = new Actions(driver);
-            Actions hover = action.moveToElement(element);
-        } catch (Exception ex) {
-            System.out.println("First attempt has been done, This is second try");
-            WebElement element = driver.findElement(By.cssSelector(locator));
-            Actions action = new Actions(driver);
-            action.moveToElement(element).perform();
-        }
-    }
-    @BeforeSuite
     public void extentSetup(ITestContext context) {
         extent = ExtentManager.getInstance();
     }
@@ -283,8 +265,6 @@ public class CommonAPI {
 
 
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-        File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 
         try {
             FileUtils.copyFile(file, new File(System.getProperty("user.dir")+ "/screenshots/"+screenshotName+" "+df.format(date)+".png"));

@@ -2,9 +2,13 @@ package search;
 
 import Util.TestLogger;
 import base.CommonAPI;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class SearchFindBy extends CommonAPI {
 
@@ -43,6 +47,12 @@ public class SearchFindBy extends CommonAPI {
         }.getClass().getEnclosingMethod().getName()));
         getSignIn();
     }
+
+    @FindBy (css="body.en div.container-fluid.fixed-container div.table-container.parent div.table-row div.table-cell.logo.hidden-xs.hidden-sm.hidden-md.hidden-lg:nth-child(1) a:nth-child(1) > img.bc-logo.logo-us")
+    public WebElement CostcoLogo;                                                                                       // Costco Logo
+    public void clickOnLogo () {
+        CostcoLogo.click(); }
+
 }
 
 
