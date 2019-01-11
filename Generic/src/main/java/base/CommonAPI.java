@@ -4,12 +4,10 @@ import Util.ExtentManager;
 import Util.ExtentTestManager;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -19,6 +17,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+
+import java.io.File;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.lang.reflect.Method;
@@ -183,12 +183,9 @@ public class CommonAPI {
             action.moveToElement(element).perform();
         }
     }
-<<<<<<< Updated upstream
-    public static ExtentReports extent;
-    //@BeforeSuite
-    public void extentSetup(ITestContext context) { extent = ExtentManager.getInstance();}
 
-=======
+    public static ExtentReports extent;
+
     public void mouseHoverByXpath(String locator) {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
@@ -205,8 +202,9 @@ public class CommonAPI {
     public void extentSetup(ITestContext context) {
         extent = ExtentManager.getInstance();
     }
+
     @BeforeMethod
->>>>>>> Stashed changes
+
     public void startExtent(Method method) {
         String className = method.getDeclaringClass().getSimpleName();
         String methodName = method.getName().toLowerCase();
@@ -240,15 +238,14 @@ public class CommonAPI {
         if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
         }
-        driver.quit();
+
     }
     public static void captureScreenshot(WebDriver driver, String screenshotName){
 
         DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
         Date date = new Date();
         df.format(date);
-<<<<<<< Updated upstream
-=======
+
 
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
@@ -257,7 +254,9 @@ public class CommonAPI {
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot "+e.getMessage());;
         }
->>>>>>> Stashed changes
+
+        driver.quit();
+
     }
     @AfterSuite
     public void generateReport() {
@@ -299,5 +298,9 @@ public class CommonAPI {
             text.add(e.getText());
         }
         return text;
+    }
+    @AfterMethod
+    public void afterMethod() {
+        driver.quit();
     }
 }
