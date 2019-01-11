@@ -4,12 +4,10 @@ import Util.ExtentManager;
 import Util.ExtentTestManager;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -19,6 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import java.io.File;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.lang.reflect.Method;
@@ -37,6 +36,8 @@ public class CommonAPI {
     public Logger logger = Logger.getLogger(CommonAPI.class);
     public static WebDriverWait wait;
     public static Actions builder = null;
+    public static ExtentReports extent;
+    public String URL=null;
 
     @Parameters({"url", "OS", "browser", "browserversion"})
     @BeforeMethod
@@ -47,12 +48,18 @@ public class CommonAPI {
         //System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
         getLocalDriver(OS, browser,browserVersion);
         driver = new ChromeDriver();
-        driver.manage().deleteAllCookies();
+        //driver.manage().deleteAllCookies();
         driver.navigate().to(url);
         wait = new WebDriverWait(driver,5);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
+    @Parameters
+    public void setURL (String URL) {
+        this.URL=URL;
+        driver.get(URL);
+    }
+
     public WebDriver getLocalDriver(@Optional String OS, String browser, String browserVersion){
         if(browser.equalsIgnoreCase("chrome")){
             if(OS.equalsIgnoreCase("Mac")){
@@ -134,6 +141,9 @@ public class CommonAPI {
     public void navigateBack(){
         driver.navigate().back();
     }
+    public void navigateForward() {
+        driver.navigate().forward();
+    }
 
     public void typeCSSLocator (String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
@@ -165,6 +175,15 @@ public class CommonAPI {
         list = driver.findElements(By.xpath(locator));
         return list;
     }
+    public List<String> getTextFromWebElements(String locator) {
+        List<WebElement> element = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        element = driver.findElements(By.cssSelector(locator));
+        for (WebElement web : element) {
+            text.add(web.getText());
+        }
+        return text;
+    }
     public void typeOnCss(String locator, String value){
         driver.findElement(By.cssSelector(locator)).sendKeys(value);
     }
@@ -183,12 +202,25 @@ public class CommonAPI {
             action.moveToElement(element).perform();
         }
     }
-<<<<<<< Updated upstream
+
     public static ExtentReports extent;
+    public void mouseHoverByXpath(String locator) {
+        try {
+            WebElement element = driver.findElement(By.xpath(locator));
+            Actions action = new Actions(driver);
+            Actions hover = action.moveToElement(element);
+        } catch (Exception ex) {
+            System.out.println("First attempt has been done, This is second try");
+            WebElement element = driver.findElement(By.cssSelector(locator));
+            Actions action = new Actions(driver);
+            action.moveToElement(element).perform();
+        }
+    }
+    //public static ExtentReports extent;
+
     //@BeforeSuite
     public void extentSetup(ITestContext context) { extent = ExtentManager.getInstance();}
 
-=======
     public void mouseHoverByXpath(String locator) {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
@@ -206,7 +238,7 @@ public class CommonAPI {
         extent = ExtentManager.getInstance();
     }
     @BeforeMethod
->>>>>>> Stashed changes
+
     public void startExtent(Method method) {
         String className = method.getDeclaringClass().getSimpleName();
         String methodName = method.getName().toLowerCase();
@@ -247,17 +279,20 @@ public class CommonAPI {
         DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
         Date date = new Date();
         df.format(date);
-<<<<<<< Updated upstream
-=======
+
+
 
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+        File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
         try {
             FileUtils.copyFile(file, new File(System.getProperty("user.dir")+ "/screenshots/"+screenshotName+" "+df.format(date)+".png"));
             System.out.println("Screenshot captured");
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot "+e.getMessage());;
         }
->>>>>>> Stashed changes
+
     }
     @AfterSuite
     public void generateReport() {
