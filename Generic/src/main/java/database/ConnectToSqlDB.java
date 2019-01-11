@@ -15,6 +15,7 @@ public class ConnectToSqlDB {
     public static Statement statement = null;
     public static PreparedStatement ps = null;
     public static ResultSet resultSet = null;
+    public static ResultSet resultSet2 = null;
 
     public static Properties loadProperties() throws IOException{
         Properties prop = new Properties();
@@ -53,7 +54,7 @@ public class ConnectToSqlDB {
         return data;
     }
 
-    public List<String> readDataBase(String tableName, String columnName1, String columnName2)throws Exception{
+    public List<String> readDataBase1(String tableName, String columnName1, String columnName2)throws Exception{
         List<String> data = new ArrayList<String>();
 
         try {
@@ -210,9 +211,9 @@ public class ConnectToSqlDB {
             ps.executeUpdate();
             ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`ID` int(11) NOT NULL AUTO_INCREMENT,`"+ columnName+"` int(20) DEFAULT NULL,  PRIMARY KEY (`ID`) );");
             ps.executeUpdate();
-            for(Object ob :list){
+            for(Object object :list){
                 ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");
-                ps.setObject(1,ob);
+                ps.setObject(1,object);
                 ps.executeUpdate();
             }
 
@@ -224,18 +225,29 @@ public class ConnectToSqlDB {
             e.printStackTrace();
         }
     }
-    public void InsertDataFromArrayListToMySql(List<String> list,String tableName, String columnName1,String columnName2 )
+    public void insertStringDataFromArrayListToMySql(List<String> list,String tableName, String columnName )
     {
-        try {
-            connectToSqlDatabase();
-            String key = list.get(0);
-            String value = list.get(1);
-            System.out.println("key is:"+ key + " value is:" + value);
-
-            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
-            ps.setString(1,key);
-            ps.setString(2,value);
-            ps.executeUpdate();
+      //  try {
+//            connectToSqlDatabase();
+//            String key = list.get(0);
+//            String value = list.get(1);
+//            System.out.println("key is:"+ key + " value is:" + value);
+//
+//            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName + "," + " ) VALUES(?,?)");
+//            ps.setString(1,key);
+//            ps.setString(2,value);
+//            ps.executeUpdate();
+            try {
+                connectToSqlDatabase();
+                ps = connect.prepareStatement("DROP TABLE IF EXISTS `"+tableName+"`;");
+                ps.executeUpdate();
+                ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`ID` int(11) NOT NULL AUTO_INCREMENT,`"+columnName+"` varchar(300) DEFAULT NULL,  PRIMARY KEY (`ID`));");
+                ps.executeUpdate();
+                for(String st :list){
+                    ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");
+                    ps.setObject(1,st);
+                    ps.executeUpdate();
+                }
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -245,6 +257,7 @@ public class ConnectToSqlDB {
             e.printStackTrace();
         }
     }
+
 
     public void createTableFromStringToMySql(String tableName, String columnName){
         try {
@@ -260,7 +273,6 @@ public class ConnectToSqlDB {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-
     }
 
     public void insertDataFromArrayListToSqlTable_1(List<Integer> list, String tableName, String columnName) {
@@ -346,7 +358,7 @@ public class ConnectToSqlDB {
         }
         return list;
     }
-    public static void main(String[] args)throws IOException, SQLException, ClassNotFoundException {
+    public static void main(String[] args)throws IOException, SQLException, ClassNotFoundException, Exception {
 
         List<User> list = readUserProfileFromSqlTable();
         for(User user:list){
