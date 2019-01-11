@@ -114,7 +114,21 @@ public class SearchFindBy extends CommonAPI {
     @FindBy(css = ".body.en div.genericEspot.container-fluid.fixed-container.WC_ContentAreaESpot_div_1_Home_Hero_Carousel" +
             ":nth-child(91) div.slick-initialized.slick-slider.slick-dotted > button.slick-next.slick-arrow")
     public static WebElement slide1;
+    public void clickSlide1(){slide1.click();}
+
+    //Cart
+    @FindBy(xpath = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/ul[1]/li[3]/a[1]")
+    public static WebElement cart;
+    public void clickCart(){cart.click();}
+
+    //Cash Card
+    @FindBy(css = "body.en div.container-fluid.fixed-container.small-offer-tiles:nth-child(92) div.row.gutter:" +
+            "nth-child(2) a:nth-child(1) div.col-lg-6.col-xs-12 > img.img-responsive")
+    public static WebElement cashcard;
+    public void clickCashCard(){cashcard.click();}
+
+
+
+
 
 }
-
-
