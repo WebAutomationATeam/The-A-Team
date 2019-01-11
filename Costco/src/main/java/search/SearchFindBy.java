@@ -53,6 +53,15 @@ public class SearchFindBy extends CommonAPI {
     public void clickOnLogo () {
         CostcoLogo.click(); }
 
+        @FindBy(xpath = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]")                          //view warehouse savings
+    public WebElement viewwarehousesavings;
+    public void clickviewwarehousesavings(){
+        viewwarehousesavings.click();
+    }
+
+
+
+
 }
 
 
