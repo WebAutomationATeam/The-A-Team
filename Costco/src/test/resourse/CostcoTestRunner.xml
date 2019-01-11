@@ -15,10 +15,8 @@
         <classes>
             <!--<class name="TestHome"/>-->
             <class name="TestFindBy"/>
-            <!--<class name="TestMembership"/>-->
+            <!--<class name="TestLogin"/>-->
             <!--<class name="TestHome"/>-->
-            <!--<class name="TestHome"/>-->
-
         </classes>
     </test>
 
