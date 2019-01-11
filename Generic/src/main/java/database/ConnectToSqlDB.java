@@ -226,6 +226,7 @@ public class ConnectToSqlDB {
     }
     public void InsertDataFromArrayListToMySql(List<String> list,String tableName, String columnName1,String columnName2 )
     {
+<<<<<<< Updated upstream
         try {
             connectToSqlDatabase();
             String key = list.get(0);
@@ -236,6 +237,29 @@ public class ConnectToSqlDB {
             ps.setString(1,key);
             ps.setString(2,value);
             ps.executeUpdate();
+=======
+        //  try {
+//            connectToSqlDatabase();
+//            String key = list.get(0);
+//            String value = list.get(1);
+//            System.out.println("key is:"+ key + " value is:" + value);
+//
+//            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName + "," + " ) VALUES(?,?)");
+//            ps.setString(1,key);
+//            ps.setString(2,value);
+//            ps.executeUpdate();
+        try {
+            connectToSqlDatabase();
+            ps = connect.prepareStatement("DROP TABLE IF EXISTS `"+tableName+"`;");
+            ps.executeUpdate();
+            ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`ID` int(11) NOT NULL AUTO_INCREMENT,`"+columnName+"` varchar(300) DEFAULT NULL,  PRIMARY KEY (`ID`));");
+            ps.executeUpdate();
+            for(String st :list){
+                ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");
+                ps.setObject(1,st);
+                ps.executeUpdate();
+            }
+>>>>>>> Stashed changes
 
         } catch (IOException e) {
             e.printStackTrace();

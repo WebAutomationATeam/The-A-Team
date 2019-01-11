@@ -43,8 +43,8 @@ public class CommonAPI {
     public void setUp (@Optional("url") String url, @Optional ("browser") String browser, @Optional ("browservVersion") String browserVersion,
                        @Optional ("OS") String OS) {
         //change the path of chrome driver for your own module
-
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\ahmed\\Desktop\\The-A-Team\\driver\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
         getLocalDriver(OS, browser,browserVersion);
         driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
@@ -183,33 +183,56 @@ public class CommonAPI {
             action.moveToElement(element).perform();
         }
     }
+<<<<<<< Updated upstream
     public static ExtentReports extent;
     //@BeforeSuite
     public void extentSetup(ITestContext context) { extent = ExtentManager.getInstance();}
 
+=======
+    public void mouseHoverByXpath(String locator) {
+        try {
+            WebElement element = driver.findElement(By.xpath(locator));
+            Actions action = new Actions(driver);
+            Actions hover = action.moveToElement(element);
+        } catch (Exception ex) {
+            System.out.println("First attempt has been done, This is second try");
+            WebElement element = driver.findElement(By.cssSelector(locator));
+            Actions action = new Actions(driver);
+            action.moveToElement(element).perform();
+        }
+    }
+    @BeforeSuite
+    public void extentSetup(ITestContext context) {
+        extent = ExtentManager.getInstance();
+    }
+    @BeforeMethod
+>>>>>>> Stashed changes
     public void startExtent(Method method) {
         String className = method.getDeclaringClass().getSimpleName();
         String methodName = method.getName().toLowerCase();
         ExtentTestManager.startTest(method.getName());
         ExtentTestManager.getTest().assignCategory(className);
     }
-    protected String getStackTrace (Throwable t) {
+    protected String getStackTrace(Throwable t) {
         StringWriter sw = new StringWriter();
         PrintWriter pw = new PrintWriter(sw);
         t.printStackTrace(pw);
         return sw.toString();
     }
-
+    @AfterMethod
     public void afterEachTestMethod(ITestResult result) {
         ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
-        ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getStartMillis()));
+        ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
 
-        for (String group: result.getMethod().getGroups()) {
+        for (String group : result.getMethod().getGroups()) {
             ExtentTestManager.getTest().assignCategory(group);
         }
+
         if (result.getStatus() == 1) {
-            ExtentTestManager.getTest().log(LogStatus.PASS, "Test Passes");
+            ExtentTestManager.getTest().log(LogStatus.PASS, "Test Passed");
         } else if (result.getStatus() == 2) {
+            ExtentTestManager.getTest().log(LogStatus.FAIL, getStackTrace(result.getThrowable()));
+        } else if (result.getStatus() == 3) {
             ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
         }
         ExtentTestManager.endTest();
@@ -217,12 +240,33 @@ public class CommonAPI {
         if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
         }
-        driver.close();
+        driver.quit();
     }
-    public void captureScreenshot(WebDriver driver, String screenshotName) {
-        DateFormat df = new SimpleDateFormat("MM.dd.yyyy-HH:mma");
+    public static void captureScreenshot(WebDriver driver, String screenshotName){
+
+        DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
         Date date = new Date();
         df.format(date);
+<<<<<<< Updated upstream
+=======
+
+        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(file, new File(System.getProperty("user.dir")+ "/screenshots/"+screenshotName+" "+df.format(date)+".png"));
+            System.out.println("Screenshot captured");
+        } catch (Exception e) {
+            System.out.println("Exception while taking screenshot "+e.getMessage());;
+        }
+>>>>>>> Stashed changes
+    }
+    @AfterSuite
+    public void generateReport() {
+        extent.close();
+    }
+    private Date getTime(long millis) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(millis);
+        return calendar.getTime();
     }
     public void waitToBeVisible(WebElement element){
         wait.until(ExpectedConditions.visibilityOf(element));
@@ -230,22 +274,30 @@ public class CommonAPI {
     public void waitToBeVisible(String xpathLocator){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathLocator)));
     }
-    //@AfterSuite
-    public void generateReport() { extent.close();}
-    private Date getTime(long millis) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(millis);
-        return calendar.getTime();
-    }
-    public static String convertToString (String string) {
-        String str;
-        str= StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(string)," ");
-        return str;
-    }
-    @AfterMethod
-    public void cleanUp() {
-        driver.close();
-    }
 
+    public static String convertToString(String st){
+        String splitString ;
+        splitString = StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(st), ' ');
+        return splitString;
+    }
+    public void inputValueInTextBoxByWebElement(WebElement webElement, String value){
+        webElement.sendKeys(value + Keys.ENTER);
+    }
+    public void typeOnInputField(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
+    }
+    public void clearInputBox(WebElement webElement){
+        webElement.clear();
+    }
+    public static void sleepFor(int sec)throws InterruptedException {
+        Thread.sleep(sec * 1000);
+    }
+    public List<String> getTextFromWebElements(WebElement element){
+        List<WebElement> elements = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        for(WebElement e:elements){
+            text.add(e.getText());
+        }
+        return text;
+    }
 }
-
