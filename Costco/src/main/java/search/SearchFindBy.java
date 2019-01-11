@@ -110,7 +110,10 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement slide;
     public void clickSlide(){slide.click();}
 
-
+    //slide1
+    @FindBy(css = ".body.en div.genericEspot.container-fluid.fixed-container.WC_ContentAreaESpot_div_1_Home_Hero_Carousel" +
+            ":nth-child(91) div.slick-initialized.slick-slider.slick-dotted > button.slick-next.slick-arrow")
+    public static WebElement slide1;
 
 }
 
