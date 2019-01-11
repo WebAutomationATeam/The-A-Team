@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4afb391c-0b28-4e72-abd6-df7660a395fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Costco/src/main/java/searchDB/DBOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Costco/src/test/java/webTest/TestHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/main/java/search/SearchCustomerService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/main/java/search/SearchLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/main/java/search/SearchLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/main/java/search/SearchMembership.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/test/java/TestCustomerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/test/java/TestFindBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/test/java/TestHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/test/java/TestLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/test/java/TestMembership.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/test/resourse/CostcoTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/test/resourse/CostcoTestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+            <state relative-caret-position="344">
+              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -62,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HBO/src/main/java/search/DatabaseOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="26">
+              <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -177,8 +165,8 @@
         <option value="$PROJECT_DIR$/Costco/src/test/java/TestHome.java" />
         <option value="$PROJECT_DIR$/Costco/src/test/java/TestLogin.java" />
         <option value="$PROJECT_DIR$/Costco/src/test/java/webTest/TestHomePage.java" />
-        <option value="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" />
+        <option value="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" />
       </list>
     </option>
   </component>
@@ -219,11 +207,6 @@
             <path>
               <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
               <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
-              <item name="CitiBank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
               <item name="Costco" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -255,15 +238,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
-              <item name="Costco" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="searchDB" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
@@ -307,7 +281,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547235826452" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547236073160" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebAutomationNov2018" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15429688" />
@@ -434,8 +408,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="34" width="1600" height="966" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990619" visible="true" weight="0.24677002" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990619" visible="true" weight="0.24677002" />
       <window_info id="Structure" order="1" sideWeight="0.50093806" side_tool="true" weight="0.024291499" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -449,7 +424,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" weight="0.34954408" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" visible="true" weight="0.34866828" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50040483" side_tool="true" weight="0.053285968" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -751,13 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-36">
@@ -770,8 +738,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HBO/src/main/java/search/DatabaseOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="26">
+          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
         </state>
       </provider>
     </entry>
