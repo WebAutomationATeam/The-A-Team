@@ -73,13 +73,18 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement grocery;
     public void clickGrocery(){grocery.click();}
 
-    @FindBy(css = "#Home_Ancillary_1")                                                                              //click business delivery
+    @FindBy(css = "#Home_Ancillary_1")                                                                                  //click business delivery
     public static WebElement businessdelivery;
     public void clickBusinessDelivdery(){businessdelivery.click();}
 
     @FindBy(css = "#Home_Ancillary_2")                                                                                  //optical
     public static WebElement searchoptical;
-    public void getoptical(){searchoptical.click();}
+    public void clickOptical(){searchoptical.click();}
+
+    @FindBy(css = "#Home_Ancillary_3")                                                                                  //pharmacy
+    public static WebElement pharmacy;
+    public void getPharmacy(){pharmacy.click();}
+
 
 
 
