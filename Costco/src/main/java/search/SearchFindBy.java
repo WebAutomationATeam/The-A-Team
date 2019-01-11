@@ -69,9 +69,9 @@ public class SearchFindBy extends CommonAPI {
     public WebElement emailoffer;
     public void clickEmailOffer () { emailoffer.sendKeys("Game of Thrones", Keys.ENTER); }
 
-
-
-
+    @FindBy(css = "#Home_Ancillary_0")                                                                                  //click grocery
+    public static WebElement grocery;
+    public void clickGrocery(){grocery.click();}
 
 
 
