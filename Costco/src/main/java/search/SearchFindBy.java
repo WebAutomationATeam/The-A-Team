@@ -203,6 +203,17 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement homesavingslide1;
     public void clickHomeSaving1(){homesavingslide1.click();}
 
+    //Price Reductions
+    @FindBy(css = "body.en div.container-fluid.fixed-container:nth-child(97) div.feature-carousel-container " +
+            "div.feature-carousel.slick-initialized.slick-slider.slick-dotted:nth-child(2) >" +
+            " button.slick-next.slick-arrow")
+    public static WebElement pricereduction;
+    public void clickPriceReductions(){pricereduction.click();}
+
+
+
+
+
 
 
 
