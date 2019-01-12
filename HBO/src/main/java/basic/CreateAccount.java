@@ -37,11 +37,19 @@ public class CreateAccount extends HomePage {
 
     public void getEmail() {email.sendKeys("roktimrobin@gmail.com"); }
 
+    public void invalidEmail() {email.sendKeys("ajsndajsd@jansda.com");}
+
     public void getPassWord() { passWord.sendKeys("Abcd#1234"); }
+
+    public void invalidPassword(){passWord.sendKeys("abc123");}
 
     public void getFirstName() { firstName.sendKeys("Robin"); }
 
+    public void emptyFirstName() {firstName.sendKeys("");}
+
     public void getLastName() { lastName.sendKeys("Das"); }
+
+    public void emptyLastName() {lastName.sendKeys("");}
 
     public void getZipCode() { zipCode.sendKeys("11104"); }
 
