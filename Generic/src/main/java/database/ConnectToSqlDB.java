@@ -234,39 +234,11 @@ public class ConnectToSqlDB {
             String value = list.get(1);
             System.out.println("key is:"+ key + " value is:" + value);
 
-            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
-            ps.setString(1,key);
-            ps.setString(2,value);
-            ps.executeUpdate();
-
-        //  try {
-
-      //  try {
-
-//            connectToSqlDatabase();
-//            String key = list.get(0);
-//            String value = list.get(1);
-//            System.out.println("key is:"+ key + " value is:" + value);
-//
-//            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName + "," + " ) VALUES(?,?)");
+//            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName + ","  + " ) VALUES(?,?)");
 //            ps.setString(1,key);
 //            ps.setString(2,value);
 //            ps.executeUpdate();
 
-        try {
-            connectToSqlDatabase();
-            ps = connect.prepareStatement("DROP TABLE IF EXISTS `"+tableName+"`;");
-            ps.executeUpdate();
-            ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`ID` int(11) NOT NULL AUTO_INCREMENT,`"+columnName+"` varchar(300) DEFAULT NULL,  PRIMARY KEY (`ID`));");
-            ps.executeUpdate();
-            for(String st :list){
-                ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");
-                ps.setObject(1,st);
-                ps.executeUpdate();
-            }
-
-
-            try {
                 connectToSqlDatabase();
                 ps = connect.prepareStatement("DROP TABLE IF EXISTS `"+tableName+"`;");
                 ps.executeUpdate();
@@ -287,7 +259,6 @@ public class ConnectToSqlDB {
             e.printStackTrace();
         }
     }
-
 
     public void createTableFromStringToMySql(String tableName, String columnName){
         try {

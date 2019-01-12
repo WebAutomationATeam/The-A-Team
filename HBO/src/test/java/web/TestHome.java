@@ -11,9 +11,11 @@ public class TestHome extends HomePage {
 
     HomePage hp = null;
     @BeforeMethod
-    public void initializeElement () {hp=PageFactory.initElements(driver,HomePage.class);}
-   /* @Test
-    public void clickSearchButton () {hp.clickOnSearchButton();}
+    public void initializeElement () {
+        hp=PageFactory.initElements(driver,HomePage.class);
+    }
+    @Test
+    public void clickSearchButton () { hp.clickOnSearchButton(); }
     @Test
     public void clickGetHBO() {hp.clickonGetHBO(); }
     @Test
@@ -27,11 +29,20 @@ public class TestHome extends HomePage {
     @Test
     public void clickSeries(){findSeries();}
     @Test
-    public void clickMovie(){findMovies();}*/
-
+    public void clickMovie(){findMovies();}
     @Test
     public void clickFreeEpisodes(){getFreeEpisodes();}
-
-
+    @Test
+    public void clickGetItToday(){clickHBOToday();}
+    @Test
+    public void goToNextSlide(){clickNextSlide();}
+    @Test
+    public void testFbPage(){getFbPage();}
+    @Test
+    public void checkInstaPage(){getInstaPage();}
+    @Test
+    public void viewTwitterPage(){getTwitterPage();}
+    @Test
+    public void viewYoutubePage(){navigateToYoutubePage();}
 
 }
