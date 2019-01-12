@@ -13,7 +13,7 @@
     <test name = "Test">
         <classes>
             <class name="HomePage.TestPageElement"/>
-            <!--<class name="HomePage.TestSearchEBay"/>
+            <class name="HomePage.TestSearchEBay"/>
             <class name="HomePage.TestRegisterUser"/>
             <class name="HomePage.TestSignInUser"/>
             <class name="EBayMotorsPage.TestEBayMotors"/>
@@ -21,7 +21,7 @@
             <class name="EBayFashionPage.TestExploreInterests"/>
             <class name="EBayFashionPage.TestSalesEvents"/>
             <class name="EBayFashionPage.TestSellOnEbay"/>
-            <class name="EBayFashionPage.TestTopBrands"/>-->
+            <class name="EBayFashionPage.TestTopBrands"/>
 
         </classes>
     </test>
