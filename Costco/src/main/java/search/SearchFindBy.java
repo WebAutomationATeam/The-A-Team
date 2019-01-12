@@ -133,8 +133,11 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement appliances;
     public void clickAppliances(){appliances.click();}
 
-
-
+    //TV
+    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(93) " +
+            "div.feature-tiles.row.gutter div.col-xs-3.thumb:nth-child(2) a.thumbnail > img.img-responsive")
+    public static WebElement tv;
+    public void clickTv(){tv.click();}
 
 
 
