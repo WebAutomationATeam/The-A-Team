@@ -14,8 +14,6 @@ public class DatabaseOperation extends ConnectToSqlDB {
     public static void insertDataIntoDB() {
         List<String> list = getHeaderValue();
         ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-        //connectToSqlDB.insertStringDataFromArrayListToMySql(list, "headerList","headers");
-        //connectToSqlDB.insertDataFromArrayListToSqlTableforString(list,"headerList","headers");
         connectToSqlDB.insertStringDataFromArrayListToMySql(list,"headerList","headers");
 
     }

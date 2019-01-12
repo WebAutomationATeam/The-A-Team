@@ -13,7 +13,8 @@
 
     <test name = "Test">
         <classes>
-           <class name="web.TestHome"/>
+           <!--<class name="web.TestHome"/>-->
+            <class name="web.TestCreateAccount"/>
         </classes>
     </test>
 

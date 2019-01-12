@@ -7,11 +7,25 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import search.XlsxDataReader;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HomePage extends CommonAPI {
+
+    public static void sendKeys(WebElement webElement, String elementName, String keys){
+        webElement.clear();
+        TestLogger.log("Send keys to "+ elementName);
+        webElement.sendKeys(keys);
+        TestLogger.log("Keys sent to " + elementName);
+    }
+    public static String getText(WebElement webElement, String webElementName){
+        TestLogger.log("getting Text from " + webElementName);
+        String actualText = webElement.getText();
+        TestLogger.log("Actual text : " + webElementName);
+        return actualText;
+    }
 
 @FindBy (how =How.XPATH, using = "/html/body/main/div[1]/div/div/header/div[1]/div/div[2]/div/div/div")
 public  WebElement searchButton;
@@ -37,150 +51,114 @@ public void clickOnSignIn() {
 @FindBy (css="body > main > div.navigationband.basecomponent > div > div > header > div.components\\2f Band--maxWidth > div > div.bands\\2f MainNavigation--leftSlot > span > a > svg > g > g > path")
 public WebElement HBOLogo;
 public void clickOnLogo () {
+    TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
     HBOLogo.click(); }
 
     @FindBy(xpath = "//div[contains(@class,'bands/MainNavigation--searchIcon')]")
     public WebElement searchlink;
     public void clicksearchlink(){
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         searchlink.click();
     }
 
     @FindBy(xpath = "//input[@placeholder='Search']")
     public WebElement searchBox;
     public void sendInput () {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         searchBox.sendKeys("Game of Thrones", Keys.ENTER);
     }
 
     @FindBy(css = ".bands\\/MainNavigation--topBar [href='\\/series']")
-    public static WebElement series;
-    public void findSeries(){series.click();}
+    public WebElement series;
+    public void findSeries(){
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        series.click();}
 
     @FindBy(css = ".bands\\/MainNavigation--topBar [href='\\/movies']")
-    public static WebElement movies;
-    public void findMovies(){movies.click();}
-
+    public WebElement movies;
+    public String findMovies(){
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        movies.click();
+        String title = driver.getTitle();
+        System.out.println("Movies page Title: " + title);
+        return title;
+    }
     @FindBy(css = ".bands\\/MainNavigation--topBar [href='\\/watch-free-episodes']")
-    public static WebElement searchFreeEpisodes;
-    public void getFreeEpisodes(){searchFreeEpisodes.click();}
+    public WebElement searchFreeEpisodes;
+    public void getFreeEpisodes(){
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        searchFreeEpisodes.click();}
 
-    @FindBy(css = ".wrapperMain .basecomponent:nth-of-type(4) .components\\/CarouselButton--next [points]")
-    public static WebElement slide;
+    @FindBy (css = "body > main > div.producteducationband.basecomponent > div > div > div.components\\2f Band--maxWidth > div > div.bands\\2f ProductEducation--pane1 > div.bands\\2f ProductEducation--ctaContainer > div > a > span")
+    public static WebElement HBOToday;
+    public void clickHBOToday(){
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        HBOToday.click();}
 
-    @FindBy(css = ".wrapperMain .basecomponent:nth-of-type(4) .components\\/CarouselButton--previous [viewBox]")
-    public static WebElement slide1;
+    @FindBy (css = "body > main > div:nth-child(4) > div > div > div.components\\2f Band--maxWidth > div.modules\\2f cards\\2f BasicCard--containers > div.modules\\2f cards\\2f BasicCard--tabletContainer > section > div > button.components\\2f CarouselButton--container.components\\2f CarouselButton--next > div > span > span > svg")
+    public static WebElement nextSlide;
+    public void clickNextSlide(){nextSlide.click();}
 
-    @FindBy(css = ".modules\\/cards\\/BasicCard--flexContainer [src='\\/content\\/dam\\/hbodata\\/series\\/camping\\/camping-ka-1920\\.jpg\\/_jcr_content\\/renditions\\/cq5dam\\.web\\.1200\\.675\\.jpeg']")
-    public static WebElement image;
+    @FindBy (css = "body > main > div.footerband.basecomponent > div > div > footer > div.modules\\2f FollowHbo--darkGray > div > div > ul > li:nth-child(1) > a")
+    public static WebElement fbPage;
+    public void getFbPage(){
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        fbPage.click();}
 
-    @FindBy(css = ".modules\\/InlineVideoHero--right .__player-playpause")
-    public static WebElement playPause;
+    @FindBy (xpath = "//a[@title='instagram']")
+    public static WebElement instaPage;
+    public void getInstaPage(){
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        instaPage.click();}
 
-    @FindBy(css = ".bands\\/MainNavigation--topBar .components\\/BasicButton--children")
-    public static WebElement service;
+    @FindBy (xpath = "//a[@title='twitter']")
+    public static WebElement twitterLogo;
+    public void getTwitterPage(){
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        twitterLogo.click();}
 
-    @FindBy(css = "[href='http\\:\\/\\/www\\.facebook\\.com\\/HBO']")
-    public static WebElement link;
+    @FindBy (xpath = "//a[@title='youtube']")
+    public static WebElement youtubeLogo;
+    public void navigateToYoutubePage(){
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        youtubeLogo.click();}
 
-    @FindBy(partialLinkText = "[href='http\\:\\/\\/www\\.hbogo\\.com\\/\\?icid\\=hbo_edu_go_start\\&_ga\\=2\\.177753701\\.1329746051\\.1539388045-417017646\\.1537570844'] .components\\/Cta--label")
-    public static WebElement getStartedLink;
+    public List webElementList(){
+        List<WebElement> webElements = new ArrayList<>();
+        webElements.add(searchButton);
+        webElements.add(getHBO);
+        webElements.add(signIn);
+        webElements.add(HBOLogo);
+        webElements.add(searchlink);
+        webElements.add(searchBox);
+        webElements.add(series);
+        webElements.add(movies);
+        webElements.add(searchFreeEpisodes);
+        webElements.add(HBOToday);
+        webElements.add(nextSlide);
+        webElements.add(fbPage);
+        webElements.add(instaPage);
+        webElements.add(twitterLogo);
+        webElements.add(youtubeLogo);
 
-    @FindBy(xpath = "//div[@id=\"J_SC_header\"]/header/div[2]/div[1]/div/div/h3")
-    public static WebElement categories;
+        List<String>list = new ArrayList<>();
+        for(int i=0; i<webElements.size();i++){
+            list.add(webElements.get(i).getText());
+        }
+        System.out.println(list);
+        return list;
+    }
 
-    @FindBy(partialLinkText = "Machinery")
-    private WebElement machinery;
-
-    @FindBy(partialLinkText = "Hand Tools")
-    private WebElement handTools;
-
-    @FindBy(xpath = "//a[@class='more' and @href='javascript:;']")
-    private WebElement seeMore;
-
-    @FindBy(css = ".bands\\/MainNavigation--topBar g:nth-of-type(1) g .components\\/Logo--black")
-    private WebElement lebel;
-
-    @FindBy(xpath = "//a[@data-val='ordericon']")
-    private WebElement orderProtectionButton;
-
-    //After sign under MyAccount this location shall be available
-    @FindBy(css = ".sc-hd-ms-name")
-    public static WebElement greetingsToAccountHolder;
-
-    @FindBy(partialLinkText = "My HBO")
-    public static WebElement myHBO;
-
-    @FindBy(css = ".J-search-text")
-    public static WebElement emailBoxToSubscribeForTradeAlert;
-
-    @FindBy(css = ".J-btn-search")
-    public static WebElement tradeAlertSubscriptionButton;
-
-    //Footer
-    @FindBy(xpath = "//*[@id=\"ui-footer\"]//div[1]/dl/dd[1]/a")
-    public static WebElement helpCenterLink;
-
-    @FindBy(xpath = "//*[@id=\"J_SC_header\"]/header/div[2]/div[1]/div[1]/a")
-    public static WebElement verificationPointHelpCenter;
-
-    @FindBy(xpath = "//dd/a[contains (text(), 'About Alibaba.com')]")
-    public static WebElement aboutAlibabaLink;
-
-    @FindBy(xpath = "//h2[contains (text(), 'About Alibaba.com')]")
-    public static WebElement verificationPointAboutAlibaba;
-
-    @FindBy(xpath = "//dd/a[contains (text(),'Wholesaler Market')]")
-    public static WebElement wholesalerMarket;
-
-    @FindBy(linkText = "Wholesaler Market")
-    public static WebElement verificationPointAWholesaleMarket;
-
-    @FindBy(xpath = "/html/body/div[5]/div/div/i")
-    public static WebElement moveToTopButton;
-
-    @FindBy(xpath = "//input[@name='rfqName']")
-    public static WebElement productNameForQuotes;
-
-    @FindBy(xpath = "//input[@name='quantity']")
-    public static WebElement quantity;
-
-    @FindBy(xpath = "//form/div[3]/div")
-    public static WebElement clickUnit;
-
-    @FindBy(xpath = "/html/body/main/div[1]/div/div/header/div[1]/div/div[1]/span/a/svg")
-    public static WebElement selectUnit;
-
-    @FindBy(css = ".ui2-tag-body")
-    public static WebElement requestPrice;
-
-    @FindBy(css = ".rfq-submit")
-    public static WebElement requestForQuotation;
-
-    @FindBy(css = ".control-detail")
-    public static WebElement productDetailedSpecifications;
-
-    @FindBy(xpath = "//div[@id='post-wrap']//form//button")
-    public static WebElement submitRFQ;
-
-    @FindBy(css = "#xjoinFirstName")
-    public static WebElement fNamePoPUpSignInWindow;
-
-    @FindBy(xpath = "//div[@id='thirdPartLogin']/a[2]")
-    public static WebElement googleIconOnPoPUpSignInWindow;
-
-    @FindBy(tagName = "a")
-    public List<WebElement> anchorTag = new ArrayList<>();
-
-    @FindBy(xpath = "//*[@id=\"post-wrap\"]/div/form/div[4]/div/div[1]/div/div[3]/div/div/div[2]/div[2]/div[2]")
-    public static WebElement uploadFile;
-
-    @FindBy(xpath = "//div[2]/div[1]/div[2]/div[2]/a[1]")
-    public static WebElement downloadAPK;
-
-    @FindBy(xpath = "//*[@id=\"top\"]/div[2]/div/div[3]//div[2]/a")
-    public static WebElement downloadWhatsApp;
-
-
-
+   /* XlsxDataReader xlData = new XlsxDataReader("C:\\Users\\Rob Dos\\Documents\\JAVA\\HomePageHBO.xlsx");
+    public List expectedWebElement(){
+        int rowcount = xlData.getRowCount("Sheet1");
+        List<String> expect = new ArrayList<>();
+        for(int i = 2; i <= rowcount; i++){
+            expect.add(xlData.getCellData("Sheet1","WebElementName",i));
+        }
+        System.out.println(expect);
+        return expect;
+    }*/
 
 
 
