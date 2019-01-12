@@ -262,7 +262,25 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement twodaydelivery;
     public void clickTwoDayDelivery(){twodaydelivery.click();}
 
+    //Everyday Purchase Rewards
+    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/div[1]/a[1]/div[1]/div[1]/div[1]")
+    public static WebElement everydaypurchaserewards;
+    public void clickEverydayPurchaseRewards(){everydaypurchaserewards.click();}
 
+    //The Costco Connection
+    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/div[2]/a[1]/div[1]/div[1]")
+    public static WebElement costcoconnection;
+    public void clickCostcoConnection(){costcoconnection.click();}
+
+    //January Entertainment
+    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/div[3]/a[1]/div[1]/div[1]/div[1]")
+    public static WebElement januaryentertainment;
+    public void clickJanuaryEntertainment(){januaryentertainment.click();}
+
+    //Join the Club
+    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/div[4]/a[1]/div[1]/div[1]")
+    public static WebElement jointheclub;
+    public void clickJoinTheClub(){jointheclub.click();}
 
 
 
