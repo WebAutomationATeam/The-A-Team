@@ -151,6 +151,27 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement mattress;
     public void clickMatterss(){mattress.click();}
 
+    //Members only Savings
+    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(94)" +
+            "div.feature-tiles.row.gutter:nth-child(1)div.col-xs-3.thumb:nth-child(1)a.thumbnail > img.img-responsive")
+    public static WebElement memberonlysavings;
+    public void clickMemberOnlySavings(){memberonlysavings.click();}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
