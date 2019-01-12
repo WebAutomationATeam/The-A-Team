@@ -175,6 +175,17 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement muradserum;
     public void clickMuradSerum(){muradserum.click();}
 
+    //Relax in Style
+    @FindBy(css = "body.en div.container-fluid.fixed-container:nth-child(95) div.feature-carousel-container" +
+            " div.feature-carousel.slick-initialized.slick-slider.slick-dotted:nth-child(2) > " +
+            "button.slick-prev.slick-arrow.slick-disabled")
+    public static WebElement rsslide;
+    public void clickRsSlide(){rsslide.click();}
+
+
+
+
+
 
 
 
