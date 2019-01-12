@@ -240,6 +240,20 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement royalshredder;
     public void clickRoyalShredder(){royalshredder.click();}
 
+    //Better Health
+    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(100)" +
+       " div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(3) a.thumbnail > img.img-responsive")
+    public static WebElement betterhealth;
+    public void clickBetterHealth(){betterhealth.click();}
+
+    //Green Mountain 100ct K-Cups
+    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(100)" +
+      " div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(4) a.thumbnail > img.img-responsive")
+    public static WebElement gmcups;
+    public void clickGMCups(){gmcups.click();}
+
+
+
 
 
 
