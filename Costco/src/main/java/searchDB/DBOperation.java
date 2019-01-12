@@ -7,8 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.sun.tools.doclint.Entity.and;
-
 public class DBOperation extends ConnectToSqlDB {
     public static ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 
