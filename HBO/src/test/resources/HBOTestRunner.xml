@@ -14,7 +14,8 @@
     <test name = "Test">
         <classes>
            <!--<class name="web.TestHome"/>-->
-            <class name="web.TestCreateAccount"/>
+            <!--<class name="web.TestCreateAccount"/>-->
+            <class name="web.TestFreeEpisodes"/>
         </classes>
     </test>
 
