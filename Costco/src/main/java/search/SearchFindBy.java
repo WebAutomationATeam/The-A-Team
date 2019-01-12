@@ -210,6 +210,14 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement pricereduction;
     public void clickPriceReductions(){pricereduction.click();}
 
+    //Treasure Hunt
+    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(99)" +
+        " div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(2) a.thumbnail > img.img-responsive")
+    public static WebElement treasurehunt;
+    public void clickTreasureHunt(){treasurehunt.click();}
+
+
+
 
 
 
