@@ -6,6 +6,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,6 +23,7 @@ import org.testng.annotations.*;
 
 >>>>>>> Shafayet
 import java.io.File;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.lang.reflect.Method;
@@ -48,17 +50,20 @@ public class CommonAPI {
     public void setUp (@Optional("url") String url, @Optional ("browser") String browser, @Optional ("browservVersion") String browserVersion,
                        @Optional ("OS") String OS) {
         //change the path of chrome driver for your own module
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\ahmed\\Desktop\\The-A-Team\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
         //System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
         getLocalDriver(OS, browser,browserVersion);
         driver = new ChromeDriver();
+        logger.setLevel(Level.INFO);
+        logger.info("Test is running on local env");
+        logger.error("mine error");
         //driver.manage().deleteAllCookies();
         driver.navigate().to(url);
         wait = new WebDriverWait(driver,5);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
-    @Parameters
+    //@Parameters
     public void setURL (String URL) {
         this.URL=URL;
         driver.get(URL);
@@ -209,9 +214,12 @@ public class CommonAPI {
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
+=======
     public static ExtentReports extent;
 >>>>>>> Shafayet
 
+>>>>>>> c8dfbb44d8830437883cb4f29b24bf4b729f85a7
     public void mouseHoverByXpath(String locator) {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
@@ -224,7 +232,13 @@ public class CommonAPI {
             action.moveToElement(element).perform();
         }
     }
+<<<<<<< HEAD
+    //public static ExtentReports extent;
 
+    @BeforeSuite
+=======
+
+>>>>>>> c8dfbb44d8830437883cb4f29b24bf4b729f85a7
     public void extentSetup(ITestContext context) {
         extent = ExtentManager.getInstance();
     }
@@ -273,25 +287,33 @@ public class CommonAPI {
         df.format(date);
 
 <<<<<<< HEAD
+        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+=======
+<<<<<<< HEAD
 
 =======
 >>>>>>> Shafayet
 
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
+>>>>>>> c8dfbb44d8830437883cb4f29b24bf4b729f85a7
         try {
-            FileUtils.copyFile(file, new File(System.getProperty("user.dir")+ "/screenshots/"+screenshotName+" "+df.format(date)+".png"));
+            FileUtils.copyFile(file, new File(System.getProperty("C:\\Users\\Rob Dos\\Desktop\\Screenshots1")+ "/screenshots/"+screenshotName+" "+df.format(date)+".png"));
             System.out.println("Screenshot captured");
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot "+e.getMessage());;
         }
+<<<<<<< HEAD
+=======
 
 <<<<<<< HEAD
 =======
         driver.quit();
 
 >>>>>>> Shafayet
+>>>>>>> c8dfbb44d8830437883cb4f29b24bf4b729f85a7
     }
+
     @AfterSuite
     public void generateReport() {
         extent.close();
@@ -324,6 +346,18 @@ public class CommonAPI {
     }
     public static void sleepFor(int sec)throws InterruptedException {
         Thread.sleep(sec * 1000);
+    }
+    public void iframeHandle(WebElement element) {
+        driver.switchTo().frame(element);
+    }
+    // Handling Alert
+    public void okAlert() {
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+    }
+    public void cancelAlert() {
+        Alert alert = driver.switchTo().alert();
+        alert.dismiss();
     }
     public List<String> getTextFromWebElements(WebElement element){
         List<WebElement> elements = new ArrayList<WebElement>();
