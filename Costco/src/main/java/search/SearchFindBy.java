@@ -163,6 +163,13 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement googlehomemini;
     public void clickGoogleHomeMini(){googlehomemini.click();}
 
+    //Turbotax
+    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(94) " +
+            "div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(3) a.thumbnail > img.img-responsive")
+    public static WebElement turbotax;
+    public void clickTurboTax(){turbotax.click();}
+
+
 
 
 
