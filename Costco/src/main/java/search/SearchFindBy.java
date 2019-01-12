@@ -216,11 +216,11 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement treasurehunt;
     public void clickTreasureHunt(){treasurehunt.click();}
 
-
-
-
-
-
+    //Discover Our Latest Items
+    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(99)" +
+       " div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(3) a.thumbnail > img.img-responsive")
+    public static WebElement discoverourlatestitem;
+    public void clickDiscoverOurLatestItem(){discoverourlatestitem.click();}
 
 
 
