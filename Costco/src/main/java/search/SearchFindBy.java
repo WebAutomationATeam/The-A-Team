@@ -56,7 +56,7 @@ public class SearchFindBy extends CommonAPI {
     @FindBy (css="body.en div.container-fluid.fixed-container div.table-container.parent div.table-row div." +
             "table-cell.logo.hidden-xs.hidden-sm.hidden-md.hidden-lg:nth-child(1) a:nth-child(1) > img.bc-logo.logo-us")
     public WebElement costcologo;
-    public void clickOnLogo () { costcologo.click();
+    public void clickCostcoLogo () { costcologo.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         costcologo.click();}
@@ -64,7 +64,7 @@ public class SearchFindBy extends CommonAPI {
     //view warehouse savings
     @FindBy(xpath = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]")
     public WebElement viewwarehousesavings;
-    public void clickviewwarehousesavings(){ viewwarehousesavings.click();
+    public void clickViewWareHouSesavings(){ viewwarehousesavings.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         viewwarehousesavings.click();}
@@ -73,7 +73,7 @@ public class SearchFindBy extends CommonAPI {
     @FindBy(xpath = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[4]/a[1]")
     public WebElement customerservice;
     public void clickCustomerService () {
-        customerservice.sendKeys("Game of Thrones", Keys.ENTER);
+        customerservice.sendKeys("Cookies", Keys.ENTER);
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         customerservice.click();}
@@ -81,7 +81,7 @@ public class SearchFindBy extends CommonAPI {
     //Get email Offer
     @FindBy(xpath = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[3]/a[1]")
     public WebElement emailoffer;
-    public void clickEmailOffer () { emailoffer.sendKeys("Game of Thrones", Keys.ENTER);
+    public void clickEmailOffer () { emailoffer.sendKeys("animesh.rahman@gmail.com", Keys.ENTER);
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         emailoffer.click();}
