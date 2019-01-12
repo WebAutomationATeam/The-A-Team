@@ -319,15 +319,12 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement gasoline;
     public void clickGasoline(){gasoline.click();}
 
+    //Email offer
     public void costcogetemailoffer(){
         typeOnElementNEnter("#footer-email-offer", "animesh.rahman@gmail.com");
         clickElement("/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/span[1]/button[1]");
         navigateBack();
     }
-
-
-
-
 
 
 }
