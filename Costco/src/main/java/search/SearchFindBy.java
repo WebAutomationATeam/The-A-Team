@@ -282,6 +282,16 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement jointheclub;
     public void clickJoinTheClub(){jointheclub.click();}
 
+    //Sponsored Products slide
+    @FindBy(xpath = "/html[1]/body[1]/div[14]/div[1]/div[2]/button[1]")
+    public static WebElement sponsoredproductsslide;
+    public void clickSponsoredProductsSlide(){sponsoredproductsslide.click();}
+
+    //Sponsored Products slide 1
+    @FindBy(xpath = "/html[1]/body[1]/div[14]/div[1]/div[2]/button[2]")
+    public static WebElement sponsoredproductsslide1;
+    public void clickSponsoredProductsSlide1(){sponsoredproductsslide1.click();}
+
 
 
 
