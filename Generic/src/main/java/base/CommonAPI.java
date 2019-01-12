@@ -17,6 +17,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+<<<<<<< HEAD
+=======
+
+>>>>>>> Shafayet
 import java.io.File;
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -202,24 +206,11 @@ public class CommonAPI {
             action.moveToElement(element).perform();
         }
     }
+<<<<<<< HEAD
+=======
 
     public static ExtentReports extent;
-    public void mouseHoverByXpath(String locator) {
-        try {
-            WebElement element = driver.findElement(By.xpath(locator));
-            Actions action = new Actions(driver);
-            Actions hover = action.moveToElement(element);
-        } catch (Exception ex) {
-            System.out.println("First attempt has been done, This is second try");
-            WebElement element = driver.findElement(By.cssSelector(locator));
-            Actions action = new Actions(driver);
-            action.moveToElement(element).perform();
-        }
-    }
-    //public static ExtentReports extent;
-
-    //@BeforeSuite
-    public void extentSetup(ITestContext context) { extent = ExtentManager.getInstance();}
+>>>>>>> Shafayet
 
     public void mouseHoverByXpath(String locator) {
         try {
@@ -233,10 +224,11 @@ public class CommonAPI {
             action.moveToElement(element).perform();
         }
     }
-    @BeforeSuite
+
     public void extentSetup(ITestContext context) {
         extent = ExtentManager.getInstance();
     }
+
     @BeforeMethod
 
     public void startExtent(Method method) {
@@ -272,7 +264,7 @@ public class CommonAPI {
         if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
         }
-        driver.quit();
+
     }
     public static void captureScreenshot(WebDriver driver, String screenshotName){
 
@@ -280,11 +272,12 @@ public class CommonAPI {
         Date date = new Date();
         df.format(date);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> Shafayet
 
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-        File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 
         try {
             FileUtils.copyFile(file, new File(System.getProperty("user.dir")+ "/screenshots/"+screenshotName+" "+df.format(date)+".png"));
@@ -293,6 +286,11 @@ public class CommonAPI {
             System.out.println("Exception while taking screenshot "+e.getMessage());;
         }
 
+<<<<<<< HEAD
+=======
+        driver.quit();
+
+>>>>>>> Shafayet
     }
     @AfterSuite
     public void generateReport() {
@@ -334,5 +332,9 @@ public class CommonAPI {
             text.add(e.getText());
         }
         return text;
+    }
+    @AfterMethod
+    public void afterMethod() {
+        driver.quit();
     }
 }

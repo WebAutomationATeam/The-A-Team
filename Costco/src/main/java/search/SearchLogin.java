@@ -8,7 +8,7 @@ public class SearchLogin extends CommonAPI {
 
         clickElement("//*[@id=\"header_sign_in\"]");
         typeOnElementNEnter("//*[@id=\"logonId\"]","partha_uk@hotmail.com");
-        typeOnElementNEnter("//*[@id=\"logonPassword\"]","Sneha$3116");
+        typeOnElementNEnter("//*[@id=\"logonPassword\"]","abcd1234");
         clickElement("//*[@id=\"LogonForm\"]/fieldset/div[5]/input");
         typeOnElementNEnter("#search-field", "Cookies" );
         clickElement("//*[@id=\"myaccount-d\"]");
