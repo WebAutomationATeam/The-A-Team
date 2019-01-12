@@ -260,9 +260,9 @@ public class CommonAPI {
         }
         ExtentTestManager.endTest();
         extent.flush();
-        if (result.getStatus() == ITestResult.FAILURE) {
+       if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
-        }
+       }
     }
     @AfterSuite
     public void generateReport() {
@@ -273,16 +273,20 @@ public class CommonAPI {
         calendar.setTimeInMillis(millis);
         return calendar.getTime();
     }
-    public static void captureScreenshot(WebDriver driver, String screenshotName){
+    public static void captureScreenshot(WebDriver driver, String screenshotName)  {
 
         DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
         Date date = new Date();
         df.format(date);
 
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-        try {
-            FileUtils.copyFile(file, new File(System.getProperty("C:\\Users\\Rob Dos\\Desktop\\Screenshots1")+ "/screenshots/"+screenshotName+" "+df.format(date)+".png"));
+        /*try {
+            FileUtils.copyFile(file, new File("C:\\Users\\Rob Dos\\Desktop\\Screenshots1\\" +screenshotName+" "+df.format(date)+".png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
+       try {
+            FileUtils.copyFile(file, new File(System.getProperty("C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\HBO\\screenshots\\") +screenshotName+" "+df.format(date)+".png"));
             System.out.println("Screenshot captured");
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot "+e.getMessage());;
@@ -335,8 +339,8 @@ public class CommonAPI {
         }
         return text;
     }
-    @AfterMethod
+    /*@AfterMethod
     public void afterMethod() {
         driver.quit();
-    }
+    }*/
 }
