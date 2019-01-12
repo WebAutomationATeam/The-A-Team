@@ -222,6 +222,12 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement discoverourlatestitem;
     public void clickDiscoverOurLatestItem(){discoverourlatestitem.click();}
 
+    //Exciting Products for a Limited-Time
+    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(99)" +
+      " div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(4) a.thumbnail > img.img-responsive")
+    public static WebElement excitingproductsforalimitedtime;
+    public void clickExcitingProductsForALimitedTime(){excitingproductsforalimitedtime.click();}
+
 
 
 
