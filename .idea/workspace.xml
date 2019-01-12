@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-
     <list default="true" id="4afb391c-0b28-4e72-abd6-df7660a395fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HBO/src/test/java/web/TestFreeEpisodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBO/src/main/java/basic/HBONowSignIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBO/src/main/java/basic/Kids.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBO/src/test/java/web/Listeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBO/src/test/java/web/TestHBONowSignIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A-Team.iml" beforeDir="false" afterPath="$PROJECT_DIR$/A-Team.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CitiBank/CitiBank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CitiBank/CitiBank.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/Costco.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/Costco.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/Generic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/Generic.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/database/ConnectToSqlDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/database/ConnectToSqlDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/HBO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/HBO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/src/main/java/basic/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/src/main/java/basic/CreateAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/src/main/java/basic/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/src/main/java/basic/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/src/main/java/search/DatabaseOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/src/main/java/search/DatabaseOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/src/test/java/web/TestCreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/src/test/java/web/TestCreateAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HBO/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/Extent-Report/ExtentReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HBO/src/test/java/web/TestFreeEpisodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/src/test/java/web/TestFreeEpisodes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HBO/src/test/resources/HBOTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/src/test/resources/HBOTestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebay/ebay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ebay/ebay.iml" afterDir="false" />
     </list>
-
-    <list default="true" id="4afb391c-0b28-4e72-abd6-df7660a395fd" name="Default Changelist" comment="" />
-
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Generic/target/" />
@@ -51,21 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="1943">
-              <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
-=======
-
-            <state relative-caret-position="2159">
-              <caret line="160" column="7" selection-start-line="160" selection-start-column="7" selection-end-line="160" selection-end-column="7" />
-
-            <state relative-caret-position="386">
-
-              <caret line="147" column="4" selection-start-line="147" selection-start-column="4" selection-end-line="147" selection-end-column="4" />
-
-
-              <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
-
+            <state relative-caret-position="-1309">
+              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,9 +53,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/CreateAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
->>>>>>> 0be3f06066ac6c66edf58a9a1152dda68fa25aa1
+            <state relative-caret-position="308">
+              <caret line="47" column="58" lean-forward="true" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HBONowSignIn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-17">
+              <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-131">
+              <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestHBONowSignIn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,114 +99,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HBO/src/test/resources/HBOTestRunner.xml">
+        <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/Kids.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4403#4404#0" expanded="true" />
-                <element signature="e#4434#4435#0" expanded="true" />
-                <element signature="e#4446#4447#0" expanded="true" />
-                <element signature="e#4481#4482#0" expanded="true" />
-                <element signature="e#4521#4522#0" expanded="true" />
-                <element signature="e#4553#4554#0" expanded="true" />
-                <element signature="e#4594#4595#0" expanded="true" />
-                <element signature="e#4627#4628#0" expanded="true" />
-                <element signature="e#4667#4668#0" expanded="true" />
-                <element signature="e#4699#4700#0" expanded="true" />
-                <element signature="e#4743#4744#0" expanded="true" />
-                <element signature="e#4779#4780#0" expanded="true" />
-                <element signature="e#4815#4816#0" expanded="true" />
-                <element signature="e#4843#4844#0" expanded="true" />
-                <element signature="e#4883#4884#0" expanded="true" />
-                <element signature="e#4915#4916#0" expanded="true" />
-                <element signature="e#4956#4957#0" expanded="true" />
-                <element signature="e#4989#4990#0" expanded="true" />
-                <element signature="e#5034#5035#0" expanded="true" />
-                <element signature="e#5071#5072#0" expanded="true" />
-                <element signature="e#5116#5117#0" expanded="true" />
-                <element signature="e#5153#5154#0" expanded="true" />
-                <element signature="e#5202#5203#0" expanded="true" />
-                <element signature="e#5243#5244#0" expanded="true" />
-                <element signature="e#5286#5287#0" expanded="true" />
-                <element signature="e#5321#5322#0" expanded="true" />
-                <element signature="e#5368#5369#0" expanded="true" />
-                <element signature="e#5407#5408#0" expanded="true" />
-                <element signature="e#5445#5446#0" expanded="true" />
-                <element signature="e#5475#5476#0" expanded="true" />
-                <element signature="e#5517#5518#0" expanded="true" />
-                <element signature="e#5551#5552#0" expanded="true" />
-                <element signature="e#5589#5590#0" expanded="true" />
-                <element signature="e#5619#5620#0" expanded="true" />
-                <element signature="e#5661#5662#0" expanded="true" />
-                <element signature="e#5695#5696#0" expanded="true" />
-                <element signature="e#5730#5731#0" expanded="true" />
-                <element signature="e#5757#5758#0" expanded="true" />
-                <element signature="e#5796#5797#0" expanded="true" />
-                <element signature="e#5827#5828#0" expanded="true" />
-                <element signature="e#5868#5869#0" expanded="true" />
-                <element signature="e#5901#5902#0" expanded="true" />
-                <element signature="e#5946#5947#0" expanded="true" />
-                <element signature="e#5983#5984#0" expanded="true" />
-                <element signature="e#6024#6025#0" expanded="true" />
-                <element signature="e#6057#6058#0" expanded="true" />
-                <element signature="e#6102#6103#0" expanded="true" />
-                <element signature="e#6139#6140#0" expanded="true" />
-                <element signature="e#6177#6178#0" expanded="true" />
-                <element signature="e#6207#6208#0" expanded="true" />
-                <element signature="e#6249#6250#0" expanded="true" />
-                <element signature="e#6283#6284#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestFreeEpisodes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="261" column="14" selection-start-line="261" selection-start-column="14" selection-end-line="261" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#10910#10911#0" expanded="true" />
-                <element signature="e#10940#10941#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HBO/Extent-Report/ExtentReport.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestHome.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="204">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -214,6 +122,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>screenshot</find>
+      <find>icebox</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -236,13 +145,17 @@
         <option value="$PROJECT_DIR$/HBO/src/main/java/basic/HomePage.java" />
         <option value="$PROJECT_DIR$/HBO/src/main/java/basic/CreateAccount.java" />
         <option value="$PROJECT_DIR$/HBO/src/test/java/web/TestCreateAccount.java" />
-        <option value="$PROJECT_DIR$/HBO/src/test/resources/HBOTestRunner.xml" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/database/sql.java" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/database/ConnectToSqlDB.java" />
         <option value="$PROJECT_DIR$/HBO/src/main/java/search/DatabaseOperation.java" />
         <option value="$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java" />
         <option value="$PROJECT_DIR$/HBO/src/test/java/web/TestFreeEpisodes.java" />
+        <option value="$PROJECT_DIR$/HBO/src/test/resources/HBOTestRunner.xml" />
+        <option value="$PROJECT_DIR$/HBO/src/test/java/web/Listeners.java" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" />
+        <option value="$PROJECT_DIR$/HBO/src/main/java/basic/HBONowSignIn.java" />
+        <option value="$PROJECT_DIR$/HBO/src/test/java/web/TestHBONowSignIn.java" />
+        <option value="$PROJECT_DIR$/HBO/src/main/java/basic/Kids.java" />
       </list>
     </option>
   </component>
@@ -264,7 +177,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-21" />
-    <option name="width" value="1034" />
+    <option name="width" value="1035" />
     <option name="height" value="1032" />
   </component>
   <component name="ProjectView">
@@ -273,12 +186,58 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
               <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
@@ -343,7 +302,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="TestSearch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
@@ -351,18 +310,17 @@
               <item name="HBO" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547266565814" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547279606572" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hasib/AutomationP1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15429688" />
@@ -477,41 +435,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.11 at 20h 00m 50s.xml">
+    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.12 at 00h 32m 16s.xml">
       <configuration name="C:/Users/Rob Dos/Desktop/Robin/The-A-Team/HBO/src/test/resources/HBOTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.11 at 20h 03m 22s.xml">
+    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.12 at 01h 39m 04s.xml">
       <configuration name="C:/Users/Rob Dos/Desktop/Robin/The-A-Team/HBO/src/test/resources/HBOTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.11 at 22h 51m 52s.xml">
+    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.12 at 01h 40m 48s.xml">
       <configuration name="C:/Users/Rob Dos/Desktop/Robin/The-A-Team/HBO/src/test/resources/HBOTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.11 at 22h 52m 55s.xml">
+    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.12 at 01h 42m 13s.xml">
       <configuration name="C:/Users/Rob Dos/Desktop/Robin/The-A-Team/HBO/src/test/resources/HBOTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.11 at 22h 56m 56s.xml">
+    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.12 at 01h 45m 53s.xml">
       <configuration name="C:/Users/Rob Dos/Desktop/Robin/The-A-Team/HBO/src/test/resources/HBOTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.11 at 23h 01m 50s.xml">
+    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.12 at 01h 50m 20s.xml">
       <configuration name="C:/Users/Rob Dos/Desktop/Robin/The-A-Team/HBO/src/test/resources/HBOTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.11 at 23h 09m 28s.xml">
+    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.12 at 01h 51m 33s.xml">
       <configuration name="C:/Users/Rob Dos/Desktop/Robin/The-A-Team/HBO/src/test/resources/HBOTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.11 at 23h 11m 07s.xml">
+    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.12 at 01h 53m 25s.xml">
       <configuration name="C:/Users/Rob Dos/Desktop/Robin/The-A-Team/HBO/src/test/resources/HBOTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.11 at 23h 11m 47s.xml">
+    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.12 at 02h 02m 06s.xml">
       <configuration name="C:/Users/Rob Dos/Desktop/Robin/The-A-Team/HBO/src/test/resources/HBOTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.11 at 23h 13m 52s.xml">
+    <history-entry file="C__Users_Rob_Dos_Desktop_Robin_The-A-Team_HBO_src_test_resources_HBOTestRunner_xml - 2019.01.12 at 02h 03m 54s.xml">
       <configuration name="C:/Users/Rob Dos/Desktop/Robin/The-A-Team/HBO/src/test/resources/HBOTestRunner.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990619" visible="true" weight="0.24777327" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990619" visible="true" weight="0.23319837" />
       <window_info id="Structure" order="1" sideWeight="0.50093806" side_tool="true" weight="0.024291499" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -520,7 +479,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5666075" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.94671404" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37655416" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -536,12 +495,12 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" weight="0.24079755" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Mongo Explorer" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32955465" />
-      <window_info anchor="right" id="Maven Executor" order="10" />
-      <window_info anchor="right" id="Maven-2 Build" order="11" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32955465" />
+      <window_info anchor="right" id="Maven Executor" order="9" />
+      <window_info anchor="right" id="Maven-2 Build" order="10" />
+      <window_info anchor="right" id="Mongo Explorer" order="11" weight="0.32955465" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -633,58 +592,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/database/sql.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/CreateAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/database/sql.java" />
     <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestCreateAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="-1171">
-          <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
-=======
-
-        <state relative-caret-position="170">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-
-        <state relative-caret-position="386">
-
-          <caret line="147" column="4" selection-start-line="147" selection-start-column="4" selection-end-line="147" selection-end-column="4" />
-
-
-          <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
-
->>>>>>> 0be3f06066ac6c66edf58a9a1152dda68fa25aa1
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestHome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1171" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Generic/src/main/java/database/ConnectToSqlDB.java">
@@ -712,72 +623,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4403#4404#0" expanded="true" />
-            <element signature="e#4434#4435#0" expanded="true" />
-            <element signature="e#4446#4447#0" expanded="true" />
-            <element signature="e#4481#4482#0" expanded="true" />
-            <element signature="e#4521#4522#0" expanded="true" />
-            <element signature="e#4553#4554#0" expanded="true" />
-            <element signature="e#4594#4595#0" expanded="true" />
-            <element signature="e#4627#4628#0" expanded="true" />
-            <element signature="e#4667#4668#0" expanded="true" />
-            <element signature="e#4699#4700#0" expanded="true" />
-            <element signature="e#4743#4744#0" expanded="true" />
-            <element signature="e#4779#4780#0" expanded="true" />
-            <element signature="e#4815#4816#0" expanded="true" />
-            <element signature="e#4843#4844#0" expanded="true" />
-            <element signature="e#4883#4884#0" expanded="true" />
-            <element signature="e#4915#4916#0" expanded="true" />
-            <element signature="e#4956#4957#0" expanded="true" />
-            <element signature="e#4989#4990#0" expanded="true" />
-            <element signature="e#5034#5035#0" expanded="true" />
-            <element signature="e#5071#5072#0" expanded="true" />
-            <element signature="e#5116#5117#0" expanded="true" />
-            <element signature="e#5153#5154#0" expanded="true" />
-            <element signature="e#5202#5203#0" expanded="true" />
-            <element signature="e#5243#5244#0" expanded="true" />
-            <element signature="e#5286#5287#0" expanded="true" />
-            <element signature="e#5321#5322#0" expanded="true" />
-            <element signature="e#5368#5369#0" expanded="true" />
-            <element signature="e#5407#5408#0" expanded="true" />
-            <element signature="e#5445#5446#0" expanded="true" />
-            <element signature="e#5475#5476#0" expanded="true" />
-            <element signature="e#5517#5518#0" expanded="true" />
-            <element signature="e#5551#5552#0" expanded="true" />
-            <element signature="e#5589#5590#0" expanded="true" />
-            <element signature="e#5619#5620#0" expanded="true" />
-            <element signature="e#5661#5662#0" expanded="true" />
-            <element signature="e#5695#5696#0" expanded="true" />
-            <element signature="e#5730#5731#0" expanded="true" />
-            <element signature="e#5757#5758#0" expanded="true" />
-            <element signature="e#5796#5797#0" expanded="true" />
-            <element signature="e#5827#5828#0" expanded="true" />
-            <element signature="e#5868#5869#0" expanded="true" />
-            <element signature="e#5901#5902#0" expanded="true" />
-            <element signature="e#5946#5947#0" expanded="true" />
-            <element signature="e#5983#5984#0" expanded="true" />
-            <element signature="e#6024#6025#0" expanded="true" />
-            <element signature="e#6057#6058#0" expanded="true" />
-            <element signature="e#6102#6103#0" expanded="true" />
-            <element signature="e#6139#6140#0" expanded="true" />
-            <element signature="e#6177#6178#0" expanded="true" />
-            <element signature="e#6207#6208#0" expanded="true" />
-            <element signature="e#6249#6250#0" expanded="true" />
-            <element signature="e#6283#6284#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1224" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestFreeEpisodes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        <state relative-caret-position="255">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/Listeners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/resources/HBOTestRunner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestHome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -785,12 +673,61 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HBO/Extent-Report/ExtentReport.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663" />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1943">
-          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+        <state relative-caret-position="-1309">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HBONowSignIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/CreateAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="47" column="58" lean-forward="true" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/Util/ExtentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/Util/ExtentTestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/Util/TestLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -799,20 +736,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="261" column="14" selection-start-line="261" selection-start-column="14" selection-end-line="261" selection-end-column="14" />
+        <state relative-caret-position="4012">
+          <caret line="286" column="11" lean-forward="true" selection-start-line="286" selection-start-column="11" selection-end-line="286" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10910#10911#0" expanded="true" />
-            <element signature="e#10940#10941#0" expanded="true" />
+            <element signature="e#10922#10923#0" expanded="true" />
+            <element signature="e#10952#10953#0" expanded="true" />
+            <element signature="e#13079#13080#0" expanded="true" />
+            <element signature="e#13127#13128#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HBO/src/test/resources/HBOTestRunner.xml">
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/Util/ApplicationLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+        <state relative-caret-position="51">
+          <caret line="4" column="50" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131">
+          <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestHBONowSignIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/Kids.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
