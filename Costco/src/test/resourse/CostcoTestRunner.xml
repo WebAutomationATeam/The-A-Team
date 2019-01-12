@@ -14,7 +14,7 @@
     <test name = "Costco Home">
         <classes>
             <!--<class name="TestHome"/>-->
-            <class name="TestFindBy"/>
+            <class name="testCostcoSearching.TestFindBy"/>
             <!--<class name="TestLogin"/>-->
             <!--<class name="TestHome"/>-->
         </classes>

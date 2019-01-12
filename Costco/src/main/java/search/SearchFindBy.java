@@ -151,6 +151,47 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement mattress;
     public void clickMatterss(){mattress.click();}
 
+    //Members only Savings
+    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(94)" +
+            "div.feature-tiles.row.gutter:nth-child(1)div.col-xs-3.thumb:nth-child(1)a.thumbnail > img.img-responsive")
+    public static WebElement memberonlysavings;
+    public void clickMemberOnlySavings(){memberonlysavings.click();}
+
+    //Google home mini
+    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(94)" +
+            "div.feature-tiles.row.gutter:nth-child(1)div.col-xs-3.thumb:nth-child(2)a.thumbnail > img.img-responsive")
+    public static WebElement googlehomemini;
+    public void clickGoogleHomeMini(){googlehomemini.click();}
+
+    //Turbotax
+    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(94) " +
+            "div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(3) a.thumbnail > img.img-responsive")
+    public static WebElement turbotax;
+    public void clickTurboTax(){turbotax.click();}
+
+    //Murad Serum
+    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(94)" +
+            " div.row.no-gutter:nth-child(3) a:nth-child(1) > img.img-responsive.hidden-xs.hidden-sm:nth-child(1)")
+    public static WebElement muradserum;
+    public void clickMuradSerum(){muradserum.click();}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
