@@ -532,3 +532,12 @@ public class ConnectToSqlDB {
     }*/
     }
 }
+
+    protected void insertStringDataFromArrayListToMySql() {
+    }
+
+    protected void insertStringDataFromArrayListToMySql() {
+    }
+
+    protected void insertStringDataFromArrayListToMySql() {
+    }
