@@ -3,7 +3,7 @@ package testCostcoSearching;
 import org.testng.annotations.Test;
 import search.SearchPage;
 
-public class TestHome extends SearchPage {
+public class TestPage extends SearchPage {
 
     @Test
     public void test1(){
