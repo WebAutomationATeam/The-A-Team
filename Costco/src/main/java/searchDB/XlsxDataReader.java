@@ -1,4 +1,4 @@
-package search;
+package searchDB;
 
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -8,6 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
 import java.util.Calendar;
+
 public class XlsxDataReader {
 
     protected XSSFSheet ExcelWSheet;
@@ -116,7 +117,8 @@ public class XlsxDataReader {
             //System.out.println(cell.getCellType());
             if (cell.getCellType() == org.apache.poi.ss.usermodel.Cell.CELL_TYPE_STRING)
                 return cell.getStringCellValue();
-            else if (cell.getCellType() == org.apache.poi.ss.usermodel.Cell.CELL_TYPE_NUMERIC || cell.getCellType() == org.apache.poi.ss.usermodel.Cell.CELL_TYPE_FORMULA) {
+            else if (cell.getCellType() == org.apache.poi.ss.usermodel.Cell.CELL_TYPE_NUMERIC ||
+                    cell.getCellType() == org.apache.poi.ss.usermodel.Cell.CELL_TYPE_FORMULA) {
 
                 String cellText = String.valueOf(cell.getNumericCellValue());
                 if (HSSFDateUtil.isCellDateFormatted(cell)) {
