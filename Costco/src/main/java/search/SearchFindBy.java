@@ -292,6 +292,41 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement sponsoredproductsslide1;
     public void clickSponsoredProductsSlide1(){sponsoredproductsslide1.click();}
 
+    //Costco job
+    @FindBy(css = "body.en div.container-fluid.fixed-container div.hidden-xs.hidden-sm div." +
+        "footer-items.row.gutter div.col-sm-3.col-md-3:nth-child(1) ul.footer-list li:nth-child(7) > a:nth-child(1)")
+    public static WebElement jobs;
+    public void clickJobs(){jobs.click();}
+
+    //Costco Company Information
+    @FindBy(css = "body.en div.container-fluid.fixed-container div.hidden-xs.hidden-sm div." +
+      "footer-items.row.gutter div.col-sm-3.col-md-3:nth-child(1) ul.footer-list li:nth-child(4) > a:nth-child(1)")
+    public static WebElement companyinfo;
+    public void clickCompanyInfo(){companyinfo.click();}
+
+    //Costco Credit Card
+    @FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[6]/a[1]")
+    public static WebElement creditcard;
+    public void clickCreditCard(){creditcard.click();}
+
+    //Costco Cash Card Balance
+    @FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[3]/ul[1]/li[3]/a[1]")
+    public static WebElement cashcardbalance;
+    public void clickCashCardBalance(){cashcardbalance.click();}
+
+    //Costco Gasoline
+    @FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[6]/a[1]")
+    public static WebElement gasoline;
+    public void clickGasoline(){gasoline.click();}
+
+    public void costcogetemailoffer(){
+        typeOnElementNEnter("#footer-email-offer", "animesh.rahman@gmail.com");
+        clickElement("/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/span[1]/button[1]");
+        navigateBack();
+    }
+
+
+
 
 
 
