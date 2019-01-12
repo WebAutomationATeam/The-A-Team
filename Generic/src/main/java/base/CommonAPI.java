@@ -18,6 +18,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+<<<<<<< HEAD
+=======
+
+>>>>>>> Shafayet
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -207,7 +211,15 @@ public class CommonAPI {
             action.moveToElement(element).perform();
         }
     }
+<<<<<<< HEAD
+=======
 
+<<<<<<< HEAD
+=======
+    public static ExtentReports extent;
+>>>>>>> Shafayet
+
+>>>>>>> c8dfbb44d8830437883cb4f29b24bf4b729f85a7
     public void mouseHoverByXpath(String locator) {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
@@ -220,12 +232,17 @@ public class CommonAPI {
             action.moveToElement(element).perform();
         }
     }
+<<<<<<< HEAD
     //public static ExtentReports extent;
 
     @BeforeSuite
+=======
+
+>>>>>>> c8dfbb44d8830437883cb4f29b24bf4b729f85a7
     public void extentSetup(ITestContext context) {
         extent = ExtentManager.getInstance();
     }
+
     @BeforeMethod
 
     public void startExtent(Method method) {
@@ -261,7 +278,7 @@ public class CommonAPI {
         if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
         }
-        driver.quit();
+
     }
     public static void captureScreenshot(WebDriver driver, String screenshotName){
 
@@ -269,13 +286,32 @@ public class CommonAPI {
         Date date = new Date();
         df.format(date);
 
+<<<<<<< HEAD
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> Shafayet
+
+        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+>>>>>>> c8dfbb44d8830437883cb4f29b24bf4b729f85a7
         try {
             FileUtils.copyFile(file, new File(System.getProperty("C:\\Users\\Rob Dos\\Desktop\\Screenshots1")+ "/screenshots/"+screenshotName+" "+df.format(date)+".png"));
             System.out.println("Screenshot captured");
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot "+e.getMessage());;
         }
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+=======
+        driver.quit();
+
+>>>>>>> Shafayet
+>>>>>>> c8dfbb44d8830437883cb4f29b24bf4b729f85a7
     }
 
     @AfterSuite
@@ -330,5 +366,9 @@ public class CommonAPI {
             text.add(e.getText());
         }
         return text;
+    }
+    @AfterMethod
+    public void afterMethod() {
+        driver.quit();
     }
 }
