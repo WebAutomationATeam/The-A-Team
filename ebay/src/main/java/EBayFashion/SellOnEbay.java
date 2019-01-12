@@ -3,7 +3,7 @@ package EBayFashion;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
+import reporting.TestLogger;
 public class SellOnEbay extends CommonAPI {
     @FindBy(xpath = ("//*[@id=\"mainContent\"]/div[1]/ul/li[4]/a"))
     public static WebElement ViewFashion;
@@ -13,10 +13,14 @@ public class SellOnEbay extends CommonAPI {
     public static WebElement ViewSellDirect;
 
     public void ClickViewConsignItem() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewConsignItem.click();
     }
     public void ClickViewSellDirect() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewSellDirect.click();
     }
