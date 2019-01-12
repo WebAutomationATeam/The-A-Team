@@ -252,11 +252,15 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement gmcups;
     public void clickGMCups(){gmcups.click();}
 
+    //Same Day Delivery
+    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/a[1]/div[1]/img[1]")
+    public static WebElement samedaydelivery;
+    public void clickSameDayDelivery(){samedaydelivery.click();}
 
-
-
-
-
+    //Two Day Delivery
+    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/a[2]/div[1]/img[1]")
+    public static WebElement twodaydelivery;
+    public void clickTwoDayDelivery(){twodaydelivery.click();}
 
 
 
