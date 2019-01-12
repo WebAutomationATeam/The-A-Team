@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4afb391c-0b28-4e72-abd6-df7660a395fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" afterDir="false" />
-    </list>
+    <list default="true" id="4afb391c-0b28-4e72-abd6-df7660a395fd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Generic/target/" />
@@ -32,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="386">
-              <caret line="147" column="4" selection-start-line="147" selection-start-column="4" selection-end-line="147" selection-end-column="4" />
+              <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
               <folding>
                 <element signature="e#569#570#0" expanded="true" />
                 <element signature="e#604#605#0" expanded="true" />
@@ -754,7 +752,7 @@
     <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
-          <caret line="147" column="4" selection-start-line="147" selection-start-column="4" selection-end-line="147" selection-end-column="4" />
+          <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
           <folding>
             <element signature="e#569#570#0" expanded="true" />
             <element signature="e#604#605#0" expanded="true" />
