@@ -189,28 +189,19 @@ public class SearchFindBy extends CommonAPI {
     public static WebElement rsslide1;
     public void clickRsSlide1(){rsslide1.click();}
 
+    //Home Saving
+    @FindBy(css = "body.en div.container-fluid.fixed-container:nth-child(97) div.feature-carousel-container " +
+            "div.feature-carousel.slick-initialized.slick-slider.slick-dotted:nth-child(2) > " +
+            "button.slick-prev.slick-arrow.slick-disabled")
+    public static WebElement homesavingslide;
+    public void clickHomeSavingSlide(){homesavingslide.click();}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //Home Saving 1
+    @FindBy(css = "body.en div.container-fluid.fixed-container:nth-child(97) div.feature-carousel-container " +
+            "div.feature-carousel.slick-initialized.slick-slider.slick-dotted:nth-child(2) >" +
+            " button.slick-next.slick-arrow")
+    public static WebElement homesavingslide1;
+    public void clickHomeSaving1(){homesavingslide1.click();}
 
 
 
