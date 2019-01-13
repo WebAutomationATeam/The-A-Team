@@ -9,7 +9,7 @@ public class SearchPage extends CommonAPI {
         navigateBack();
         typeOnElementNEnter("#search-field", "Samsung");
         navigateBack();
-        typeOnElementNEnter("#search-field", "Vegetable");
+        typeOnElementNEnter("#search-field", "Frozen Food");
         navigateBack();
         typeOnElementNEnter("#search-field", "Coffee");
         navigateBack();
