@@ -169,7 +169,7 @@ public class TestFindBy extends SearchFindBy {
     public void clickGasoline(){gasoline.click();}
 
     @Test
-    public void costcogetemailoffer(){costcogetemailoffer();}
+    public void clickCostcoGetEmailOffer(){costcogetemailoffer();}
 
 
 
