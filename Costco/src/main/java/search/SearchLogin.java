@@ -13,6 +13,5 @@ public class SearchLogin extends CommonAPI {
         typeOnElementNEnter("#search-field", "Cookies" );
         clickElement("//*[@id=\"myaccount-d\"]");
         clickElement("//*[@id=\"myaccount-t\"]/span");
-
     }
 }
