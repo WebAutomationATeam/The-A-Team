@@ -4,8 +4,8 @@
 <suite name="HBO Automation Script " parallel="false">
 
 
-    <!--<parameter name="useCloudEnv" value="false"/>-->
-    <!--<parameter name="cloudEnvName" value="browserstack"/>-->
+    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="cloudEnvName" value="saucelabs"/>
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="Windows 10"/>
     <parameter name="browser" value="Google Chrome"/>
