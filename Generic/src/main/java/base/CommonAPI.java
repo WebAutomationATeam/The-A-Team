@@ -53,8 +53,8 @@ public class CommonAPI {
     public void setUp (@Optional ("useCloudEnv")boolean useCloudEnv, @Optional ("cloudEnvName") String cloudEnvName,@Optional("url") String url, @Optional ("browser") String browser, @Optional ("browservVersion") String browserVersion,
                        @Optional ("OS") String OS, @Optional ("os_version") String os_version) throws IOException {
         //change the path of chrome driver for your own module
-        //System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+//        System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
         if(useCloudEnv==true){
             if(cloudEnvName.equalsIgnoreCase("browserstack")) {
                 getCloudDriver(cloudEnvName,browserstack_username,browserstack_accesskey,OS,os_version, browser, browserVersion);
