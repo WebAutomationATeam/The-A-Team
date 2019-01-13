@@ -56,7 +56,6 @@ public class XlsxDataReader {
         return mydata;
     } // end of getexcel sheet data// mr. Jahid
 
-
     public String path;
     public FileInputStream fis = null;
     private XSSFWorkbook workbook = null;

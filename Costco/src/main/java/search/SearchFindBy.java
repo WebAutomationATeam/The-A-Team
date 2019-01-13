@@ -452,6 +452,14 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         cashcardbalance.click();}
 
+    //Costco Credit Card
+    @FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[4]")
+    public static WebElement hoursandholidayclosures;
+    public void clickHoursAndHolidayClosures(){hoursandholidayclosures.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        hoursandholidayclosures.click();}
+
     //Costco Gasoline
     @FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[6]/a[1]")
     public static WebElement gasoline;
