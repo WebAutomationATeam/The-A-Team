@@ -7,27 +7,20 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
 public class TestFreeEpisodes extends AllFreeEpisodes {
-
     AllFreeEpisodes free;
-    //JavascriptExecutor js = (JavascriptExecutor) driver;
-
     @BeforeMethod
     public void initializeElement(){ free= PageFactory.initElements(driver, AllFreeEpisodes.class); }
-
     @Test
     public void navigateToFreeEpisodes(){free.getFreeEpisodes();}
-
     @Test
     public void watchSoprano(){
-
         free.getFreeEpisodes();
         free.getWatchSopranos();
         try {
-            Thread.sleep(3000);
+            sleepFor(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -41,7 +34,7 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
         //js.executeScript("arguments[0].scrollIntoView();", theIceBox);
         free.getTheIceBox();
         try {
-            Thread.sleep(3000);
+            sleepFor(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -54,7 +47,7 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
         free.getFreeEpisodes();
         free.getWestWorld();
         try {
-            Thread.sleep(3000);
+            sleepFor(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -65,7 +58,7 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
         free.getFreeEpisodes();
         free.getBarry();
         try {
-            Thread.sleep(3000);
+            sleepFor(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -76,7 +69,7 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
         free.getFreeEpisodes();
         free.getSally4Ever();
         try {
-            Thread.sleep(3000);
+            sleepFor(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -87,7 +80,7 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
         free.getFreeEpisodes();
         free.getPodSaveAmerica();
         try {
-            Thread.sleep(3000);
+            sleepFor(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -98,7 +91,7 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
         free.getFreeEpisodes();
         free.getSharpObjects();
         try {
-            Thread.sleep(3000);
+            sleepFor(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -109,7 +102,7 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
         free.getFreeEpisodes();
         free.getAnimals();
         try {
-            Thread.sleep(3000);
+            sleepFor(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -120,7 +113,7 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
         free.getFreeEpisodes();
         free.getSrAvila();
         try {
-            Thread.sleep(3000);
+            sleepFor(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -131,7 +124,7 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
         free.getFreeEpisodes();
         free.getVeep();
         try {
-            Thread.sleep(3000);
+            sleepFor(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -142,7 +135,7 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
         free.getFreeEpisodes();
         free.getHereAndNow();
         try {
-            Thread.sleep(3000);
+            sleepFor(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -153,7 +146,7 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
         free.getFreeEpisodes();
         free.getTheNightOf();
         try {
-            Thread.sleep(3000);
+            sleepFor(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -164,7 +157,7 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
         free.getFreeEpisodes();
         free.getRoom104();
         try {
-            Thread.sleep(3000);
+            sleepFor(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -1,6 +1,7 @@
 package basic;
 
 import base.CommonAPI;
+import database.ConnectToSqlDB;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -213,7 +214,6 @@ public class AllFreeEpisodes extends CommonAPI {
         playRoom104.click();
         return playRoom104;
     }
-
     public List list(){
         List<WebElement> webElements = new ArrayList<>();
         webElements.add(sopranos);
@@ -229,6 +229,7 @@ public class AllFreeEpisodes extends CommonAPI {
         webElements.add(hereAndNow);
         webElements.add(theNightOf);
         webElements.add(room104);
+
         List<String > text = new ArrayList<>();
         for(int i = 0; i<webElements.size();i++){
             text.add(webElements.get(i).getText());
@@ -253,4 +254,5 @@ public class AllFreeEpisodes extends CommonAPI {
         expectedShowsName.add("Room 104");
         return expectedShowsName;
     }
+
 }
