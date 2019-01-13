@@ -13,6 +13,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
@@ -23,6 +25,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.lang.reflect.Method;
+import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -31,9 +34,11 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static org.openqa.selenium.server.SpecialCommand.captureScreenshot;
-
 public class CommonAPI {
+    public String saucelabs_username = "";
+    public String saucelabs_accesskey = "";
+    public String browserstack_username= "";
+    public String browserstack_accesskey = "";
     public WebDriver driver=null;
     public Logger logger = Logger.getLogger(CommonAPI.class);
     public static WebDriverWait wait;
@@ -41,14 +46,27 @@ public class CommonAPI {
     public static ExtentReports extent;
     public String URL=null;
 
-    @Parameters({"url", "OS", "browser", "browserversion"})
+    @Parameters({"useCloudEnv","cloudEnvName","url", "OS", "os_version","browser", "browserversion"})
     @BeforeMethod
-    public void setUp (@Optional("url") String url, @Optional ("browser") String browser, @Optional ("browservVersion") String browserVersion,
-                       @Optional ("OS") String OS) {
+    public void setUp (@Optional ("useCloudEnv")boolean useCloudEnv, @Optional ("cloudEnvName") String cloudEnvName,@Optional("url") String url, @Optional ("browser") String browser, @Optional ("browservVersion") String browserVersion,
+                       @Optional ("OS") String OS, @Optional ("os_version") String os_version) throws IOException {
         //change the path of chrome driver for your own module
         System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+<<<<<<< HEAD
         //System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
         getLocalDriver(OS, browser,browserVersion);
+=======
+//        System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
+        if(useCloudEnv==true){
+            if(cloudEnvName.equalsIgnoreCase("browserstack")) {
+                getCloudDriver(cloudEnvName,browserstack_username,browserstack_accesskey,OS,os_version, browser, browserVersion);
+            }else if (cloudEnvName.equalsIgnoreCase("saucelabs")){
+                getCloudDriver(cloudEnvName,saucelabs_username, saucelabs_accesskey,OS,os_version, browser, browserVersion);
+            }
+        }else{
+            getLocalDriver(OS, browser,browserVersion);
+        }
+>>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
         driver = new ChromeDriver();
         logger.setLevel(Level.INFO);
         logger.info("Test is running on local env");
@@ -84,8 +102,24 @@ public class CommonAPI {
         return driver;
     }
 
-
-    //type
+    public WebDriver getCloudDriver(String envName,String envUsername, String envAccessKey,String OS, String os_version,String browser,
+                                    String browserVersion)throws IOException {
+        DesiredCapabilities cap = new DesiredCapabilities();
+        cap.setCapability("browser",browser);
+        cap.setCapability("browser_version",browserVersion);
+        cap.setCapability("OS", OS);
+        cap.setCapability("os_version", os_version);
+        if(envName.equalsIgnoreCase("Saucelabs")){
+            //resolution for Saucelabs
+            driver = new RemoteWebDriver(new URL("http://"+envUsername+":"+envAccessKey+
+                    "@ondemand.saucelabs.com:80/wd/hub"), cap);
+        }else if(envName.equalsIgnoreCase("Browserstack")) {
+            cap.setCapability("resolution", "1024x768");
+            driver = new RemoteWebDriver(new URL("http://" + envUsername + ":" + envAccessKey +
+                    "@hub-cloud.browserstack.com/wd/hub"), cap);
+        }
+        return driver;
+    }
     public void typeOnElement(String locator, String value){
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value);
@@ -263,11 +297,19 @@ public class CommonAPI {
        if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
        }
+<<<<<<< HEAD
     }
     @AfterSuite
     public void generateReport() {
         extent.close();
     }
+=======
+    }
+    @AfterSuite
+    public void generateReport() {
+        extent.close();
+    }
+>>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
     private Date getTime(long millis) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);
@@ -279,20 +321,28 @@ public class CommonAPI {
         Date date = new Date();
         df.format(date);
 
+<<<<<<< HEAD
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         /*try {
             FileUtils.copyFile(file, new File("C:\\Users\\Rob Dos\\Desktop\\Screenshots1\\" +screenshotName+" "+df.format(date)+".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }*/
+=======
+        File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+>>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
        try {
             FileUtils.copyFile(file, new File(System.getProperty("C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\HBO\\screenshots\\") +screenshotName+" "+df.format(date)+".png"));
             System.out.println("Screenshot captured");
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot "+e.getMessage());;
         }
+<<<<<<< HEAD
         driver.quit();
 
+=======
+        //driver.quit();
+>>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
     }
 
     public void waitToBeVisible(WebElement element){

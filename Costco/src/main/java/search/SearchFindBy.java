@@ -344,6 +344,7 @@ public class SearchFindBy extends CommonAPI {
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         betterhealth.click();}
+<<<<<<< HEAD
 
     //Green Mountain 100ct K-Cups
     @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(100)" +
@@ -378,6 +379,42 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         everydaypurchaserewards.click();}
 
+=======
+
+    //Green Mountain 100ct K-Cups
+    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(100)" +
+      " div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(4) a.thumbnail > img.img-responsive")
+    public static WebElement gmcups;
+    public void clickGMCups(){gmcups.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        gmcups.click();}
+
+    //Same Day Delivery
+    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/a[1]/div[1]/img[1]")
+    public static WebElement samedaydelivery;
+    public void clickSameDayDelivery(){samedaydelivery.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        samedaydelivery.click();}
+
+    //Two Day Delivery
+    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/a[2]/div[1]/img[1]")
+    public static WebElement twodaydelivery;
+    public void clickTwoDayDelivery(){twodaydelivery.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        twodaydelivery.click();}
+
+    //Everyday Purchase Rewards
+    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/div[1]/a[1]/div[1]/div[1]/div[1]")
+    public static WebElement everydaypurchaserewards;
+    public void clickEverydayPurchaseRewards(){everydaypurchaserewards.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        everydaypurchaserewards.click();}
+
+>>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
     //The Costco Connection
     @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/div[2]/a[1]/div[1]/div[1]")
     public static WebElement costcoconnection;
@@ -444,6 +481,18 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         creditcard.click();}
 
+<<<<<<< HEAD
+=======
+    //Costco Company Information
+    @FindBy(css = "body.en div.container-fluid.fixed-container div.hidden-xs.hidden-sm div.footer-items.row.gutter" +
+            " div.col-sm-3.col-md-3:nth-child(3) ul.footer-list li:nth-child(11) > a:nth-child(1)")
+    public static WebElement recalls;
+    public void clickRecalls(){recalls.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        recalls.click();}
+
+>>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
     //Costco Cash Card Balance
     @FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[3]/ul[1]/li[3]/a[1]")
     public static WebElement cashcardbalance;
@@ -452,6 +501,17 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         cashcardbalance.click();}
 
+<<<<<<< HEAD
+=======
+    //Costco Credit Card
+    @FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[4]")
+    public static WebElement hoursandholidayclosures;
+    public void clickHoursAndHolidayClosures(){hoursandholidayclosures.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        hoursandholidayclosures.click();}
+
+>>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
     //Costco Gasoline
     @FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[6]/a[1]")
     public static WebElement gasoline;
