@@ -4,8 +4,11 @@ import basic.AllFreeEpisodes;
 import basic.HomePage;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class TestFreeEpisodes extends AllFreeEpisodes {
 
@@ -166,5 +169,12 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
             e.printStackTrace();
         }
         free.getPlayRoom104();
+    }
+    @Test
+    public void allFreeSpisodes(){
+        free.getFreeEpisodes();
+        List actual = free.list();
+        List expected = free.expectedAllFreeEpisodes();
+        Assert.assertEquals(actual,expected);
     }
 }

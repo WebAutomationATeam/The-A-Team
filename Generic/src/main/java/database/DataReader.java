@@ -80,7 +80,6 @@ public class DataReader {
         return value.toString();
 
     }
-
     public void writeBack(String value) throws IOException {
         wb = new HSSFWorkbook();
         sheet = wb.createSheet();

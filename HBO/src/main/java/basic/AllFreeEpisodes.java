@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class AllFreeEpisodes extends CommonAPI {
 
     @FindBy (xpath = "/html/body/main/div[1]/div/div/header/div[1]/div/div[3]/ul/li[1]/div/a")
@@ -122,59 +125,46 @@ public class AllFreeEpisodes extends CommonAPI {
         pressPlay.click();
         return pressPlay;
     }
-
     public WebElement getWestWorld() {
         westWorld.click();
         return westWorld;
     }
-
     public WebElement getPlayWestWorld() {
-
         playWestWorld.click();
         return playWestWorld;
     }
-
     public WebElement getBarry() {
         barry.click();
         return barry;
     }
-
     public WebElement getPlayBarry() {
         playBarry.click();
         return playBarry;
     }
-
     public WebElement getSally4Ever() {
         sally4Ever.click();
         return sally4Ever;
     }
-
     public WebElement getPlaySally4Ever() {
         playSally4Ever.click();
         return playSally4Ever;
     }
-
     public WebElement getPodSaveAmerica() {
-
         podSaveAmerica.click();
         return podSaveAmerica;
     }
-
     public WebElement getPlayPodSaveAmerica() {
         playPodSaveAmerica.click();
         return playPodSaveAmerica;
     }
-
     public WebElement getSharpObjects() {
         sharpObjects.click();
         return sharpObjects;
     }
-
     public WebElement getPlaySharpObjects() {
         playSharpObjects.click();
         return playSharpObjects;
     }
-
     public WebElement getAnimals() {
         getAnimals().click();
         return animals;
@@ -183,54 +173,84 @@ public class AllFreeEpisodes extends CommonAPI {
         playAnimals.click();
         return playAnimals;
     }
-
     public WebElement getSrAvila() {
         srAvila.click();
         return srAvila;
     }
-
     public WebElement getPlaySrAvila() {
         playSrAvila.click();
         return playSrAvila;
     }
-
     public WebElement getVeep() {
         veep.click();
         return veep;
     }
-
     public WebElement getPlayVeep() {
         playVeep.click();
         return playVeep;
     }
-
     public WebElement getHereAndNow() {
         hereAndNow.click();
         return hereAndNow;
     }
-
     public WebElement getPlayHereAndNow() {
         playHereAndNow.click();
         return playHereAndNow;
     }
-
     public WebElement getTheNightOf() {
         theNightOf.click();
         return theNightOf;
     }
-
     public WebElement getPlayTheNightOf() {
         playTheNightOf.click();
         return playTheNightOf;
     }
-
     public WebElement getRoom104() {
         room104.click();
         return room104;
     }
-
     public WebElement getPlayRoom104() {
         playRoom104.click();
         return playRoom104;
+    }
+
+    public List list(){
+        List<WebElement> webElements = new ArrayList<>();
+        webElements.add(sopranos);
+        webElements.add(theIceBox);
+        webElements.add(westWorld);
+        webElements.add(barry);
+        webElements.add(sally4Ever);
+        webElements.add(podSaveAmerica);
+        webElements.add(sharpObjects);
+        webElements.add(animals);
+        webElements.add(srAvila);
+        webElements.add(veep);
+        webElements.add(hereAndNow);
+        webElements.add(theNightOf);
+        webElements.add(room104);
+        List<String > text = new ArrayList<>();
+        for(int i = 0; i<webElements.size();i++){
+            text.add(webElements.get(i).getText());
+            System.out.println(webElements.get(i).getText());
+        }
+        return text;
+    }
+    public List expectedAllFreeEpisodes(){
+        List<String> expectedShowsName = new ArrayList<>();
+        expectedShowsName.add("Sopranos");
+        expectedShowsName.add("The IceBox");
+        expectedShowsName.add("WestWorld");
+        expectedShowsName.add("Barry");
+        expectedShowsName.add("Sally4Ever");
+        expectedShowsName.add("Pod Save America");
+        expectedShowsName.add("Sharp Objects");
+        expectedShowsName.add("Animals");
+        expectedShowsName.add("Sr.Avila");
+        expectedShowsName.add("Veep");
+        expectedShowsName.add("Here and Now");
+        expectedShowsName.add("The Night Of");
+        expectedShowsName.add("Room 104");
+        return expectedShowsName;
     }
 }
