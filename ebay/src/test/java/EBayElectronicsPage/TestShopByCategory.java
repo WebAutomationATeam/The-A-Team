@@ -4,7 +4,8 @@ import EBayElectronics.ShopByCategory;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import reporting.TestLogger;
+import Util.TestLogger;
+
 
 public class TestShopByCategory extends ShopByCategory {
     ShopByCategory shopByCategory;

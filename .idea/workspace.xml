@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4afb391c-0b28-4e72-abd6-df7660a395fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/main/java/search/SearchLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/main/java/search/SearchLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopByCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopByCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopElectronicsSalesEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopElectronicsSalesEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestElectronicsSalesEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestElectronicsSalesEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestShopByCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestShopByCategory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,21 +31,108 @@
     <option name="myElementSize" value="175" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="454" column="8" selection-start-line="454" selection-start-column="8" selection-end-line="454" selection-end-column="8" />
+            <state relative-caret-position="418">
+              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchPage.java">
+        <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/CreateAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+            <state relative-caret-position="675">
+              <caret line="47" column="58" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HBONowSignIn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopElectronicsSalesEvents.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="205" selection-start-line="205" selection-end-line="205" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/Kids.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopByCategory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestElectronicsSalesEvents.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestShopByCategory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,76 +140,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2832">
-              <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+            <state relative-caret-position="988">
+              <caret line="52" column="12" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Generic/src/main/java/database/ConnectToSqlDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6120">
-              <caret line="402" column="5" selection-start-line="402" selection-start-column="5" selection-end-line="402" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1538#1546#0" expanded="true" />
-                <element signature="e#2086#2094#0" expanded="true" />
-                <element signature="e#2979#2987#0" expanded="true" />
-                <element signature="e#3336#3344#0" expanded="true" />
-                <element signature="e#6275#6283#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Costco/src/main/java/searchDB/XlsxDataReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Costco/src/main/java/searchDB/DBOperation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/Listeners.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchLogin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Generic/src/main/java/database/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -138,6 +162,7 @@
     <findStrings>
       <find>screenshot</find>
       <find>icebox</find>
+      <find>logg</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,14 +200,15 @@
         <option value="$PROJECT_DIR$/ebay/src/main/java/EBayFashion/SellOnEbay.java" />
         <option value="$PROJECT_DIR$/ebay/pom.xml" />
         <option value="$PROJECT_DIR$/ebay/src/test/java/resources/eBayTestRunner.xml" />
-        <option value="$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestElectronicsSalesEvents.java" />
-        <option value="$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopElectronicsSalesEvents.java" />
-        <option value="$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestShopByCategory.java" />
         <option value="$PROJECT_DIR$/Costco/src/main/java/searchDB/DBOperation.java" />
         <option value="$PROJECT_DIR$/Costco/src/main/java/searchDB/XlsxDataReader.java" />
         <option value="$PROJECT_DIR$/Costco/src/main/java/search/SearchPage.java" />
         <option value="$PROJECT_DIR$/Costco/src/main/java/search/SearchLogin.java" />
         <option value="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" />
+        <option value="$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopElectronicsSalesEvents.java" />
+        <option value="$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopByCategory.java" />
+        <option value="$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestElectronicsSalesEvents.java" />
+        <option value="$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestShopByCategory.java" />
       </list>
     </option>
   </component>
@@ -195,7 +221,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="A-Team" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="A-Team" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -214,35 +250,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
               <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
               <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
               <item name="Costco" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
               <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
               <item name="Costco" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
               <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
               <item name="Costco" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
               <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
               <item name="Costco" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -250,13 +286,210 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
               <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
               <item name="Costco" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Costco" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="searchDB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Costco" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Costco" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Costco" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testCostcoSearching" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Costco" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="driver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="Extent-Report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="screenshots" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="EBayElectronics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="EBayFashion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="EBayElectronicsPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="HBO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="HBO" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="HBO" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="HBO" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="HBO" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -265,7 +498,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547353108061" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547357159758" />
     <property name="last_opened_file_path" value="$USER_HOME$/hasib/AutomationP1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15429688" />
@@ -273,13 +506,13 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Rob Dos\Desktop\Robin\The-A-Team\HBO\src\test" />
-      <recent name="C:\Users\Rob Dos\IdeaProjects\ATeam\Generic\src\test" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Rob Dos\Desktop\Robin\The-A-Team\HBO\src\test" />
       <recent name="C:\Users\Rob Dos\IdeaProjects\ATeam\driver" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rob Dos\Desktop\Robin\The-A-Team\HBO\src\test" />
+      <recent name="C:\Users\Rob Dos\IdeaProjects\ATeam\Generic\src\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -412,10 +645,9 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="973" extended-state="0" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990619" visible="true" weight="0.18488944" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990619" visible="true" weight="0.18496802" />
       <window_info id="Structure" order="1" sideWeight="0.50093806" side_tool="true" weight="0.024291499" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -424,7 +656,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.94671404" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18526544" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37655416" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -438,7 +670,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.24079755" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.24040511" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -449,8 +681,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../WebAutomationNov2018/Amazon/src/test/resources/AmazonTestRunner.xml" />
-    <entry file="file://$PROJECT_DIR$/HBO/src/test/HBOTestRunner.xml" />
     <entry file="file://$PROJECT_DIR$/HBO/src/test/java/TestHome.java" />
     <entry file="file://$PROJECT_DIR$/Generic/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -572,36 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/CreateAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="47" column="58" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HBONowSignIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HBO/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
@@ -616,30 +816,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="205" selection-start-line="205" selection-end-line="205" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestHBONowSignIn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/Kids.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -674,33 +854,20 @@
     <entry file="file://$PROJECT_DIR$/ebay/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
-          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ebay/src/test/java/resources/eBayTestRunner.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
-          <caret line="25" column="74" lean-forward="true" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
+          <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestElectronicsSalesEvents.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopElectronicsSalesEvents.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestShopByCategory.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Generic/src/main/java/Util/TestLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="190">
           <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -727,16 +894,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HBO/application.log">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2832">
-          <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/Listeners.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -770,13 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Costco/src/main/java/searchDB/DBOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Costco/src/main/java/searchDB/XlsxDataReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
@@ -802,6 +952,117 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="454" column="8" selection-start-line="454" selection-start-column="8" selection-end-line="454" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Costco/src/main/java/searchDB/DBOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="52" column="12" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="205" selection-start-line="205" selection-end-line="205" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/CreateAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="47" column="58" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HBONowSignIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/Kids.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopElectronicsSalesEvents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopByCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestElectronicsSalesEvents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestShopByCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
