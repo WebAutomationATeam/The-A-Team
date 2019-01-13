@@ -53,14 +53,12 @@ public WebElement HBOLogo;
 public void clickOnLogo () {
     TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
     HBOLogo.click(); }
-
     @FindBy(xpath = "//div[contains(@class,'bands/MainNavigation--searchIcon')]")
     public WebElement searchlink;
     public void clicksearchlink(){
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         searchlink.click();
     }
-
     @FindBy(xpath = "//input[@placeholder='Search']")
     public WebElement searchBox;
     public void sendInput () {
@@ -149,7 +147,7 @@ public void clickOnLogo () {
         return list;
     }
 
-   XlsxDataReader xlData = new XlsxDataReader("C:\\Users\\Rob Dos\\Documents\\JAVA\\HomePageHBO.xlsx");
+   XlsxDataReader xlData = new XlsxDataReader("C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\HBO\\src\\test\\HomePageHBO.xlsx");
     public List expectedWebElement(){
         int rowcount = xlData.getRowCount("Sheet1");
         List<String> expect = new ArrayList<>();

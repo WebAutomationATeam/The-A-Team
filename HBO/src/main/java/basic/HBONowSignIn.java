@@ -1,8 +1,10 @@
 package basic;
 
 import base.CommonAPI;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class HBONowSignIn extends CommonAPI {
 
@@ -28,31 +30,29 @@ public class HBONowSignIn extends CommonAPI {
         signInTab.click();
         return signInTab;
     }
-
     public WebElement getHboNowLogo() {
         hboNowLogo.click();
         return hboNowLogo;
     }
-
     public WebElement getHboNowSignInTab() {
         hboNowSignInTab.click();
         return hboNowSignInTab;
     }
-
-    public WebElement getEnterEmailAddress() {
-        enterEmailAddress.sendKeys("john@gmail.com");
+    public WebElement getEnterEmailAddress(String email) {
+        enterEmailAddress.sendKeys("email",email);
         return enterEmailAddress;
     }
-
-    public WebElement getEnterPassword() {
-        enterPassword.sendKeys("abcd1234");
+    public WebElement getEnterPassword(String password) {
+        enterPassword.sendKeys("password",password);
         return enterPassword;
     }
-
     public WebElement getClickOnSignIn() {
         clickOnSignIn.click();
         return clickOnSignIn;
     }
-
-
+    public void errorMessage() {
+        String actualText = driver.findElement(By.xpath("//*[@id=\"Viewport\"]/div[1]/div[5]/div/div[1]/div[2]/span/span")).getText();
+        String expectedText = "The email address or password is incorrect. Please try again.";
+        Assert.assertEquals(actualText,expectedText);
+    }
 }
