@@ -18,10 +18,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-<<<<<<< HEAD
-=======
-
->>>>>>> Shafayet
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -50,7 +46,7 @@ public class CommonAPI {
     public void setUp (@Optional("url") String url, @Optional ("browser") String browser, @Optional ("browservVersion") String browserVersion,
                        @Optional ("OS") String OS) {
         //change the path of chrome driver for your own module
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
         //System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
         getLocalDriver(OS, browser,browserVersion);
         driver = new ChromeDriver();
@@ -211,15 +207,11 @@ public class CommonAPI {
             action.moveToElement(element).perform();
         }
     }
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
-=======
-    public static ExtentReports extent;
->>>>>>> Shafayet
+    //public static ExtentReports extent;
 
->>>>>>> c8dfbb44d8830437883cb4f29b24bf4b729f85a7
+
+
     public void mouseHoverByXpath(String locator) {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
@@ -232,19 +224,12 @@ public class CommonAPI {
             action.moveToElement(element).perform();
         }
     }
-<<<<<<< HEAD
-    //public static ExtentReports extent;
-
     @BeforeSuite
-=======
-
->>>>>>> c8dfbb44d8830437883cb4f29b24bf4b729f85a7
     public void extentSetup(ITestContext context) {
         extent = ExtentManager.getInstance();
     }
 
     @BeforeMethod
-
     public void startExtent(Method method) {
         String className = method.getDeclaringClass().getSimpleName();
         String methodName = method.getName().toLowerCase();
@@ -275,45 +260,10 @@ public class CommonAPI {
         }
         ExtentTestManager.endTest();
         extent.flush();
-        if (result.getStatus() == ITestResult.FAILURE) {
+       if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
-        }
-
+       }
     }
-    public static void captureScreenshot(WebDriver driver, String screenshotName){
-
-        DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
-        Date date = new Date();
-        df.format(date);
-
-<<<<<<< HEAD
-        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> Shafayet
-
-        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
->>>>>>> c8dfbb44d8830437883cb4f29b24bf4b729f85a7
-        try {
-            FileUtils.copyFile(file, new File(System.getProperty("C:\\Users\\Rob Dos\\Desktop\\Screenshots1")+ "/screenshots/"+screenshotName+" "+df.format(date)+".png"));
-            System.out.println("Screenshot captured");
-        } catch (Exception e) {
-            System.out.println("Exception while taking screenshot "+e.getMessage());;
-        }
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-=======
-        driver.quit();
-
->>>>>>> Shafayet
->>>>>>> c8dfbb44d8830437883cb4f29b24bf4b729f85a7
-    }
-
     @AfterSuite
     public void generateReport() {
         extent.close();
@@ -323,6 +273,28 @@ public class CommonAPI {
         calendar.setTimeInMillis(millis);
         return calendar.getTime();
     }
+    public static void captureScreenshot(WebDriver driver, String screenshotName)  {
+
+        DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
+        Date date = new Date();
+        df.format(date);
+
+        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        /*try {
+            FileUtils.copyFile(file, new File("C:\\Users\\Rob Dos\\Desktop\\Screenshots1\\" +screenshotName+" "+df.format(date)+".png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
+       try {
+            FileUtils.copyFile(file, new File(System.getProperty("C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\HBO\\screenshots\\") +screenshotName+" "+df.format(date)+".png"));
+            System.out.println("Screenshot captured");
+        } catch (Exception e) {
+            System.out.println("Exception while taking screenshot "+e.getMessage());;
+        }
+        driver.quit();
+
+    }
+
     public void waitToBeVisible(WebElement element){
         wait.until(ExpectedConditions.visibilityOf(element));
     }
@@ -367,8 +339,8 @@ public class CommonAPI {
         }
         return text;
     }
-    @AfterMethod
+    /*@AfterMethod
     public void afterMethod() {
         driver.quit();
-    }
+    }*/
 }

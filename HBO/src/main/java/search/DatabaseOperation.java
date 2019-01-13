@@ -63,10 +63,15 @@ public class DatabaseOperation extends ConnectToSqlDB {
         System.out.println(list);
         return list;
     }
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         insertDataIntoDB();
         ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-        List<String> list = connectToSqlDB.readDataBase("headerList", "headers");
+        List<String> list = null;
+        try {
+            list = connectToSqlDB.readDataBase("headerList", "headers");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         for (String st : list) {
             System.out.println(st);
         }

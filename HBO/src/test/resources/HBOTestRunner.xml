@@ -3,6 +3,7 @@
 
 <suite name="HBO Automation Script " parallel="false">
 
+
     <!--<parameter name="useCloudEnv" value="false"/>-->
     <!--<parameter name="cloudEnvName" value="browserstack"/>-->
     <parameter name="os" value="Windows"/>
@@ -14,7 +15,9 @@
     <test name = "Test">
         <classes>
            <!--<class name="web.TestHome"/>-->
-            <class name="web.TestCreateAccount"/>
+            <!--<class name="web.TestCreateAccount"/>-->
+            <!--<class name="web.TestFreeEpisodes"/>-->
+            <class name="web.TestHBONowSignIn"/>
         </classes>
     </test>
 

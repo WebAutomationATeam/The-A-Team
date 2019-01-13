@@ -1,8 +1,8 @@
 package MainPage;
 import base.CommonAPI;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 public class PageElement extends CommonAPI {
     @FindBy(xpath = ("//a[@href='https://www.ebay.com/']"))
     public static WebElement ViewLogo;
