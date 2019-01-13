@@ -7,7 +7,7 @@ import java.util.List;
 
 public class TestGoogleSheetPages extends GoogleSheets{
     //User should be able to search items using google sheet
-    @Test
+    /*@Test
     public void amzTS05TC01() throws Exception {
         int i = 0;
         String spreadsheetId = "1bJtVC5OBrhZdoCOyRxoTHMs7nWhVMzq8RmpHjBeAQmE";
@@ -19,6 +19,6 @@ public class TestGoogleSheetPages extends GoogleSheets{
             i++;
         }
         System.out.println("Test cases passed");
-    }
+    }*/
 }
 
