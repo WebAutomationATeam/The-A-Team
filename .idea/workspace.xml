@@ -1,68 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4afb391c-0b28-4e72-abd6-df7660a395fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Costco/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Costco/nullclickCustomerService (01.12.2019-14:34PM).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Costco/nullclickEmailOffer (01.12.2019-14:34PM).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Costco/nullclickGoogleHomeMini (01.12.2019-14:35PM).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Costco/src/main/java/searchDB/XlsxDataReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CostcoHomePage.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HBO/src/main/java/basic/HBONowSignIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HBO/src/main/java/basic/Kids.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HBO/src/test/java/web/Listeners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HBO/src/test/java/web/TestFreeEpisodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HBO/src/test/java/web/TestHBONowSignIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/main/java/EBayFashion/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/main/java/EBayFashion/ExploreInterests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/main/java/EBayFashion/SalesEvents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/main/java/EBayFashion/SellOnEbay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/main/java/EBayFashion/TopBrands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/main/java/EBayMotors/EBayMotors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/main/java/MainPage/RegisterUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/main/java/MainPage/SearchEBay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/main/java/MainPage/SignInUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/test/java/EBayFashionPage/TestCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/test/java/EBayFashionPage/TestExploreInterests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/test/java/EBayFashionPage/TestSalesEvents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/test/java/EBayFashionPage/TestSellOnEbay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/test/java/EBayFashionPage/TestTopBrands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/test/java/EBayMotorsPage/TestEBayMotors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/test/java/HomePage/TestRegisterUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/test/java/HomePage/TestSearchEBay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ebay/src/test/java/HomePage/TestSignInUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A-Team.iml" beforeDir="false" afterPath="$PROJECT_DIR$/A-Team.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CitiBank/CitiBank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CitiBank/CitiBank.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CitiBank/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/CitiBank/Extent-Report/ExtentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/Costco.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/Costco.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/Extent-Report/ExtentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/main/java/searchDB/DBOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/main/java/searchDB/DBOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/test/resourse/CostcoTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/test/resourse/CostcoTestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/Generic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/Generic.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/database/ConnectToSqlDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/database/ConnectToSqlDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/Extent-Report/ExtentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/HBO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/HBO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/src/main/java/basic/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/src/main/java/basic/CreateAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/src/main/java/basic/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/src/main/java/basic/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/src/main/java/search/DatabaseOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/src/main/java/search/DatabaseOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/src/main/java/search/XlsxDataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/src/main/java/search/XlsxDataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/src/test/java/web/TestCreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/src/test/java/web/TestCreateAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/src/test/resources/HBOTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HBO/src/test/resources/HBOTestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebay/ebay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ebay/ebay.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebay/src/main/java/MainPage/PageElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/ebay/src/main/java/MainPage/PageElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebay/src/test/java/HomePage/TestPageElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/ebay/src/test/java/HomePage/TestPageElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebay/src/test/java/resources/eBayTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ebay/src/test/java/resources/eBayTestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4afb391c-0b28-4e72-abd6-df7660a395fd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Generic/target/" />
@@ -209,24 +148,6 @@
               <item name="CitiBank" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -396,7 +317,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990619" visible="true" weight="0.23909532" />
       <window_info id="Structure" order="1" sideWeight="0.50093806" side_tool="true" weight="0.024291499" />
@@ -412,7 +332,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" weight="0.15349545" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" visible="true" weight="0.5759878" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50040483" side_tool="true" weight="0.053285968" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3285968" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3250444" />
