@@ -34,8 +34,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static org.openqa.selenium.server.SpecialCommand.captureScreenshot;
-
 public class CommonAPI {
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";

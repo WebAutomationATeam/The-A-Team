@@ -5,9 +5,9 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import java.io.FileInputStream;
 import java.util.Calendar;
+
 public class XlsxDataReader {
 
     protected XSSFSheet ExcelWSheet;
@@ -15,16 +15,14 @@ public class XlsxDataReader {
     protected XSSFCell Cell;
     protected XSSFRow Row;
 
-    public void setExcelFile(String Path) throws Exception {
+    public void setExcelFile(String path) throws Exception {
         try {
-            FileInputStream ExcelFile = new FileInputStream(Path);
+            FileInputStream ExcelFile = new FileInputStream(path);
             ExcelWBook = new XSSFWorkbook(ExcelFile);
-            ///ExcelWSheet = ExcelWBook.getSheet(SheetName);
         } catch (Exception e){
             throw (e);
         }
-    }// end of setexcelfile
-
+    }
     public String[][] getExcelSheetData(String sheetname) throws Exception {
         String[][] data = null;
         String[][] mydata = null;
@@ -36,7 +34,6 @@ public class XlsxDataReader {
                 int arrayrow = rows+1;
                 data = new String[arrayrow][cols];
                 mydata = new String[rows][cols];
-
                 for (int i = 0; i < arrayrow; i++) {
                     for (int j = 0; j < cols; j++) {
                         org.apache.poi.ss.usermodel.Cell cell = sheet.getRow(i).getCell(j);
@@ -53,8 +50,7 @@ public class XlsxDataReader {
             }
         }
         return mydata;
-    } // end of getexcel sheet data// mr. Jahid
-
+    }
 
     public String path;
     public FileInputStream fis = null;
@@ -74,7 +70,6 @@ public class XlsxDataReader {
             e.printStackTrace();
         }
     }
-
     // returns the row count in a sheet
     public int getRowCount(String sheetName) {
         int index = workbook.getSheetIndex(sheetName);
@@ -86,7 +81,6 @@ public class XlsxDataReader {
             return number;
         }
     }
-
     // returns the data from a cell
     public String getCellData(String sheetName, String colName, int rowNum) {
         try {
