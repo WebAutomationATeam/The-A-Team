@@ -14,8 +14,7 @@ import java.util.List;
 public class SearchFindBy extends CommonAPI {
 
     //SearchButton
-    @FindBy(how = How.XPATH, using = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]" +
-            "/div[1]/form[1]/div[2]/span[1]/input[2]")
+    @FindBy(how = How.XPATH, using = "//input[@id='search-field']")
     public WebElement searchButton;
     public WebElement getSearchButton() {
         return searchButton;
@@ -27,8 +26,7 @@ public class SearchFindBy extends CommonAPI {
     }
 
     //Costco All Button
-    @FindBy(how = How.XPATH, using = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]" +
-            "/div[2]/div[1]/form[1]/div[1]/select[1]")
+    @FindBy(how = How.XPATH, using = "//select[@id='search-dropdown-select']")
     public WebElement getCostcoAll;
     public WebElement getGetCostcoAll() {
         return getCostcoAll;
@@ -40,8 +38,7 @@ public class SearchFindBy extends CommonAPI {
     }
 
     //Signin
-    @FindBy(how = How.XPATH, using = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div" +
-            "[3]/ul[1]/li[2]/a[1]")
+    @FindBy(how = How.XPATH, using = "#header_sign_in")
     public WebElement signIn;
     public WebElement getSignIn() {
         return signIn;
@@ -53,8 +50,7 @@ public class SearchFindBy extends CommonAPI {
     }
 
     //Costco Logo
-    @FindBy (css="body.en div.container-fluid.fixed-container div.table-container.parent div.table-row div." +
-            "table-cell.logo.hidden-xs.hidden-sm.hidden-md.hidden-lg:nth-child(1) a:nth-child(1) > img.bc-logo.logo-us")
+    @FindBy (xpath ="//div[@class='logo-small hidden-xl']//img[@class='bc-logo logo-us']")
     public WebElement costcologo;
     public void clickCostcoLogo () { costcologo.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -62,7 +58,7 @@ public class SearchFindBy extends CommonAPI {
         costcologo.click();}
 
     //view warehouse savings
-    @FindBy(xpath = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]")
+    @FindBy(xpath = "//a[@id='warehouse-savings']")
     public WebElement viewwarehousesavings;
     public void clickViewWareHouSesavings(){ viewwarehousesavings.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -70,7 +66,7 @@ public class SearchFindBy extends CommonAPI {
         viewwarehousesavings.click();}
 
     //Customer Service
-    @FindBy(xpath = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[4]/a[1]")
+    @FindBy(xpath = "//a[@id='customer-service-link']")
     public WebElement customerservice;
     public void clickCustomerService () {
         customerservice.sendKeys("Cookies", Keys.ENTER);
@@ -79,7 +75,7 @@ public class SearchFindBy extends CommonAPI {
         customerservice.click();}
 
     //Get email Offer
-    @FindBy(xpath = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[3]/a[1]")
+    @FindBy(xpath = "//a[@id='email-signup-dropdown']")
     public WebElement emailoffer;
     public void clickEmailOffer () { emailoffer.sendKeys("animesh.rahman@gmail.com", Keys.ENTER);
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -135,8 +131,7 @@ public class SearchFindBy extends CommonAPI {
         travel.click();}
 
     //slide
-    @FindBy(css= "body.en div.genericEspot.container-fluid.fixed-container.WC_ContentAreaESpot_div_1_Home_Hero_Carousel" +
-            ":nth-child(91) div.slick-initialized.slick-slider.slick-dotted > button.slick-prev.slick-arrow")
+    @FindBy(css= "//*[@id=\"hero-carousel\"]/button[1]")
     public static WebElement slide;
     public void clickSlide(){slide.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -144,8 +139,7 @@ public class SearchFindBy extends CommonAPI {
         slide.click();}
 
     //slide1
-    @FindBy(css = ".body.en div.genericEspot.container-fluid.fixed-container.WC_ContentAreaESpot_div_1_Home_Hero_Carousel" +
-            ":nth-child(91) div.slick-initialized.slick-slider.slick-dotted > button.slick-next.slick-arrow")
+    @FindBy(css = "//*[@id=\"hero-carousel\"]/button[2]")
     public static WebElement slide1;
     public void clickSlide1(){slide1.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -153,7 +147,7 @@ public class SearchFindBy extends CommonAPI {
         customerservice.click();}
 
     //Cart
-    @FindBy(xpath = "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/ul[1]/li[3]/a[1]")
+    @FindBy(xpath = "//*[@id=\"cart-t\"]/i")
     public static WebElement cart;
     public void clickCart(){cart.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -170,8 +164,7 @@ public class SearchFindBy extends CommonAPI {
         cashcard.click();}
 
     //Appliances
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(93) " +
-            "div.feature-tiles.row.gutter div.col-xs-3.thumb:nth-child(1) a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide10\"]/a/img")
     public static WebElement appliances;
     public void clickAppliances(){appliances.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -179,8 +172,7 @@ public class SearchFindBy extends CommonAPI {
         appliances.click();}
 
     //TV
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(93) " +
-            "div.feature-tiles.row.gutter div.col-xs-3.thumb:nth-child(2) a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide11\"]/a/img")
     public static WebElement tv;
     public void clickTv(){tv.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -188,8 +180,7 @@ public class SearchFindBy extends CommonAPI {
         tv.click();}
 
     //Computer
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(93) " +
-            "div.feature-tiles.row.gutter div.col-xs-3.thumb:nth-child(3) a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide12\"]/a/img")
     public static WebElement computer;
     public void clickComputer(){computer.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -197,8 +188,7 @@ public class SearchFindBy extends CommonAPI {
         computer.click();}
 
     //Matterss
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(93) " +
-            "div.feature-tiles.row.gutter div.col-xs-3.thumb:nth-child(4) a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide13\"]")
     public static WebElement mattress;
     public void clickMatterss(){mattress.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -206,8 +196,7 @@ public class SearchFindBy extends CommonAPI {
         mattress.click();}
 
     //Members only Savings
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(94)" +
-            "div.feature-tiles.row.gutter:nth-child(1)div.col-xs-3.thumb:nth-child(1)a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide20\"]/a/img")
     public static WebElement memberonlysavings;
     public void clickMemberOnlySavings(){memberonlysavings.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -215,8 +204,7 @@ public class SearchFindBy extends CommonAPI {
         memberonlysavings.click();}
 
     //Google home mini
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(94)" +
-            "div.feature-tiles.row.gutter:nth-child(1)div.col-xs-3.thumb:nth-child(2)a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide21\"]/a/img")
     public static WebElement googlehomemini;
     public void clickGoogleHomeMini(){googlehomemini.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -224,8 +212,7 @@ public class SearchFindBy extends CommonAPI {
         googlehomemini.click();}
 
     //Turbotax
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(94) " +
-            "div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(3) a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide22\"]/a/img")
     public static WebElement turbotax;
     public void clickTurboTax(){turbotax.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -233,8 +220,7 @@ public class SearchFindBy extends CommonAPI {
         turbotax.click();}
 
     //Murad Serum
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(94)" +
-            " div.row.no-gutter:nth-child(3) a:nth-child(1) > img.img-responsive.hidden-xs.hidden-sm:nth-child(1)")
+    @FindBy(css = "/html/body/div[8]/div[2]/a/img[1]")
     public static WebElement muradserum;
     public void clickMuradSerum(){muradserum.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -242,9 +228,7 @@ public class SearchFindBy extends CommonAPI {
         muradserum.click();}
 
     //Relax in Style
-    @FindBy(css = "body.en div.container-fluid.fixed-container:nth-child(95) div.feature-carousel-container" +
-            " div.feature-carousel.slick-initialized.slick-slider.slick-dotted:nth-child(2) > " +
-            "button.slick-prev.slick-arrow.slick-disabled")
+    @FindBy(css = "//*[@id=\"Home_Product_Carousel_1_content\"]/div/button[1]")
     public static WebElement rsslide;
     public void clickRsSlide(){rsslide.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -252,9 +236,7 @@ public class SearchFindBy extends CommonAPI {
         rsslide.click();}
 
     //Relax in Style 1
-    @FindBy(css = "body.en div.container-fluid.fixed-container:nth-child(95) div.feature-carousel-container " +
-            "div.feature-carousel.slick-initialized.slick-slider.slick-dotted:nth-child(2)" +
-            " > button.slick-next.slick-arrow")
+    @FindBy(css = "//*[@id=\"Home_Product_Carousel_1_content\"]/div/button[2]")
     public static WebElement rsslide1;
     public void clickRsSlide1(){rsslide1.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -262,9 +244,7 @@ public class SearchFindBy extends CommonAPI {
         rsslide1.click();}
 
     //Home Saving
-    @FindBy(css = "body.en div.container-fluid.fixed-container:nth-child(97) div.feature-carousel-container " +
-            "div.feature-carousel.slick-initialized.slick-slider.slick-dotted:nth-child(2) > " +
-            "button.slick-prev.slick-arrow.slick-disabled")
+    @FindBy(css = "//*[@id=\"Home_Product_Carousel_2_content\"]/div/button[2]")
     public static WebElement homesavingslide;
     public void clickHomeSavingSlide(){homesavingslide.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -272,9 +252,7 @@ public class SearchFindBy extends CommonAPI {
        homesavingslide.click();}
 
     //Home Saving 1
-    @FindBy(css = "body.en div.container-fluid.fixed-container:nth-child(97) div.feature-carousel-container " +
-            "div.feature-carousel.slick-initialized.slick-slider.slick-dotted:nth-child(2) >" +
-            " button.slick-next.slick-arrow")
+    @FindBy(css = "//*[@id=\"Home_Product_Carousel_2_content\"]/div/button[1]")
     public static WebElement homesavingslide1;
     public void clickHomeSaving1(){homesavingslide1.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -282,9 +260,7 @@ public class SearchFindBy extends CommonAPI {
         homesavingslide1.click();}
 
     //Price Reductions
-    @FindBy(css = "body.en div.container-fluid.fixed-container:nth-child(97) div.feature-carousel-container " +
-            "div.feature-carousel.slick-initialized.slick-slider.slick-dotted:nth-child(2) >" +
-            " button.slick-next.slick-arrow")
+    @FindBy(css = "//*[@id=\"slick-slide30\"]/a/img")
     public static WebElement pricereduction;
     public void clickPriceReductions(){pricereduction.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -292,8 +268,7 @@ public class SearchFindBy extends CommonAPI {
         pricereduction.click();}
 
     //Treasure Hunt
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(99)" +
-        " div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(2) a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide31\"]/a/img")
     public static WebElement treasurehunt;
     public void clickTreasureHunt(){treasurehunt.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -301,8 +276,7 @@ public class SearchFindBy extends CommonAPI {
         treasurehunt.click();}
 
     //Discover Our Latest Items
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(99)" +
-       " div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(3) a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide32\"]/a/img")
     public static WebElement discoverourlatestitem;
     public void clickDiscoverOurLatestItem(){discoverourlatestitem.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -310,8 +284,7 @@ public class SearchFindBy extends CommonAPI {
         discoverourlatestitem.click();}
 
     //Exciting Products for a Limited-Time
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(99)" +
-      " div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(4) a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide33\"]/a/img")
     public static WebElement excitingproductsforalimitedtime;
     public void clickExcitingProductsForALimitedTime(){excitingproductsforalimitedtime.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -319,8 +292,7 @@ public class SearchFindBy extends CommonAPI {
         excitingproductsforalimitedtime.click();}
 
     //Healthy Eating
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(100)" +
-        " div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(1) a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide40\"]/a/img")
     public static WebElement healthyeating;
     public void clickHealthyEating(){healthyeating.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -328,8 +300,7 @@ public class SearchFindBy extends CommonAPI {
         healthyeating.click();}
 
     //Royal Shredder
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(100)" +
-        " div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(2) a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide41\"]/a/img")
     public static WebElement royalshredder;
     public void clickRoyalShredder(){royalshredder.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -337,8 +308,7 @@ public class SearchFindBy extends CommonAPI {
         royalshredder.click();}
 
     //Better Health
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(100)" +
-       " div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(3) a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide42\"]/a/img")
     public static WebElement betterhealth;
     public void clickBetterHealth(){betterhealth.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -346,8 +316,7 @@ public class SearchFindBy extends CommonAPI {
         betterhealth.click();}
 
     //Green Mountain 100ct K-Cups
-    @FindBy(css = "body.en div.container-fluid.fixed-container.product-list.feature-tiles-container:nth-child(100)" +
-      " div.feature-tiles.row.gutter:nth-child(1) div.col-xs-3.thumb:nth-child(4) a.thumbnail > img.img-responsive")
+    @FindBy(css = "//*[@id=\"slick-slide43\"]/a/img")
     public static WebElement gmcups;
     public void clickGMCups(){gmcups.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -355,7 +324,7 @@ public class SearchFindBy extends CommonAPI {
         gmcups.click();}
 
     //Same Day Delivery
-    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/a[1]/div[1]/img[1]")
+    @FindBy(xpath = "/html/body/div[13]/div/a[1]/div/img")
     public static WebElement samedaydelivery;
     public void clickSameDayDelivery(){samedaydelivery.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -363,7 +332,7 @@ public class SearchFindBy extends CommonAPI {
         samedaydelivery.click();}
 
     //Two Day Delivery
-    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/a[2]/div[1]/img[1]")
+    @FindBy(xpath = "/html/body/div[13]/div/a[2]/div/img")
     public static WebElement twodaydelivery;
     public void clickTwoDayDelivery(){twodaydelivery.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -371,7 +340,7 @@ public class SearchFindBy extends CommonAPI {
         twodaydelivery.click();}
 
     //Everyday Purchase Rewards
-    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/div[1]/a[1]/div[1]/div[1]/div[1]")
+    @FindBy(xpath = "/html/body/div[13]/div/div[1]/a/div/div/div")
     public static WebElement everydaypurchaserewards;
     public void clickEverydayPurchaseRewards(){everydaypurchaserewards.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -379,7 +348,7 @@ public class SearchFindBy extends CommonAPI {
         everydaypurchaserewards.click();}
 
     //The Costco Connection
-    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/div[2]/a[1]/div[1]/div[1]")
+    @FindBy(xpath = "/html/body/div[13]/div/div[2]/a/div/div")
     public static WebElement costcoconnection;
     public void clickCostcoConnection(){costcoconnection.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -387,7 +356,7 @@ public class SearchFindBy extends CommonAPI {
         costcoconnection.click();}
 
     //January Entertainment
-    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/div[3]/a[1]/div[1]/div[1]/div[1]")
+    @FindBy(xpath = "/html/body/div[13]/div/div[3]/a/div/div")
     public static WebElement januaryentertainment;
     public void clickJanuaryEntertainment(){januaryentertainment.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -395,7 +364,7 @@ public class SearchFindBy extends CommonAPI {
         januaryentertainment.click();}
 
     //Join the Club
-    @FindBy(xpath = "/html[1]/body[1]/div[13]/div[1]/div[4]/a[1]/div[1]/div[1]")
+    @FindBy(xpath = "/html/body/div[13]/div/div[4]/a/div/div/p[1]")
     public static WebElement jointheclub;
     public void clickJoinTheClub(){jointheclub.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -419,8 +388,7 @@ public class SearchFindBy extends CommonAPI {
         sponsoredproductsslide1.click();}
 
     //Costco job
-    @FindBy(css = "body.en div.container-fluid.fixed-container div.hidden-xs.hidden-sm div." +
-        "footer-items.row.gutter div.col-sm-3.col-md-3:nth-child(1) ul.footer-list li:nth-child(7) > a:nth-child(1)")
+    @FindBy(css = "//*[@id=\"footer-list\"]/div/div[1]/ul/li[7]/a")
     public static WebElement jobs;
     public void clickJobs(){jobs.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -428,25 +396,7 @@ public class SearchFindBy extends CommonAPI {
         jobs.click();}
 
     //Costco Company Information
-    @FindBy(css = "body.en div.container-fluid.fixed-container div.hidden-xs.hidden-sm div." +
-      "footer-items.row.gutter div.col-sm-3.col-md-3:nth-child(1) ul.footer-list li:nth-child(4) > a:nth-child(1)")
-    public static WebElement companyinfo;
-    public void clickCompanyInfo(){companyinfo.click();
-        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
-                getName()));
-        companyinfo.click();}
-
-    //Costco Credit Card
-    @FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[6]/a[1]")
-    public static WebElement creditcard;
-    public void clickCreditCard(){creditcard.click();
-        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
-                getName()));
-        creditcard.click();}
-
-    //Costco Company Information
-    @FindBy(css = "body.en div.container-fluid.fixed-container div.hidden-xs.hidden-sm div.footer-items.row.gutter" +
-            " div.col-sm-3.col-md-3:nth-child(3) ul.footer-list li:nth-child(11) > a:nth-child(1)")
+    @FindBy(css = "//*[@id=\"footer-list\"]/div/div[1]/ul/li[4]/a")
     public static WebElement recalls;
     public void clickRecalls(){recalls.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -454,7 +404,7 @@ public class SearchFindBy extends CommonAPI {
         recalls.click();}
 
     //Costco Cash Card Balance
-    @FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[3]/ul[1]/li[3]/a[1]")
+    @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[3]/ul/li[3]/a")
     public static WebElement cashcardbalance;
     public void clickCashCardBalance(){cashcardbalance.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -462,7 +412,7 @@ public class SearchFindBy extends CommonAPI {
         cashcardbalance.click();}
 
     //Costco Credit Card
-    @FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[4]")
+    @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[2]/ul[1]/li[6]/a")
     public static WebElement hoursandholidayclosures;
     public void clickHoursAndHolidayClosures(){hoursandholidayclosures.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -470,7 +420,7 @@ public class SearchFindBy extends CommonAPI {
         hoursandholidayclosures.click();}
 
     //Costco Gasoline
-    @FindBy(xpath = "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[6]/a[1]")
+    @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[4]/ul/li[6]/a")
     public static WebElement gasoline;
     public void clickGasoline(){gasoline.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
@@ -480,7 +430,7 @@ public class SearchFindBy extends CommonAPI {
     //Email offer
     public void costcogetemailoffer(){
         typeOnElementNEnter("#footer-email-offer", "animesh.rahman@gmail.com");
-        clickElement("/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/span[1]/button[1]");
+        clickElement("//*[@id=\"email-signup-dropdown\"]");
         navigateBack();
     }
 
@@ -498,8 +448,6 @@ public class SearchFindBy extends CommonAPI {
         webElements.add(googlehomemini);
         webElements.add(costcoconnection);
         webElements.add(jobs);
-        webElements.add(companyinfo);
-        webElements.add(creditcard);
         webElements.add(gasoline);
 
         List<String>list = new ArrayList<>();
