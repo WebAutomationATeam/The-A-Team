@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4afb391c-0b28-4e72-abd6-df7660a395fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/Costco.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/Costco.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/nullclickCustomerService (01.12.2019-14:34PM).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/nullclickEmailOffer (01.12.2019-14:34PM).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/nullclickGoogleHomeMini (01.12.2019-14:35PM).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebay/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ebay/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebay/src/test/java/resources/eBayTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ebay/src/test/java/resources/eBayTestRunner.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4afb391c-0b28-4e72-abd6-df7660a395fd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Generic/target/" />
@@ -34,13 +26,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ebay/src/test/java/resources/eBayTestRunner.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
               <caret line="25" column="74" lean-forward="true" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestElectronicsSalesEvents.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopElectronicsSalesEvents.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestShopByCategory.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -102,6 +113,9 @@
         <option value="$PROJECT_DIR$/ebay/src/main/java/EBayFashion/SellOnEbay.java" />
         <option value="$PROJECT_DIR$/ebay/pom.xml" />
         <option value="$PROJECT_DIR$/ebay/src/test/java/resources/eBayTestRunner.xml" />
+        <option value="$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestElectronicsSalesEvents.java" />
+        <option value="$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopElectronicsSalesEvents.java" />
+        <option value="$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestShopByCategory.java" />
       </list>
     </option>
   </component>
@@ -141,11 +155,6 @@
             <path>
               <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
               <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
-              <item name="Costco" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
@@ -197,6 +206,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="EBayElectronics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="EBayFashion" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -221,6 +239,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="EBayElectronicsPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -235,7 +262,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547339297099" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547339365237" />
     <property name="last_opened_file_path" value="$USER_HOME$/hasib/AutomationP1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15429688" />
@@ -725,6 +752,19 @@
           <caret line="25" column="74" lean-forward="true" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestElectronicsSalesEvents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopElectronicsSalesEvents.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/test/java/EBayElectronicsPage/TestShopByCategory.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
