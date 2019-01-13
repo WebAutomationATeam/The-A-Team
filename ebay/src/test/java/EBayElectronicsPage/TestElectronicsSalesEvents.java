@@ -1,10 +1,11 @@
 package EBayElectronicsPage;
 
 import EBayElectronics.ShopElectronicsSalesEvents;
+import Util.TestLogger;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import reporting.TestLogger;
+
 
 import static base.CommonAPI.convertToString;
 
