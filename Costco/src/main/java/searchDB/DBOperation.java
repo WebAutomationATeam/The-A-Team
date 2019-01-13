@@ -16,9 +16,7 @@ public class DBOperation extends ConnectToSqlDB {
         //connectToSqlDB.insertStringDataFromArrayListToMySql(list, "headerList","headers");
         //connectToSqlDB.insertDataFromArrayListToSqlTableforString(list,"headerList","headers");
         connectToSqlDB.insertStringDataFromArrayListToMySql(list,"headerList","headers");
-
     }
-
     public static List<String> getHeaderValue() {
         List<String> headerList = new ArrayList<>();
         headerList.add("SITE MAP");
@@ -42,14 +40,12 @@ public class DBOperation extends ConnectToSqlDB {
     @FindBy(xpath = "//a[contains(text(),'Feedback')]")
     WebElement FEEDBACK;
 
-
     public List getHeadersValue1() {
         List<WebElement> headerList1 = new ArrayList<>();
         headerList1.add(SITE_MAP);
         headerList1.add(TERMS_AND_CONDITIONS);
         headerList1.add(YOUR_PRIVATE_RIGHTS);
         headerList1.add(FEEDBACK);
-
 
         List<String> list = new ArrayList<>();
         for (int i = 0; i<headerList1.size();i++){
