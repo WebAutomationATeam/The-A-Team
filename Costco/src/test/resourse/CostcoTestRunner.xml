@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Costco Automation Script " parallel="false">
+<suite name="Costco Automation Script " parallel="true">
 
-    <!--<parameter name="useCloudEnv" value="false"/>-->
-    <!--<parameter name="cloudEnvName" value="browserstack"/>-->
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="OS X"/>
     <parameter name="os_version" value="Mojave"/>
     <parameter name="browser" value="Google Chrome"/>

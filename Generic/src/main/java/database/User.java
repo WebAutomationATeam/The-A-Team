@@ -1,42 +1,17 @@
 package database;
 
 public class User {
-    String stName;
-    String stID;
-    String stDOB;
+    String items;
 
-    public User(){}
-    public User(String stName, String stID){
-        this.stName = stName;
-        this.stID = stID;
-    }
-    public User(String stName, String stID, String stDOB){
-        this.stName = stName;
-        this.stID = stID;
-        this.stDOB = stDOB;
+    public User(String items){
+        this.items = items;
 
     }
-    public String getStName() {
-        return stName;
+    public String getItems() {
+        return items;
     }
 
-    public void setStName(String stName) {
-        this.stName = stName;
-    }
-
-    public String getStID() {
-        return stID;
-    }
-
-    public void setStID(String stID) {
-        this.stID = stID;
-    }
-
-    public String getStDOB() {
-        return stDOB;
-    }
-
-    public void setStDOB(String stDOB) {
-        this.stDOB = stDOB;
+    public void setItems(String stName) {
+        this.items = items;
     }
 }
