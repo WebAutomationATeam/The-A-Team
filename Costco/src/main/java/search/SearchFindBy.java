@@ -57,6 +57,14 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         costcologo.click();}
 
+    //Costco Shop Button
+    @FindBy (xpath ="//*[@id=\"navigation-dropdown\"]")
+    public WebElement costcoshop;
+    public void clickCostcoShop () { costcoshop.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcoshop.click();}
+
     //view warehouse savings
     @FindBy(xpath = "//a[@id='warehouse-savings']")
     public WebElement viewwarehousesavings;
