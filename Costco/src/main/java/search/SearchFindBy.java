@@ -138,8 +138,16 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         costcobackyardoasis.click();}
 
+    //Costco Make Your Home Smart
+    @FindBy(xpath = "///*[@id=\"search-results\"]/div[2]/div/div[2]/div[7]/a/div")
+    public WebElement costcomakeyourhomesmart;
+    public void clickMakeYourHomeSmart(){ costcomakeyourhomesmart.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomakeyourhomesmart.click();}
 
-        //
+
+    //
 
     //Customer Service
     @FindBy(xpath = "//a[@id='customer-service-link']")
