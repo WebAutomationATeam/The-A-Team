@@ -89,7 +89,6 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         costcomyhome.click();}
 
-        //
     //Costco Relax in Style
     @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[1]/a/div")
     public WebElement costcrelaxinstyle;
@@ -185,7 +184,6 @@ public class SearchFindBy extends CommonAPI {
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         costcofollowussocialmediapinterest.click();}
-    //
 
     //Customer Service
     @FindBy(xpath = "//a[@id='customer-service-link']")
