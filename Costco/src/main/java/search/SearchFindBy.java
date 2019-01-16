@@ -162,7 +162,29 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         costcomaximizeyourspace.click();}
 
+    //Costco American Heritage Billiards
+    @FindBy(xpath = "//*[@id=\"slick-slide40\"]/a/img")
+    public WebElement costcoamericanheritagebilliards;
+    public void clickAmericanHeritageBilliards(){ costcoamericanheritagebilliards.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcoamericanheritagebilliards.click();}
 
+    //Costco Follow Us Social Media Facebook
+    @FindBy(xpath = "//*[@id=\"footer-widget\"]/div/div[1]/div/div[4]/ul/li[1]/a/i")
+    public WebElement costcofollowussocialmediafacebook;
+    public void clickFollowUsSocialMediaFacebook(){ costcofollowussocialmediafacebook.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcofollowussocialmediafacebook.click();}
+
+    //Costco Follow Us Social Media Pinterest
+    @FindBy(xpath = "//*[@id=\"footer-widget\"]/div/div[1]/div/div[4]/ul/li[2]/a/i")
+    public WebElement costcofollowussocialmediapinterest;
+    public void clickFollowUsSocialMediaPinterest(){ costcofollowussocialmediapinterest.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcofollowussocialmediapinterest.click();}
     //
 
     //Customer Service
