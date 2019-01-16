@@ -106,29 +106,29 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         costcodiningentertaining.click();}
 
-    //Costco My Home
-    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
-    public WebElement costcomyhome;
-    public void clickCostcoMyHome(){ costcomyhome.click();
+    //Costco Best Night's Rest
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[3]/a/img")
+    public WebElement costcobestnightsrest;
+    public void clickBestNightsRest(){ costcobestnightsrest.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
-        costcomyhome.click();}
+        costcobestnightsrest.click();}
 
-    //Costco My Home
-    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
-    public WebElement costcomyhome;
-    public void clickCostcoMyHome(){ costcomyhome.click();
+    //Costco Update your Bath
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[4]/a/div")
+    public WebElement costcoupdateyourbath;
+    public void clickUpdateYourBath(){ costcoupdateyourbath.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
-        costcomyhome.click();}
+        costcoupdateyourbath.click();}
 
-    //Costco My Home
-    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
-    public WebElement costcomyhome;
-    public void clickCostcoMyHome(){ costcomyhome.click();
+    //Costco Light Up Your Space
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[5]/a/div")
+    public WebElement costlightupyourspace;
+    public void clickLightUpYourSpace(){ costlightupyourspace.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
-        costcomyhome.click();}
+        costlightupyourspace.click();}
 
     //Costco My Home
     @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
