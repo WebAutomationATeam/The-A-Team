@@ -89,6 +89,105 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         costcomyhome.click();}
 
+        //
+    //Costco Relax in Style
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[1]/a/div")
+    public WebElement costcrelaxinstyle;
+    public void clickcostcRelaxInStyle(){ costcrelaxinstyle.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcrelaxinstyle.click();}
+
+    //Costco Dining Entertaining
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[2]/a/div")
+    public WebElement costcodiningentertaining;
+    public void clickDiningEntertaining(){ costcodiningentertaining.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcodiningentertaining.click();}
+
+    //Costco My Home
+    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
+    public WebElement costcomyhome;
+    public void clickCostcoMyHome(){ costcomyhome.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomyhome.click();}
+
+    //Costco My Home
+    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
+    public WebElement costcomyhome;
+    public void clickCostcoMyHome(){ costcomyhome.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomyhome.click();}
+
+    //Costco My Home
+    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
+    public WebElement costcomyhome;
+    public void clickCostcoMyHome(){ costcomyhome.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomyhome.click();}
+
+    //Costco My Home
+    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
+    public WebElement costcomyhome;
+    public void clickCostcoMyHome(){ costcomyhome.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomyhome.click();}
+
+    //Costco My Home
+    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
+    public WebElement costcomyhome;
+    public void clickCostcoMyHome(){ costcomyhome.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomyhome.click();}
+
+    //Costco My Home
+    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
+    public WebElement costcomyhome;
+    public void clickCostcoMyHome(){ costcomyhome.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomyhome.click();}
+
+    //Costco My Home
+    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
+    public WebElement costcomyhome;
+    public void clickCostcoMyHome(){ costcomyhome.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomyhome.click();}
+
+    //Costco My Home
+    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
+    public WebElement costcomyhome;
+    public void clickCostcoMyHome(){ costcomyhome.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomyhome.click();}
+
+    //Costco My Home
+    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
+    public WebElement costcomyhome;
+    public void clickCostcoMyHome(){ costcomyhome.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomyhome.click();}
+
+    //Costco My Home
+    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
+    public WebElement costcomyhome;
+    public void clickCostcoMyHome(){ costcomyhome.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomyhome.click();}
+
+        //
+
     //Customer Service
     @FindBy(xpath = "//a[@id='customer-service-link']")
     public WebElement customerservice;
