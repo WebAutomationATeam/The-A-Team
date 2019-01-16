@@ -146,6 +146,22 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         costcomakeyourhomesmart.click();}
 
+    //Costco Work Space
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[8]/a/div")
+    public WebElement costcoworkspace;
+    public void clickWorkSpace(){ costcoworkspace.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcoworkspace.click();}
+
+    //Costco Maximize Your Space
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[9]/a/div")
+    public WebElement costcomaximizeyourspace;
+    public void clickMaximizeYourSpace(){ costcomaximizeyourspace.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomaximizeyourspace.click();}
+
 
     //
 
