@@ -4,8 +4,8 @@ import ReadList.ReadDropDown;
 import org.testng.annotations.Test;
 
 public class TestReadTextDropDown extends ReadDropDown {
-    @Test
+    /*@Test
     public void TestReadDropDown(){
         readText();
-    }
+    }*/
 }
