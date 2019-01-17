@@ -3,7 +3,7 @@
 
 <suite name="Costco Automation Script " parallel="false">
 
-    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="OS X"/>
     <parameter name="os_version" value="Mojave"/>
@@ -14,9 +14,9 @@
     <test name = "Costco Home">
         <classes>
             <!--<class name="TestHome"/>-->
-            <class name="testCostcoSearching.TestFindBy"/>
-            <!--<class name="TestLogin"/>-->
-            <!--<class name="TestHome"/>-->
+            <!--<class name="testCostcoSearching.TestFindBy"/>-->
+            <!--<class name="testCostcoSearching.TestLogin"/>-->
+            <class name="testCostcoSearching.TestPage"/>
         </classes>
     </test>
 
