@@ -10,7 +10,7 @@ import search.DatabaseOperation;
 import java.util.List;
 
 public class TestDB extends CommonAPI {
-    DatabaseOperation databaseOperation;
+    /*DatabaseOperation databaseOperation;
     @BeforeMethod
     public void setUP(){
         databaseOperation = PageFactory.initElements(driver, DatabaseOperation.class);
@@ -22,6 +22,6 @@ public class TestDB extends CommonAPI {
         List expected = databaseOperation.getHeadersValue1();
         Assert.assertEquals(actual,expected);
 
-    }
+    }*/
 
 }

@@ -7,13 +7,13 @@ import org.testng.Assert;
 import java.util.List;
 
 public class ReadDropDown extends CommonAPI {
-    /*public void readText() {
-        List<WebElement> element = getListOfWebElementsByCss("gh-sb gh-sprRetina");
+    public void readText() {
+        List<WebElement> element = getListOfWebElementsByCss("#gh-cat");
         List<String> listOfText = getListOfString(element);
         for (String text : listOfText) {
             System.out.println(text);
         }
         List<String> expectedMenu = listOfText;
         Assert.assertEquals(listOfText, expectedMenu);
-    }*/
+    }
 }

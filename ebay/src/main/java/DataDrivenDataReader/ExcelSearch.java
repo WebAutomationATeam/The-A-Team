@@ -4,17 +4,18 @@ import base.CommonAPI;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utility.ExcelDataReader;
 
 import java.io.IOException;
 
 import static org.openqa.selenium.support.How.XPATH;
 
 public class ExcelSearch extends CommonAPI {
-    /*@FindBy(how = XPATH, using ="//*[@id=\"gh-ac\"]")
+    @FindBy(how = XPATH, using ="//*[@id=\"gh-ac\"]")
     public static WebElement searchBox;
     @FindBy(how = XPATH, using ="//*[@id=\"gh-btn\"]")
     public static WebElement resultText;
-    //ExcelDataReader dtr = new ExcelDataReader();
+    ExcelDataReader dtr = new ExcelDataReader();
     //Read data for input search
     public String[] getExcelData(String fileName) throws IOException {
         String path = "../eBay/data/" + fileName;
@@ -40,7 +41,12 @@ public class ExcelSearch extends CommonAPI {
             searchBox.clear();
         }
         return actual;
-    }*/
+    }
+    public String[] getDataFromSignInKeyword(String fileName) throws IOException {
+        String path = "../eBay/data/" + fileName;
+        String[] output = dtr.colReader(path, 2); //col 2 = email
+        return output;
+    }
 }
 
 

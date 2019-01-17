@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseOperation extends ConnectToSqlDB {
-    public static ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+    /*public static ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 
     public static void insertDataIntoDB() {
         List<String> list = getHeaderValue();
@@ -75,5 +75,5 @@ public class DatabaseOperation extends ConnectToSqlDB {
         for (String st : list) {
             System.out.println(st);
         }
-    }
+    }*/
 }

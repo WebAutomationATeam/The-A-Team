@@ -4,6 +4,9 @@ import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.Iterator;
+import java.util.Set;
+
 public class SignInUser extends CommonAPI {
     @FindBy(xpath = ("//*[@id=\"gh-ug\"]/a"))
     public static WebElement ViewSignInUser;
@@ -36,5 +39,39 @@ public class SignInUser extends CommonAPI {
     public static WebElement GoogleButtonSignInPage;
     public void ClickGoogleButtonSignInPage() {
         GoogleButtonSignInPage.click();
+    }
+    public void testSignInAccount(){
+        ClickViewSignInUser();
+        InputSignInEmailorID();
+        InputSignInPassWord();
+        ClickSignInButton();
+    }
+    /*public void testGoogleWithWindowHandle(){
+        ClickViewSignInUser();
+        String parent = driver.getWindowHandle();
+        ClickGoogleButtonSignInPage();
+        Set<String> s1 = driver.getWindowHandles();
+        Iterator<String> I1 = s1.iterator();
+        while (I1.hasNext()) {
+            String child_window = I1.next();
+            if (!parent.equals(child_window)) {
+                driver.switchTo().window(child_window);
+                driver.close();
+            }
+        }
+    }*/
+    public void testFacebookWithWindowHandle(){
+        ClickViewSignInUser();
+        ClickFacebookButtonSignInPage();
+        String parent = driver.getWindowHandle();
+        Set<String> s1 = driver.getWindowHandles();
+        Iterator<String> I1 = s1.iterator();
+        while (I1.hasNext()) {
+            String child_window = I1.next();
+            if (!parent.equals(child_window)) {
+                driver.switchTo().window(child_window);
+                driver.close();
+            }
+        }
     }
 }

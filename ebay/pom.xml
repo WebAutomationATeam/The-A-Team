@@ -34,7 +34,7 @@
                 <version>3.0.0-M3</version>
                 <configuration>
                     <suiteXmlFiles>
-                    <suiteXmlFiles>\eBay\src\test\resources\eBayTestRunner.xml</suiteXmlFiles>
+                    <suiteXmlFiles>target/test-classes/eBayTestRunner.xml</suiteXmlFiles>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

@@ -5,12 +5,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-
 import java.io.IOException;
 
 public class TestExcelSearch extends ExcelSearch {
-    /*ExcelSearch objExcelFile;
+    ExcelSearch objExcelFile;
     @BeforeMethod
     public void initialization(){
         objExcelFile = PageFactory.initElements(driver, ExcelSearch.class);
@@ -26,7 +24,6 @@ public class TestExcelSearch extends ExcelSearch {
     @Test
     public void searchProductUsingExcel() throws IOException, InterruptedException {
     TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-
         String[] expectedItems = objExcelFile.getAssertData("DataEBay.xls");
         String[] actualItems = objExcelFile.getExcelData("DataEBay.xls");
         for (int i = 0; i < actualItems.length; i++) {
@@ -34,6 +31,5 @@ public class TestExcelSearch extends ExcelSearch {
             System.out.println(expectedItems[i] + ": Test - Passed"+actualItems[i]);
         }
         System.out.println("searchProductUsingExcel test pass");
-    }*/
-
+    }
 }

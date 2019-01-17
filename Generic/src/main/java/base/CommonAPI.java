@@ -51,7 +51,7 @@ public class CommonAPI {
     public void setUp (@Optional ("useCloudEnv")boolean useCloudEnv, @Optional ("cloudEnvName") String cloudEnvName,@Optional("url") String url, @Optional ("browser") String browser, @Optional ("browservVersion") String browserVersion,
                        @Optional ("OS") String OS, @Optional ("os_version") String os_version) throws IOException {
         //change the path of chrome driver for your own module
-        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\ahmed\\Desktop\\The-A-Team\\driver\\chromedriver.exe");
 //        System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
         if(useCloudEnv==true){
             if(cloudEnvName.equalsIgnoreCase("browserstack")) {
@@ -169,6 +169,10 @@ public class CommonAPI {
             }
         }
     }
+    public String getTextByWebElement(WebElement webElement) {
+        String text = webElement.getText();
+        return text;
+    }
     public void clearField(String locator){
         driver.findElement(By.id(locator)).clear();
     }
@@ -178,7 +182,20 @@ public class CommonAPI {
     public void navigateForward() {
         driver.navigate().forward();
     }
-
+    //Get list
+    public List<String> getListOfString(List<WebElement> list) {
+        List<String> items = new ArrayList<String>();
+        for (WebElement element : list) {
+            items.add(element.getText());
+        }
+        return items;
+    }
+    public List<WebElement> getListOfWebElementsByCss(String locator) {
+        List<WebElement> list = new ArrayList<WebElement>();
+        list = driver.findElements(By.cssSelector(locator));
+        return list;
+    }
+    //-----------------------
     public void typeCSSLocator (String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
         //driver.findElement(By.cssSelector(locator)).click();
@@ -292,6 +309,7 @@ public class CommonAPI {
        if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
        }
+        driver.quit();
     }
     @AfterSuite
     public void generateReport() {
@@ -315,15 +333,15 @@ public class CommonAPI {
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot "+e.getMessage());;
         }
-        //driver.quit();
+        driver.quit();
     }
 
-    public void waitToBeVisible(WebElement element){
+    /*public void waitToBeVisible(WebElement element){
         wait.until(ExpectedConditions.visibilityOf(element));
     }
     public void waitToBeVisible(String xpathLocator){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathLocator)));
-    }
+    }*/
 
     public static String convertToString(String st){
         String splitString ;

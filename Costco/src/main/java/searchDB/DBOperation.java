@@ -15,7 +15,7 @@ public class DBOperation extends ConnectToSqlDB {
         ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
         //connectToSqlDB.insertStringDataFromArrayListToMySql(list, "headerList","headers");
         //connectToSqlDB.insertDataFromArrayListToSqlTableforString(list,"headerList","headers");
-        connectToSqlDB.insertStringDataFromArrayListToMySql(list,"headerList","headers");
+        connectToSqlDB.insertStringDataFromArrayListToSqlTable(list, "headerList","list");
     }
     public static List<String> getHeaderValue() {
         List<String> headerList = new ArrayList<>();
@@ -54,10 +54,15 @@ public class DBOperation extends ConnectToSqlDB {
         System.out.println(list);
         return list;
     }
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         insertDataIntoDB();
         ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-        List<String> list = connectToSqlDB.readDataBase("headerList", "headers");
+        List<String> list = null;
+        try {
+            list = connectToSqlDB.readDataBase("headerList", "headers");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         for (String st : list) {
             System.out.println(st);
         }

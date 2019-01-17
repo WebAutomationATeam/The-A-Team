@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
 <suite name="eBay Automation Script " parallel="false">
-
-    <!--<parameter name="useCloudEnv" value="false"/>-->
-    <!--<parameter name="cloudEnvName" value="browserstack"/>-->
-    <!--<parameter name="os" value="OS X"/>-->
-    <!--<parameter name="os_version" value="Sierra"/>-->
-    <!--<parameter name="browserName" value="${browserName}"/>-->
-    <!--<parameter name="browserVersion" value="53.0"/>-->
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="saucelabs"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="browserVersion" value="62.0"/>
     <parameter name="url" value="https://www.ebay.com/"/>
     <test name = "Test">
         <classes>
-            <class name="HomePage.TestPageElement"/>
+            <!--<class name="HomePage.TestPageElement"/>
             <class name="HomePage.TestSearchEBay"/>
-            <class name="HomePage.TestRegisterUser"/>
+            <class name="HomePage.TestRegisterUser"/>-->
             <class name="HomePage.TestSignInUser"/>
-            <class name="EBayMotorsPage.TestEBayMotors"/>
+            <!--<class name="EBayMotorsPage.TestEBayMotors"/>
             <class name="EBayFashionPage.TestCategory"/>
             <class name="EBayFashionPage.TestExploreInterests"/>
             <class name="EBayFashionPage.TestSalesEvents"/>
@@ -24,8 +22,12 @@
             <class name="EBayFashionPage.TestTopBrands"/>
             <class name="EBayElectronicsPage.TestShopByCategory"/>
             <class name="EBayElectronicsPage.TestElectronicsSalesEvents"/>
-
+            <class name="ReadText.TestReadTextDropDown"/>
+            <class name="SeleniumCheckOutPage.TestItemInCart"/>
+            <class name="SeleniumCheckOutPage.TestItemCheckOut"/>
+            <class name="dataBaseSearch.TestSearchPage"/>
+            <class name="GoogleSheetReader.TestGoogleSheet"/>
+            <class name="DataDrivenDataReader.TestExcelSearch"/>-->
         </classes>
     </test>
-
 </suite>

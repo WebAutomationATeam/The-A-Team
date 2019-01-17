@@ -1,6 +1,5 @@
-package googleAPIs;
+package googleApi;
 
-/*
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
@@ -13,8 +12,6 @@ import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.SheetsScopes;
-*/
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -22,10 +19,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class GoogleSheetReader {
-    /*// Application name.
-    private static final String APPLICATION_NAME = "Google Sheets API Java GoogleSheetReader";
+    // Application name.
+    private static final String APPLICATION_NAME = "My Project eBay";
     // Directory to store user credentials for this application.
-    private static final java.io.File DATA_STORE_DIR = new java.io.File(System.getProperty("user.dir"), ".credentials/sheets-googleapis");
+    private static final java.io.File DATA_STORE_DIR = new java.io.File(System.getProperty("user.dir"), ".credentials/sheets-googleapis1/");
     // Global instance of the {@link FileDataStoreFactory}.
     private static FileDataStoreFactory DATA_STORE_FACTORY;
     // Global instance of the JSON factory.
@@ -46,7 +43,7 @@ public class GoogleSheetReader {
     }
     public static Credential authorize() throws IOException {
         // Load client secrets.
-        InputStream in = GoogleSheetReader.class.getResourceAsStream("/client_secret.json");
+        InputStream in = GoogleSheetReader.class.getResourceAsStream("/credentialsShafayat.json");
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
         // Build flow and trigger user authorization request.
         GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
@@ -58,11 +55,10 @@ public class GoogleSheetReader {
         System.out.println("Credentials saved to " + DATA_STORE_DIR.getAbsolutePath());
         return credential;
     }
-
     public static Sheets getSheetsService() throws IOException {
         Credential credential = authorize();
         return new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, credential)
                 .setApplicationName(APPLICATION_NAME)
                 .build();
-    }*/
+    }
 }
