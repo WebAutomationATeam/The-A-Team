@@ -157,12 +157,6 @@ public class TestFindBy extends SearchFindBy {
     public void clickJobs(){jobs.click();}
 
     @Test
-    public void clickCompanyInfo(){companyinfo.click();}
-
-    @Test
-    public void clickCreditCard(){creditcard.click();}
-
-    @Test
     public void clickCashCardBalance(){cashcard.click();}
 
     @Test

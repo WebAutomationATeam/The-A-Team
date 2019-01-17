@@ -18,7 +18,9 @@ public class ConnectToSqlDB {
 
     public static Properties loadProperties() throws IOException{
         Properties prop = new Properties();
-        InputStream ism = new FileInputStream("C:\\Users\\ahmed\\Desktop\\The-A-Team\\Generic\\secret.properties");
+
+        InputStream ism = new FileInputStream("/Users/animesh/Desktop/The-A-Team/Generic/secret.properties");
+
         prop.load(ism);
         ism.close();
         return prop;
@@ -384,7 +386,8 @@ public class ConnectToSqlDB {
 
         List<User> list = readUserProfileFromSqlTable();
         for(User user:list){
-            System.out.println(user.getItem_name());
+            System.out.println(user.getItems());
+
         }
     }
 }
