@@ -1,4 +1,4 @@
-package datasource;
+package Datasource;
 
 import base.CommonAPI;
 import org.openqa.selenium.Keys;
@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-import static datasource.DatabaseOperation.getItemValue;
+import static Datasource.DatabaseOperation.getItemValue;
 
 ;
 

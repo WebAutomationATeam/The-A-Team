@@ -1,6 +1,6 @@
 package dataBaseSearch;
 
-import datasource.SearchPage;
+import Datasource.SearchPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 

@@ -1,4 +1,4 @@
-package datasource;
+package Datasource;
 
 import database.ConnectToSqlDB;
 
