@@ -73,6 +73,23 @@
             <artifactId>google-oauth-client-jetty</artifactId>
             <version>1.23.0</version>
         </dependency>
+        <dependency>
+            <groupId>Dynamic-Web-Automation</groupId>
+            <artifactId>Generic</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>Dynamic-Web-Automation</groupId>
+            <artifactId>Generic</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-api</artifactId>
+            <version>3.141.59</version>
+        </dependency>
     </dependencies>
 
     <build>

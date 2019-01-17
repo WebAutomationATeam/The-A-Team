@@ -105,7 +105,7 @@ public class ReadCostcoWebElements extends CommonAPI {
             return list;
         }
         //Readxls readxls = PageFactory.initElements(driver,Readxls.class);
-        XlsxDataReader xlData = new XlsxDataReader("/iCloud Drive/Desktop/The-A-Team/CostcoHomePage.xlsx");
+        XlsxDataReader xlData = new XlsxDataReader("/Users/animesh/Desktop/The-A-Team/Costco/CostcoHomePage.xlsx");
 
         public List expectedWebElement(){
             int rowcount = xlData.getRowCount("About us");
@@ -117,7 +117,7 @@ public class ReadCostcoWebElements extends CommonAPI {
             return expect;
         }
 
-        XlsxDataReader xlData1 = new XlsxDataReader("/iCloud Drive/Desktop/The-A-Team/CostcoHomePage.xlsx");
+        XlsxDataReader xlData1 = new XlsxDataReader("/Users/animesh/Desktop/The-A-Team/Costco/CostcoHomePage.xlsx");
         public List expectedWebElement1(){
             int rowcount = xlData1.getRowCount("Membership");
             List<String> expect = new ArrayList<>();

@@ -10,8 +10,6 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -20,6 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -51,7 +50,7 @@ public class CommonAPI {
     public void setUp (@Optional ("useCloudEnv")boolean useCloudEnv, @Optional ("cloudEnvName") String cloudEnvName,@Optional("url") String url, @Optional ("browser") String browser, @Optional ("browservVersion") String browserVersion,
                        @Optional ("OS") String OS, @Optional ("os_version") String os_version) throws IOException {
         //change the path of chrome driver for your own module
-        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver","/Users/animesh/Desktop/The-A-Team/driver/chromedriver");
 //        System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
         if(useCloudEnv==true){
             if(cloudEnvName.equalsIgnoreCase("browserstack")) {
