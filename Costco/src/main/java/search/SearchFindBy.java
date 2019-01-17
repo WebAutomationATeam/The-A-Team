@@ -57,6 +57,22 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         costcologo.click();}
 
+    //Costco Find A Warehouse
+    @FindBy (xpath ="//*[@id=\"warehouse-locations-dropdown\"]")
+    public WebElement costcofindawarehouse;
+    public void clickFindaWareHouse () { costcofindawarehouse.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcofindawarehouse.click();}
+
+    //Costco Shop Button
+    @FindBy (xpath ="//*[@id=\"navigation-dropdown\"]")
+    public WebElement costcoshop;
+    public void clickCostcoShop () { costcoshop.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcoshop.click();}
+
     //view warehouse savings
     @FindBy(xpath = "//a[@id='warehouse-savings']")
     public WebElement viewwarehousesavings;
@@ -64,6 +80,110 @@ public class SearchFindBy extends CommonAPI {
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         viewwarehousesavings.click();}
+
+    //Costco My Home
+    @FindBy(xpath = "/html/body/div[6]/div[1]/a/img[1]")
+    public WebElement costcomyhome;
+    public void clickCostcoMyHome(){ costcomyhome.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomyhome.click();}
+
+    //Costco Relax in Style
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[1]/a/div")
+    public WebElement costcrelaxinstyle;
+    public void clickcostcRelaxInStyle(){ costcrelaxinstyle.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcrelaxinstyle.click();}
+
+    //Costco Dining Entertaining
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[2]/a/div")
+    public WebElement costcodiningentertaining;
+    public void clickDiningEntertaining(){ costcodiningentertaining.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcodiningentertaining.click();}
+
+    //Costco Best Night's Rest
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[3]/a/img")
+    public WebElement costcobestnightsrest;
+    public void clickBestNightsRest(){ costcobestnightsrest.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcobestnightsrest.click();}
+
+    //Costco Update your Bath
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[4]/a/div")
+    public WebElement costcoupdateyourbath;
+    public void clickUpdateYourBath(){ costcoupdateyourbath.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcoupdateyourbath.click();}
+
+    //Costco Light Up Your Space
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[5]/a/div")
+    public WebElement costlightupyourspace;
+    public void clickLightUpYourSpace(){ costlightupyourspace.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costlightupyourspace.click();}
+
+    //Costco Backyard Oasis
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[6]/a/div")
+    public WebElement costcobackyardoasis;
+    public void clickBackyardOasis(){ costcobackyardoasis.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcobackyardoasis.click();}
+
+    //Costco Make Your Home Smart
+    @FindBy(xpath = "///*[@id=\"search-results\"]/div[2]/div/div[2]/div[7]/a/div")
+    public WebElement costcomakeyourhomesmart;
+    public void clickMakeYourHomeSmart(){ costcomakeyourhomesmart.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomakeyourhomesmart.click();}
+
+    //Costco Work Space
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[8]/a/div")
+    public WebElement costcoworkspace;
+    public void clickWorkSpace(){ costcoworkspace.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcoworkspace.click();}
+
+    //Costco Maximize Your Space
+    @FindBy(xpath = "//*[@id=\"search-results\"]/div[2]/div/div[2]/div[9]/a/div")
+    public WebElement costcomaximizeyourspace;
+    public void clickMaximizeYourSpace(){ costcomaximizeyourspace.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcomaximizeyourspace.click();}
+
+    //Costco American Heritage Billiards
+    @FindBy(xpath = "//*[@id=\"slick-slide40\"]/a/img")
+    public WebElement costcoamericanheritagebilliards;
+    public void clickAmericanHeritageBilliards(){ costcoamericanheritagebilliards.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcoamericanheritagebilliards.click();}
+
+    //Costco Follow Us Social Media Facebook
+    @FindBy(xpath = "//*[@id=\"footer-widget\"]/div/div[1]/div/div[4]/ul/li[1]/a/i")
+    public WebElement costcofollowussocialmediafacebook;
+    public void clickFollowUsSocialMediaFacebook(){ costcofollowussocialmediafacebook.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcofollowussocialmediafacebook.click();}
+
+    //Costco Follow Us Social Media Pinterest
+    @FindBy(xpath = "//*[@id=\"footer-widget\"]/div/div[1]/div/div[4]/ul/li[2]/a/i")
+    public WebElement costcofollowussocialmediapinterest;
+    public void clickFollowUsSocialMediaPinterest(){ costcofollowussocialmediapinterest.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcofollowussocialmediapinterest.click();}
 
     //Customer Service
     @FindBy(xpath = "//a[@id='customer-service-link']")
