@@ -1,7 +1,5 @@
 package web;
 
-import Util.TestLogger;
-import base.CommonAPI;
 import basic.HomePage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;

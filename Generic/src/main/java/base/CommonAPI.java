@@ -10,8 +10,6 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -39,7 +37,7 @@ public class CommonAPI {
     public String saucelabs_accesskey = "";
     public String browserstack_username= "";
     public String browserstack_accesskey = "";
-    public WebDriver driver=null;
+    public static WebDriver driver=null;
     public Logger logger = Logger.getLogger(CommonAPI.class);
     public static WebDriverWait wait;
     public static Actions builder = null;
@@ -236,11 +234,6 @@ public class CommonAPI {
             action.moveToElement(element).perform();
         }
     }
-
-    //public static ExtentReports extent;
-
-
-
     public void mouseHoverByXpath(String locator) {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
@@ -317,14 +310,12 @@ public class CommonAPI {
         }
         //driver.quit();
     }
-
-    public void waitToBeVisible(WebElement element){
+   /* public void waitToBeVisible(WebElement element){
         wait.until(ExpectedConditions.visibilityOf(element));
     }
     public void waitToBeVisible(String xpathLocator){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathLocator)));
-    }
-
+    }*/
     public static String convertToString(String st){
         String splitString ;
         splitString = StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(st), ' ');

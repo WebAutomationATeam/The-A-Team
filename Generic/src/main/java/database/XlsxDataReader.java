@@ -1,4 +1,4 @@
-package search;
+package database;
 
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -124,7 +124,6 @@ public class XlsxDataReader {
                     cellText = cal.get(Calendar.DAY_OF_MONTH) + "/" +
                             cal.get(Calendar.MONTH) + 1 + "/" +
                             cellText;
-
                     //System.out.println(cellText);
                 }
                 return cellText;

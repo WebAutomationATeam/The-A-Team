@@ -1,14 +1,12 @@
 package web;
-import basic.AllFreeEpisodes;
+
 import basic.HBONowSignIn;
-import org.openqa.selenium.By;
+import database.XlsxDataReader;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import search.XlsxDataReader;
+
 import java.io.File;
 public class TestHBONowSignIn extends HBONowSignIn {
 
@@ -35,5 +33,4 @@ public class TestHBONowSignIn extends HBONowSignIn {
         hbo.getClickOnSignIn();
         hbo.errorMessage();
     }
-
 }

@@ -1,15 +1,8 @@
 package basic;
 
 import Util.TestLogger;
-import base.CommonAPI;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-
-import java.util.Iterator;
-import java.util.Set;
 
 public class CreateAccount extends HomePage {
 
@@ -35,7 +28,6 @@ public class CreateAccount extends HomePage {
     public void clickGetHBO() { getHBO.click();
         TestLogger.log("GetHBO Opened");
     }
-
     public void getStartYourFreeTrial() { startYourFreeTrial.click();
     TestLogger.log("New Web Page Opened");}
 

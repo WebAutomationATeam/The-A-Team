@@ -3,8 +3,7 @@
 
 <suite name="HBO Automation Script " parallel="false">
 
-
-    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="saucelabs"/>
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="Windows 10"/>
@@ -14,10 +13,11 @@
 
     <test name = "Test">
         <classes>
-           <!--<class name="web.TestHome"/>-->
-            <!--<class name="web.TestCreateAccount"/>-->
-            <!--<class name="web.TestFreeEpisodes"/>-->
-            <class name="web.TestHBONowSignIn"/>
+            <!--<class name="web.TestHome"/>
+            <class name="web.TestCreateAccount"/>
+            <class name="web.TestFreeEpisodes"/>
+            <class name="web.TestHBONowSignIn"/>-->
+            <class name="TestSearch.TestDB"/>
         </classes>
     </test>
 
