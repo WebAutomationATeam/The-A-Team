@@ -1,14 +1,8 @@
 package basic;
 
-import base.CommonAPI;
-import org.openqa.selenium.WebDriver;
+import Util.TestLogger;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-
-import java.util.Iterator;
-import java.util.Set;
 
 public class CreateAccount extends HomePage {
 
@@ -31,30 +25,43 @@ public class CreateAccount extends HomePage {
     @FindBy(xpath = "//*[@id=\"Viewport\"]/div[1]/div[2]/div[2]/div[2]/div/div[3]/div[2]/div")
     public WebElement clickOnCreateAccount;
 
-    public void clickGetHBO() { getHBO.click(); }
+    public void clickGetHBO() { getHBO.click();
+    TestLogger.log("GetHBO Opened");
+    }
+    public void getStartYourFreeTrial() { startYourFreeTrial.click();
+    TestLogger.log("New Web Page Opened");}
 
-    public void getStartYourFreeTrial() { startYourFreeTrial.click(); }
+    public void getEmail() {email.sendKeys("roktimrobin@gmail.com");
+    TestLogger.log("Valid Email has been entered");}
 
-    public void getEmail() {email.sendKeys("roktimrobin@gmail.com"); }
+    public void invalidEmail() {email.sendKeys("ajsndajsd@jansda.com");
+    TestLogger.log("Invalid email has been entered");}
 
-    public void invalidEmail() {email.sendKeys("ajsndajsd@jansda.com");}
+    public void getPassWord() { passWord.sendKeys("Abcd#1234");
+    TestLogger.log("Valid Password is entered");}
 
-    public void getPassWord() { passWord.sendKeys("Abcd#1234"); }
+    public void invalidPassword(){passWord.sendKeys("abc123");
+    TestLogger.log("Invalid password is entered");}
 
-    public void invalidPassword(){passWord.sendKeys("abc123");}
+    public void getFirstName() { firstName.sendKeys("Robin");
+    TestLogger.log("First Name is entered");}
 
-    public void getFirstName() { firstName.sendKeys("Robin"); }
+    public void emptyFirstName() {firstName.sendKeys("");
+    TestLogger.log("No First Name is entered");}
 
-    public void emptyFirstName() {firstName.sendKeys("");}
+    public void getLastName() { lastName.sendKeys("Das");
+    TestLogger.log("Last name is entered");}
 
-    public void getLastName() { lastName.sendKeys("Das"); }
+    public void emptyLastName() {lastName.sendKeys("");
+    TestLogger.log("No last name is entered");}
 
-    public void emptyLastName() {lastName.sendKeys("");}
+    public void getZipCode() { zipCode.sendKeys("11104");
+    TestLogger.log("Zip code is entered");}
 
-    public void getZipCode() { zipCode.sendKeys("11104"); }
+    public void getAgreeToTerms() { agreeToTerms.click();
+    TestLogger.log("Agreed on terms");}
 
-    public void getAgreeToTerms() { agreeToTerms.click(); }
-
-    public void getClickOnCreateAccount() { clickOnCreateAccount.click(); }
+    public void getClickOnCreateAccount() { clickOnCreateAccount.click();
+    TestLogger.log("Account is created after valid credentials are entered");}
 
 }
