@@ -482,6 +482,30 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         chairsidetable.click();}
 
+    //Washington Chair Set
+    @FindBy(css = "//*[@id=\"100466950_tile_desc\"]/a")
+    public static WebElement washingtonchairset;
+    public void clickWashingtonChairSet(){washingtonchairset.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        washingtonchairset.click();}
+
+    //Sealy Queen Mattress
+    @FindBy(css = "//*[@id=\"100364068_tile_desc\"]/a")
+    public static WebElement sealyqueenmatterss;
+    public void clickSealyQueenMatterss(){sealyqueenmatterss.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        sealyqueenmatterss.click();}
+
+    //Edwin Fabric Chair
+    @FindBy(css = "//*[@id=\"100466292_tile_desc\"]/a")
+    public static WebElement edwinfabricchair;
+    public void clickEdwinFabricChair(){edwinfabricchair.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        edwinfabricchair.click();}
+
     //Turbotax
     @FindBy(css = "//*[@id=\"slick-slide22\"]/a/img")
     public static WebElement turbotax;
