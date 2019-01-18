@@ -13,7 +13,7 @@ public class DatabaseOperation extends ConnectToSqlDB {
     public static void insertDataIntoDB() {
         List<String> list = getHeaderValue();
         ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-        connectToSqlDB.insertStringDataFromArrayListToSqlTable(list,"headerList","headers");
+        connectToSqlDB.insertStringDataFromArrayListToSqlTable(list,"itemlist","list");
 
     }
 
@@ -29,7 +29,7 @@ public class DatabaseOperation extends ConnectToSqlDB {
     }
     public List<String> getUserDatafromDB() throws Exception {
         List<String> list = new ArrayList<>();
-        list = connectToSqlDB.readDataBase("headerList", "headers");
+        list = connectToSqlDB.readDataBase("itemlist", "headers");
         System.out.println(list);
         return list;
     }

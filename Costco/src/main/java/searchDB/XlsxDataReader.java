@@ -11,10 +11,10 @@ import java.util.Calendar;
 
 public class XlsxDataReader {
 
-    protected XSSFSheet ExcelWSheet;
-    protected XSSFWorkbook ExcelWBook;
-    protected XSSFCell Cell;
-    protected XSSFRow Row;
+    public XSSFSheet ExcelWSheet;
+    public XSSFWorkbook ExcelWBook;
+    public XSSFCell Cell;
+    public XSSFRow Row;
 
     public void setExcelFile(String Path) throws Exception {
         try {
@@ -54,8 +54,7 @@ public class XlsxDataReader {
             }
         }
         return mydata;
-    } // end of getexcel sheet data// mr. Jahid
-
+    } //// end of getexcel sheet data
     public String path;
     public FileInputStream fis = null;
     private XSSFWorkbook workbook = null;
@@ -64,7 +63,7 @@ public class XlsxDataReader {
     private XSSFCell cell = null;
 
     public XlsxDataReader(String path) {
-        this.path = path;
+
         try {
             fis = new FileInputStream(path);
             workbook = new XSSFWorkbook(fis);
@@ -116,8 +115,7 @@ public class XlsxDataReader {
             //System.out.println(cell.getCellType());
             if (cell.getCellType() == org.apache.poi.ss.usermodel.Cell.CELL_TYPE_STRING)
                 return cell.getStringCellValue();
-            else if (cell.getCellType() == org.apache.poi.ss.usermodel.Cell.CELL_TYPE_NUMERIC ||
-                    cell.getCellType() == org.apache.poi.ss.usermodel.Cell.CELL_TYPE_FORMULA) {
+            else if (cell.getCellType() == org.apache.poi.ss.usermodel.Cell.CELL_TYPE_NUMERIC || cell.getCellType() == org.apache.poi.ss.usermodel.Cell.CELL_TYPE_FORMULA) {
 
                 String cellText = String.valueOf(cell.getNumericCellValue());
                 if (HSSFDateUtil.isCellDateFormatted(cell)) {

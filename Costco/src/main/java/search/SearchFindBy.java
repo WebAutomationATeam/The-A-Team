@@ -274,14 +274,13 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         cart.click();}
 
-    //Cash Card
-    @FindBy(css = "body.en div.container-fluid.fixed-container.small-offer-tiles:nth-child(92) div.row.gutter:" +
-            "nth-child(2) a:nth-child(1) div.col-lg-6.col-xs-12 > img.img-responsive")
-    public static WebElement cashcard;
-    public void clickCashCard(){cashcard.click();
+    //Costco Fitbit
+    @FindBy(css = "/html/body/div[6]/div/div/a[2]/div/img")
+    public static WebElement fitbit;
+    public void clickFitbit(){fitbit.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
-        cashcard.click();}
+        fitbit.click();}
 
     //Appliances
     @FindBy(css = "//*[@id=\"slick-slide10\"]/a/img")

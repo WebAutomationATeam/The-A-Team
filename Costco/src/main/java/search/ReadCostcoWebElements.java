@@ -3,7 +3,6 @@ package search;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import searchDB.XlsxDataReader;
 
 import java.util.ArrayList;
@@ -11,10 +10,10 @@ import java.util.List;
 
 public class ReadCostcoWebElements extends CommonAPI {
 
-        @FindBy(how = How.XPATH, xpath = "//*[@id=\"footer-list\"]/div/div[1]/ul/li[1]/a")
-        WebElement Aboutus;
+        @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[1]/ul/li[1]/a")
+        WebElement AboutUs;
 
-        @FindBy(xpath = "///*[@id=\"footer-list\"]/div/div[1]/ul/li[3]/a")
+        @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[1]/ul/li[3]/a")
         WebElement CharitableContributions;
 
         @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[1]/ul/li[4]/a")
@@ -29,8 +28,8 @@ public class ReadCostcoWebElements extends CommonAPI {
         @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[1]/ul/li[7]/a")
         WebElement Jobs;
 
-        @FindBy(how = How.XPATH, xpath = "//*[@id=\"footer-list\"]/div/div[1]/ul/li[8]/a]")
-        WebElement KriklandSignature;
+        @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[1]/ul/li[8]/a")
+        WebElement KirklandSignature;
 
         @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[1]/ul/li[9]/a")
         WebElement LogoAndMediaRequests;
@@ -67,13 +66,13 @@ public class ReadCostcoWebElements extends CommonAPI {
 
         public List webElementList(){
             List<WebElement> webElements = new ArrayList<>();
-            webElements.add(Aboutus);
+            webElements.add(AboutUs);
             webElements.add(CharitableContributions);
             webElements.add(CompanyInformation);
             webElements.add(SustainabilityCommitment);
             webElements.add(InvestorRelations);
             webElements.add(Jobs);
-            webElements.add(KriklandSignature);
+            webElements.add(KirklandSignature);
             webElements.add(LogoAndMediaRequests);
             webElements.add(ProductVideos);
             webElements.add(TheCostcoConnection);
@@ -87,6 +86,7 @@ public class ReadCostcoWebElements extends CommonAPI {
             System.out.println(list);
             return list;
         }
+
         public List webElementList1(){
             List<WebElement> webElements1 = new ArrayList<>();
             webElements1.add(Membership);
@@ -104,19 +104,16 @@ public class ReadCostcoWebElements extends CommonAPI {
             System.out.println(list);
             return list;
         }
-        //Readxls readxls = PageFactory.initElements(driver,Readxls.class);
         XlsxDataReader xlData = new XlsxDataReader("/Users/animesh/Desktop/The-A-Team/Costco/CostcoHomePage.xlsx");
-
         public List expectedWebElement(){
-            int rowcount = xlData.getRowCount("About us");
+            int rowcount = xlData.getRowCount("Aboutus");
             List<String> expect = new ArrayList<>();
             for(int i = 1; i <= rowcount; i++){
-                expect.add(xlData.getCellData("About","About",i));
+                expect.add(xlData.getCellData("Aboutus","About Us",i));
             }
             System.out.println(expect);
             return expect;
         }
-
         XlsxDataReader xlData1 = new XlsxDataReader("/Users/animesh/Desktop/The-A-Team/Costco/CostcoHomePage.xlsx");
         public List expectedWebElement1(){
             int rowcount = xlData1.getRowCount("Membership");

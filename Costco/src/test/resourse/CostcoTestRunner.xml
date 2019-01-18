@@ -16,7 +16,9 @@
             <!--<class name="TestHome"/>-->
             <!--<class name="testCostcoSearching.TestFindBy"/>-->
             <!--<class name="testCostcoSearching.TestLogin"/>-->
-            <class name="testCostcoSearching.TestPage"/>
+            <!--<class name="testCostcoSearching.TestPage"/>-->
+            <class name="testCostcoSearching.TestXLSXReader"/>
+            <!--<class name="testCostcoSearching.TestDB"/>-->
         </classes>
     </test>
 
