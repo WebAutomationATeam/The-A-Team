@@ -418,7 +418,7 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         samsungsoundbar.click();}
 
-    //LG Channel Bar
+    //LG Channel Bar  ----50 cases ---
     @FindBy(css = "//*[@id=\"100421910_tile_desc\"]/a")
     public static WebElement lgchannelbar;
     public void clickLgChannelBar(){lgchannelbar.click();
@@ -433,6 +433,30 @@ public class SearchFindBy extends CommonAPI {
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         googlehomemini.click();}
+
+    //Tempur Cloud Supreme Split
+    @FindBy(css = "//*[@id=\"slick-slide60\"]/div[2]/div[1]/div/img")
+    public static WebElement tempursupremesplit;
+    public void clickTempurSupremeSplit(){tempursupremesplit.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        tempursupremesplit.click();}
+
+    //Luna 2 piece Leather Set
+    @FindBy(css = "//*[@id=\"100371831_tile_desc\"]/a")
+    public static WebElement lunaleatherset;
+    public void clickLunaLeatherSet(){lunaleatherset.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        lunaleatherset.click();}
+
+    //Corona Bedroom Set
+    @FindBy(css = "//*[@id=\"100376567_tile_desc\"]/a")
+    public static WebElement coronabedroomset;
+    public void clickCoronaBedroomSet(){coronabedroomset.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        coronabedroomset.click();}
 
     //Turbotax
     @FindBy(css = "//*[@id=\"slick-slide22\"]/a/img")
@@ -450,7 +474,7 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         muradserum.click();}
 
-    //Relax in Style --50
+    //Relax in Style
     @FindBy(css = "//*[@id=\"Home_Product_Carousel_1_content\"]/div/button[1]")
     public static WebElement rsslide;
     public void clickRsSlide(){rsslide.click();
