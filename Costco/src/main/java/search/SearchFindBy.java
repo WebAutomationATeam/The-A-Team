@@ -65,6 +65,14 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         costcofindawarehouse.click();}
 
+    //Costco Country or Region
+    @FindBy (xpath ="//*[@id=\"country-select\"]")
+    public WebElement costcocountryorregion;
+    public void clickCountryOrRegion () {costcocountryorregion.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcocountryorregion.click();}
+
     //Costco Shop Button
     @FindBy (xpath ="//*[@id=\"navigation-dropdown\"]")
     public WebElement costcoshop;
@@ -210,7 +218,7 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         grocery.click();}
 
-    //Business delivery
+    //Business delivery         ---25 cases---
     @FindBy(css = "#Home_Ancillary_1")
     public static WebElement businessdelivery;
     public void clickBusinessDelivdery(){businessdelivery.click();
@@ -274,14 +282,13 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         cart.click();}
 
-    //Cash Card
-    @FindBy(css = "body.en div.container-fluid.fixed-container.small-offer-tiles:nth-child(92) div.row.gutter:" +
-            "nth-child(2) a:nth-child(1) div.col-lg-6.col-xs-12 > img.img-responsive")
-    public static WebElement cashcard;
-    public void clickCashCard(){cashcard.click();
+    //Costco Fitbit
+    @FindBy(css = "/html/body/div[6]/div/div/a[2]/div/img")
+    public static WebElement fitbit;
+    public void clickFitbit(){fitbit.click();
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
-        cashcard.click();}
+        fitbit.click();}
 
     //Appliances
     @FindBy(css = "//*[@id=\"slick-slide10\"]/a/img")
@@ -290,6 +297,14 @@ public class SearchFindBy extends CommonAPI {
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         appliances.click();}
+
+    //TCL
+    @FindBy(css = "//*[@id=\"slick-slide11\"]/a/img")
+    public static WebElement tcl;
+    public void clickTcl(){tcl.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        tcl.click();}
 
     //TV
     @FindBy(css = "//*[@id=\"slick-slide11\"]/a/img")
@@ -315,6 +330,14 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         mattress.click();}
 
+    //Valentines Day
+    @FindBy(css = "/html/body/div[10]/div/a/img[1]")
+    public static WebElement valentinesday;
+    public void clickValentinesDay(){valentinesday.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        valentinesday.click();}
+
     //Members only Savings
     @FindBy(css = "//*[@id=\"slick-slide20\"]/a/img")
     public static WebElement memberonlysavings;
@@ -322,6 +345,86 @@ public class SearchFindBy extends CommonAPI {
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         memberonlysavings.click();}
+
+    //Vizio
+    @FindBy(css = "//*[@id=\"100424390_tile_desc\"]/a")
+    public static WebElement vizio;
+    public void clickVizio(){vizio.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        vizio.click();}
+
+    //Vizio Channel
+    @FindBy(css = "//*[@id=\"100367294_tile_desc\"]/a")
+    public static WebElement viziochannel;
+    public void clickVizioChannel(){viziochannel.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        viziochannel.click();}
+
+    //LG 75 inch TV
+    @FindBy(css = "//*[@id=\"100410396_tile_desc\"]/a")
+    public static WebElement lg75inchtv;
+    public void clickLg75InchTv(){lg75inchtv.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        lg75inchtv.click();}
+
+    //Hisense TV
+    @FindBy(css = "//*[@id=\"100404993_tile_desc\"]/a")
+    public static WebElement hisensetv;
+    public void clickHisenseTv(){hisensetv.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        hisensetv.click();}
+
+    //Samsung UHD TV
+    @FindBy(css = "//*[@id=\"100416069_tile_desc\"]/a")
+    public static WebElement samsunguhdtv;
+    public void clickSamsungUhdTv(){samsunguhdtv.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        samsunguhdtv.click();}
+
+    //TCL TV
+    @FindBy(css = "//*[@id=\"100463477_tile_desc\"]/a")
+    public static WebElement tcltv;
+    public void clickTclTv(){tcltv.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        tcltv.click();}
+
+    //XBox One
+    @FindBy(css = "//*[@id=\"100460585_tile_desc\"]/a")
+    public static WebElement xboxone;
+    public void clickXboxOne(){xboxone.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        xboxone.click();}
+
+    //ION Pathfinder Bluetooth Speaker
+    @FindBy(css = "//*[@id=\"100432496_tile_desc\"]/a")
+    public static WebElement ionpathfinder;
+    public void clickIonPathfinder(){ionpathfinder.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        ionpathfinder.click();}
+
+    //Samsung Sound Bar
+    @FindBy(css = "//*[@id=\"100422440_tile_desc\"]/a")
+    public static WebElement samsungsoundbar;
+    public void clickSamsungSoundBar(){samsungsoundbar.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        samsungsoundbar.click();}
+
+    //LG Channel Bar        ----50 cases ---
+    @FindBy(css = "//*[@id=\"100421910_tile_desc\"]/a")
+    public static WebElement lgchannelbar;
+    public void clickLgChannelBar(){lgchannelbar.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        lgchannelbar.click();}
 
     //Google home mini
     @FindBy(css = "//*[@id=\"slick-slide21\"]/a/img")
@@ -331,6 +434,78 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         googlehomemini.click();}
 
+    //Tempur Cloud Supreme Split
+    @FindBy(css = "//*[@id=\"slick-slide60\"]/div[2]/div[1]/div/img")
+    public static WebElement tempursupremesplit;
+    public void clickTempurSupremeSplit(){tempursupremesplit.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        tempursupremesplit.click();}
+
+    //Luna 2 piece Leather Set
+    @FindBy(css = "//*[@id=\"100371831_tile_desc\"]/a")
+    public static WebElement lunaleatherset;
+    public void clickLunaLeatherSet(){lunaleatherset.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        lunaleatherset.click();}
+
+    //Corona Bedroom Set
+    @FindBy(css = "//*[@id=\"100376567_tile_desc\"]/a")
+    public static WebElement coronabedroomset;
+    public void clickCoronaBedroomSet(){coronabedroomset.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        coronabedroomset.click();}
+
+    //Bayside Office Chair
+    @FindBy(css = "//*[@id=\"100427526_tile_desc\"]/a")
+    public static WebElement baysideofficechair;
+    public void clickBaysideOfficeChair(){baysideofficechair.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        baysideofficechair.click();}
+
+    //Crystal Table Lamp
+    @FindBy(css = "//*[@id=\"100463209_tile_desc\"]/a")
+    public static WebElement crystaltablelamp;
+    public void clickCrystalTableLamp(){crystaltablelamp.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        crystaltablelamp.click();}
+
+    //Chairside Table
+    @FindBy(css = "//*[@id=\"100463985_tile_desc\"]/a")
+    public static WebElement chairsidetable;
+    public void clickChairsideTable(){chairsidetable.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        chairsidetable.click();}
+
+    //Washington Chair Set
+    @FindBy(css = "//*[@id=\"100466950_tile_desc\"]/a")
+    public static WebElement washingtonchairset;
+    public void clickWashingtonChairSet(){washingtonchairset.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        washingtonchairset.click();}
+
+    //Sealy Queen Mattress
+    @FindBy(css = "//*[@id=\"100364068_tile_desc\"]/a")
+    public static WebElement sealyqueenmatterss;
+    public void clickSealyQueenMatterss(){sealyqueenmatterss.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        sealyqueenmatterss.click();}
+
+    //Edwin Fabric Chair
+    @FindBy(css = "//*[@id=\"100466292_tile_desc\"]/a")
+    public static WebElement edwinfabricchair;
+    public void clickEdwinFabricChair(){edwinfabricchair.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        edwinfabricchair.click();}
+
     //Turbotax
     @FindBy(css = "//*[@id=\"slick-slide22\"]/a/img")
     public static WebElement turbotax;
@@ -338,6 +513,14 @@ public class SearchFindBy extends CommonAPI {
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         turbotax.click();}
+
+    //Costco Tires
+    @FindBy(css = "//*[@id=\"slick-slide23\"]/a/img")
+    public static WebElement costcotires;
+    public void clickCostcoTires(){costcotires.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcotires.click();}
 
     //Murad Serum
     @FindBy(css = "/html/body/div[8]/div[2]/a/img[1]")
@@ -411,6 +594,14 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         excitingproductsforalimitedtime.click();}
 
+    //Celebrate Lunar New Year
+    @FindBy(css = "//*[@id=\"slick-slide42\"]/a/img")
+    public static WebElement celebratelunarnewyear;
+    public void clickCelebrateLunarNewYear(){celebratelunarnewyear.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        celebratelunarnewyear.click();}
+
     //Healthy Eating
     @FindBy(css = "//*[@id=\"slick-slide40\"]/a/img")
     public static WebElement healthyeating;
@@ -435,7 +626,7 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         betterhealth.click();}
 
-    //Green Mountain 100ct K-Cups
+    //Green Mountain 100ct K-Cups      ---75 cases---
     @FindBy(css = "//*[@id=\"slick-slide43\"]/a/img")
     public static WebElement gmcups;
     public void clickGMCups(){gmcups.click();
@@ -547,13 +738,12 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         gasoline.click();}
 
-    //Email offer
+    //Email offer                   *** 90 cases ***
     public void costcogetemailoffer(){
         typeOnElementNEnter("#footer-email-offer", "animesh.rahman@gmail.com");
         clickElement("//*[@id=\"email-signup-dropdown\"]");
         navigateBack();
     }
-
     public List webElementList(){
         List<WebElement> webElements = new ArrayList<>();
         webElements.add(searchButton);

@@ -4,32 +4,27 @@ import base.CommonAPI;
 
 public class SearchPage extends CommonAPI {
 
-    public void searchMenu(){
-        typeOnElementNEnter("#search-field", "Cookies");
-        navigateBack();
-        typeOnElementNEnter("#search-field", "Samsung");
-        navigateBack();
-        typeOnElementNEnter("#search-field", "Frozen Food");
-        navigateBack();
-        typeOnElementNEnter("#search-field", "Coffee");
-        navigateBack();
-        typeOnElementNEnter("#search-field", "iPhone");
-        navigateBack();
-        typeOnElementNEnter("#search-field", "Macbooks");
-        navigateBack();
+    public void searchMenu() throws InterruptedException {
         typeOnElementNEnter("#search-field", "Fans");
+        sleepFor(5);
         navigateBack();
         typeOnElementNEnter("#search-field", "Kids Book");
+        sleepFor(5);
         navigateBack();
         typeOnElementNEnter("#search-field", "Binders");
+        sleepFor(5);
         navigateBack();
         typeOnElementNEnter("#search-field", "Baby Food");
+        sleepFor(5);
         navigateBack();
         typeOnElementNEnter("#search-field", "Seafood");
+        sleepFor(5);
         navigateBack();
         typeOnElementNEnter("#search-field", "Basketball");
+        sleepFor(5);
         navigateBack();
         typeOnElementNEnter("#search-field", "Optical");
+        sleepFor(5);
         navigateBack();
     }
 }
