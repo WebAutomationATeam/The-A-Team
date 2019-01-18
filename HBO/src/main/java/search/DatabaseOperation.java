@@ -1,9 +1,9 @@
+
 package search;
 
 import database.ConnectToSqlDB;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,10 +13,13 @@ public class DatabaseOperation extends ConnectToSqlDB {
     public static void insertDataIntoDB() {
         List<String> list = getHeaderValue();
         ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+ Animesh
         connectToSqlDB.insertStringDataFromArrayListToSqlTable(list,"itemlist","list");
 
-    }
 
+        connectToSqlDB.insertStringDataFromArrayListToSqlTable(list, "headerList","headers");
+ Developer
+    }
     public static List<String> getHeaderValue() {
         List<String> headerList = new ArrayList<>();
         headerList.add("ABOUT");
@@ -24,7 +27,7 @@ public class DatabaseOperation extends ConnectToSqlDB {
         headerList.add("HELP");
         headerList.add("SHOP");
         headerList.add("CAREERS");
-        headerList.add("HBOINSPIRES");
+        headerList.add("HBO INSPIRES");
         return headerList;
     }
     public List<String> getUserDatafromDB() throws Exception {

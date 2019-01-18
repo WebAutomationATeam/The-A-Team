@@ -6,7 +6,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import search.DatabaseOperation;
-
 import java.util.List;
 
 public class TestDB extends CommonAPI {
@@ -14,7 +13,6 @@ public class TestDB extends CommonAPI {
     @BeforeMethod
     public void setUP(){
         databaseOperation = PageFactory.initElements(driver, DatabaseOperation.class);
-
     }
     @Test
     public void webElementName() throws Exception {
