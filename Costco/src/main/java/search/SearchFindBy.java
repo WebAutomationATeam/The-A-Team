@@ -65,6 +65,14 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         costcofindawarehouse.click();}
 
+    //Costco Country or Region
+    @FindBy (xpath ="//*[@id=\"country-select\"]")
+    public WebElement costcocountryorregion;
+    public void clickCountryOrRegion () {costcocountryorregion.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcocountryorregion.click();}
+
     //Costco Shop Button
     @FindBy (xpath ="//*[@id=\"navigation-dropdown\"]")
     public WebElement costcoshop;
@@ -505,6 +513,14 @@ public class SearchFindBy extends CommonAPI {
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         excitingproductsforalimitedtime.click();}
+
+    //Celebrate Lunar New Year
+    @FindBy(css = "//*[@id=\"slick-slide42\"]/a/img")
+    public static WebElement celebratelunarnewyear;
+    public void clickCelebrateLunarNewYear(){celebratelunarnewyear.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        celebratelunarnewyear.click();}
 
     //Healthy Eating
     @FindBy(css = "//*[@id=\"slick-slide40\"]/a/img")
