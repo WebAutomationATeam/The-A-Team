@@ -290,6 +290,14 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         appliances.click();}
 
+    //TCL
+    @FindBy(css = "//*[@id=\"slick-slide11\"]/a/img")
+    public static WebElement tcl;
+    public void clickTcl(){tcl.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        tcl.click();}
+
     //TV
     @FindBy(css = "//*[@id=\"slick-slide11\"]/a/img")
     public static WebElement tv;
@@ -314,6 +322,14 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         mattress.click();}
 
+    //Valentines Day
+    @FindBy(css = "/html/body/div[10]/div/a/img[1]")
+    public static WebElement valentinesday;
+    public void clickValentinesDay(){valentinesday.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        valentinesday.click();}
+
     //Members only Savings
     @FindBy(css = "//*[@id=\"slick-slide20\"]/a/img")
     public static WebElement memberonlysavings;
@@ -321,6 +337,14 @@ public class SearchFindBy extends CommonAPI {
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         memberonlysavings.click();}
+
+    //Vizio
+    @FindBy(css = "//*[@id=\"100424390_tile_desc\"]/a")
+    public static WebElement vizio;
+    public void clickVizio(){vizio.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        vizio.click();}
 
     //Google home mini
     @FindBy(css = "//*[@id=\"slick-slide21\"]/a/img")
