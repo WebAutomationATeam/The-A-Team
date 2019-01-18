@@ -346,6 +346,30 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         vizio.click();}
 
+    //Vizio Channel
+    @FindBy(css = "//*[@id=\"100367294_tile_desc\"]/a")
+    public static WebElement viziochannel;
+    public void clickVizioChannel(){viziochannel.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        viziochannel.click();}
+
+    //LG 75 inch TV
+    @FindBy(css = "//*[@id=\"100410396_tile_desc\"]/a")
+    public static WebElement lg75inchtv;
+    public void clickLg75InchTv(){lg75inchtv.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        lg75inchtv.click();}
+
+    //Hisense TV
+    @FindBy(css = "//*[@id=\"100404993_tile_desc\"]/a")
+    public static WebElement hisensetv;
+    public void clickHisenseTv(){hisensetv.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        hisensetv.click();}
+
     //Google home mini
     @FindBy(css = "//*[@id=\"slick-slide21\"]/a/img")
     public static WebElement googlehomemini;
