@@ -738,13 +738,12 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         gasoline.click();}
 
-    //Email offer
+    //Email offer                   *** 90 cases ***
     public void costcogetemailoffer(){
         typeOnElementNEnter("#footer-email-offer", "animesh.rahman@gmail.com");
         clickElement("//*[@id=\"email-signup-dropdown\"]");
         navigateBack();
     }
-
     public List webElementList(){
         List<WebElement> webElements = new ArrayList<>();
         webElements.add(searchButton);
