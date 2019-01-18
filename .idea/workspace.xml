@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="436" column="6" selection-start-line="436" selection-start-column="6" selection-end-line="436" selection-end-column="6" />
+            <state relative-caret-position="72">
+              <caret line="458" column="24" selection-start-line="458" selection-start-column="24" selection-end-line="458" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -241,7 +241,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547812348716" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547812704256" />
     <property name="last_opened_file_path" value="$USER_HOME$/hasib/AutomationP1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15429688" />
@@ -415,7 +415,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="23" width="1667" height="964" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990619" visible="true" weight="0.14613003" />
       <window_info id="Structure" order="1" sideWeight="0.50093806" side_tool="true" weight="0.024291499" />
@@ -848,8 +847,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="436" column="6" selection-start-line="436" selection-start-column="6" selection-end-line="436" selection-end-column="6" />
+        <state relative-caret-position="72">
+          <caret line="458" column="24" selection-start-line="458" selection-start-column="24" selection-end-line="458" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
