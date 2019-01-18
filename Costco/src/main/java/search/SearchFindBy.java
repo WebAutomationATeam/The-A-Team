@@ -394,6 +394,30 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         xboxone.click();}
 
+    //ION Pathfinder Bluetooth Speaker
+    @FindBy(css = "//*[@id=\"100432496_tile_desc\"]/a")
+    public static WebElement ionpathfinder;
+    public void clickIonPathfinder(){ionpathfinder.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        ionpathfinder.click();}
+
+    //Samsung Sound Bar
+    @FindBy(css = "//*[@id=\"100422440_tile_desc\"]/a")
+    public static WebElement samsungsoundbar;
+    public void clickSamsungSoundBar(){samsungsoundbar.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        samsungsoundbar.click();}
+
+    //LG Channel Bar
+    @FindBy(css = "//*[@id=\"100421910_tile_desc\"]/a")
+    public static WebElement lgchannelbar;
+    public void clickLgChannelBar(){lgchannelbar.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        lgchannelbar.click();}
+
     //Google home mini
     @FindBy(css = "//*[@id=\"slick-slide21\"]/a/img")
     public static WebElement googlehomemini;
@@ -418,7 +442,7 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         muradserum.click();}
 
-    //Relax in Style
+    //Relax in Style --50
     @FindBy(css = "//*[@id=\"Home_Product_Carousel_1_content\"]/div/button[1]")
     public static WebElement rsslide;
     public void clickRsSlide(){rsslide.click();
