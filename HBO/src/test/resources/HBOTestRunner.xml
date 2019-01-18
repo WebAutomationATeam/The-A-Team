@@ -18,7 +18,8 @@
             <!--<class name="web.TestFreeEpisodes"/>-->
             <!--<class name="web.TestHBONowSignIn"/>-->
             <!--<class name="TestSearch.TestDB"/>-->
-            <class name="web.TestReadXlsx"/>
+            <!--<class name="web.TestReadXlsx"/>-->
+            <class name="TestSearch.TestGoogleSheet"/>
         </classes>
     </test>
 

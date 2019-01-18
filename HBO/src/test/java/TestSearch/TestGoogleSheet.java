@@ -21,8 +21,6 @@ public class TestGoogleSheet extends GoogleSheetsPage {
         googleSheetsPage.clickLogIn();
 
         int i = 0;
-        String spreadsheetId = "1Ul4nRYHWdQ6KUR0U7-VQmy479FKhzdyzAsnrBibqcl8";
-        String range = "Sheet1!A1:Z1000";
         List<String> actualErrorMessage = googleSheetsPage.signInByInvalidIdPass(spreadsheetId, range);
         List<List<Object>> expectedErrorMessage = googleSheetsPage.getSpreadSheetRecords(spreadsheetId, range);
         for (List row : expectedErrorMessage) {
@@ -33,4 +31,13 @@ public class TestGoogleSheet extends GoogleSheetsPage {
         }
         System.out.println("testLogInByInvalidIdPassUsingGoogleSheet Passed");
     }*/
+
+    GoogleSheetsPage googleSheetsPage;
+    //Verify log in by taking data from a google sheets file
+    @Test
+    public void testLogInByInvalidIdPassUsingGoogleSheet() throws Exception {
+        googleSheetsPage = PageFactory.initElements(driver, GoogleSheetsPage.class);
+        googleSheetsPage.testGoogleSheet();
+    }
 }
+
