@@ -218,7 +218,7 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         grocery.click();}
 
-    //Business delivery
+    //Business delivery         ---25 cases---
     @FindBy(css = "#Home_Ancillary_1")
     public static WebElement businessdelivery;
     public void clickBusinessDelivdery(){businessdelivery.click();
@@ -418,7 +418,7 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         samsungsoundbar.click();}
 
-    //LG Channel Bar  ----50 cases ---
+    //LG Channel Bar        ----50 cases ---
     @FindBy(css = "//*[@id=\"100421910_tile_desc\"]/a")
     public static WebElement lgchannelbar;
     public void clickLgChannelBar(){lgchannelbar.click();
@@ -513,6 +513,14 @@ public class SearchFindBy extends CommonAPI {
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
                 getName()));
         turbotax.click();}
+
+    //Costco Tires
+    @FindBy(css = "//*[@id=\"slick-slide23\"]/a/img")
+    public static WebElement costcotires;
+    public void clickCostcoTires(){costcotires.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        costcotires.click();}
 
     //Murad Serum
     @FindBy(css = "/html/body/div[8]/div[2]/a/img[1]")
@@ -618,7 +626,7 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         betterhealth.click();}
 
-    //Green Mountain 100ct K-Cups
+    //Green Mountain 100ct K-Cups      ---75 cases---
     @FindBy(css = "//*[@id=\"slick-slide43\"]/a/img")
     public static WebElement gmcups;
     public void clickGMCups(){gmcups.click();
