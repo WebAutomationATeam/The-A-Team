@@ -47,7 +47,7 @@ public class HomePage extends CommonAPI {
     TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
     getSignIn();}
 
-    @FindBy (css="body > main > div.navigationband.basecomponent > div > div > header > div.components\\2f Band--maxWidth > div > div.bands\\2f MainNavigation--leftSlot > span > a > svg > g > g > path")
+    @FindBy (xpath = "/html/body/main/div[1]/div/div/header/div[1]/div/div[1]/span/a/svg/g/g/path")
     public WebElement HBOLogo;
     public void clickOnLogo () {
     TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
@@ -121,7 +121,7 @@ public class HomePage extends CommonAPI {
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         youtubeLogo.click();}
 
-    /*public List webElementList(){
+    public List webElementList(){
         List<WebElement> webElements = new ArrayList<>();
         webElements.add(searchButton);
         webElements.add(getHBO);
@@ -156,6 +156,6 @@ public class HomePage extends CommonAPI {
         }
         System.out.println(expect);
         return expect;
-    }*/
+    }
 
 }

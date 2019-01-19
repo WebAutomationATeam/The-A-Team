@@ -1,4 +1,3 @@
-
 package search;
 
 import database.ConnectToSqlDB;
@@ -13,12 +12,7 @@ public class DatabaseOperation extends ConnectToSqlDB {
     public static void insertDataIntoDB() {
         List<String> list = getHeaderValue();
         ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
- Animesh
-        connectToSqlDB.insertStringDataFromArrayListToSqlTable(list,"itemlist","list");
-
-
         connectToSqlDB.insertStringDataFromArrayListToSqlTable(list, "headerList","headers");
- Developer
     }
     public static List<String> getHeaderValue() {
         List<String> headerList = new ArrayList<>();
@@ -32,7 +26,7 @@ public class DatabaseOperation extends ConnectToSqlDB {
     }
     public List<String> getUserDatafromDB() throws Exception {
         List<String> list = new ArrayList<>();
-        list = connectToSqlDB.readDataBase("itemlist", "headers");
+        list = connectToSqlDB.readDataBase("headerList", "headers");
         System.out.println(list);
         return list;
     }
