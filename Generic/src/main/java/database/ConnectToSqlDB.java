@@ -1,19 +1,13 @@
 package database;
 
-//import parser.Student;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
-import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-/**
- * Created by mrahman on 04/02/18.
- */
 
 public class ConnectToSqlDB {
 
@@ -24,7 +18,9 @@ public class ConnectToSqlDB {
 
     public static Properties loadProperties() throws IOException{
         Properties prop = new Properties();
+
         InputStream ism = new FileInputStream("/Users/animesh/Desktop/The-A-Team/Generic/secret.properties");
+
         prop.load(ism);
         ism.close();
         return prop;
@@ -391,6 +387,7 @@ public class ConnectToSqlDB {
         List<User> list = readUserProfileFromSqlTable();
         for(User user:list){
             System.out.println(user.getItems());
+
         }
     }
 }
