@@ -19,7 +19,7 @@ public class ReadXlsx extends CommonAPI {
     @FindBy (xpath = "/html/body/main/div[1]/div/div/header/div[1]/div/div[3]/ul/li[3]/div/span")
     public WebElement signIn;
 
-    /*@FindBy (css="body > main > div.navigationband.basecomponent > div > div > header > div.components\\2f Band--maxWidth > div > div.bands\\2f MainNavigation--leftSlot > span > a > svg > g > g > path")
+    @FindBy (css="body > main > div.navigationband.basecomponent > div > div > header > div.components\\2f Band--maxWidth > div > div.bands\\2f MainNavigation--leftSlot > span > a > svg > g > g > path")
     public WebElement HBOLogo;
 
     @FindBy(xpath = "//div[contains(@class,'bands/MainNavigation--searchIcon')]")
@@ -53,14 +53,14 @@ public class ReadXlsx extends CommonAPI {
     public WebElement twitterLogo;
 
     @FindBy (xpath = "//a[@title='youtube']")
-    public WebElement youtubeLogo;*/
+    public WebElement youtubeLogo;
 
     public List webElementList(){
         List<WebElement> webElements = new ArrayList<>();
         webElements.add(searchButton);
         webElements.add(getHBO);
         webElements.add(signIn);
-        /*webElements.add(HBOLogo);
+        webElements.add(HBOLogo);
         webElements.add(searchlink);
         webElements.add(searchBox);
         webElements.add(series);
@@ -71,7 +71,7 @@ public class ReadXlsx extends CommonAPI {
         webElements.add(fbPage);
         webElements.add(instaPage);
         webElements.add(twitterLogo);
-        webElements.add(youtubeLogo);*/
+        webElements.add(youtubeLogo);
 
         List<String>list = new ArrayList<>();
         for(int i=0; i<webElements.size();i++){
