@@ -793,6 +793,31 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         authorsignings.click();}
 
+    //PetArmor Formula
+    @FindBy(xpath = "//*[@id=\"slick-slide71\"]/div/p/a[2]")
+    public static WebElement petarmorformula;
+    public void clickPetArmorFormula(){petarmorformula.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        petarmorformula.click();}
+
+    //Airborne Immune
+    @FindBy(xpath = "//*[@id=\"slick-slide73\"]/div/p/a[2]")
+    public static WebElement airborneimmune;
+    public void clickAirborneImmune(){airborneimmune.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        airborneimmune.click();}
+
+    //Blossom JeJu
+    @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[4]/ul/li[5]/a")
+    public static WebElement blossomjeju;
+    public void clickBlossomJeJu(){blossomjeju.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        blossomjeju.click();}
+
+
 
     public List webElementList(){
         List<WebElement> webElements = new ArrayList<>();

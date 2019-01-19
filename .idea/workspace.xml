@@ -10,10 +10,10 @@
       <change beforePath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ebay/src/test/java/ReadText/TestReadTextDropDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/ebay/src/test/java/ReadText/TestReadTextDropDown.java" afterDir="false" />
     <list default="true" id="4afb391c-0b28-4e72-abd6-df7660a395fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/Extent-Report/ExtentReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Costco/nullwebElementName (01.17.2019-20:07PM).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Costco/nullwebElementName (01.17.2019-20:17PM).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Costco/nullwebElementName (01.18.2019-22:23PM).png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Costco/target/" />
@@ -40,6 +40,8 @@
   <component name="FileEditorManager">
 Animesh
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+ Animesh
+
 
     <leaf>
       Developer
@@ -75,11 +77,12 @@ Animesh
           </provider>
         </entry>
       </file>
+ Developer
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="790" column="27" selection-start-line="790" selection-start-column="27" selection-end-line="790" selection-end-column="27" />
+            <state relative-caret-position="255">
+              <caret line="811" column="11" selection-start-line="811" selection-start-column="11" selection-end-line="811" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -478,6 +481,14 @@ Animesh
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
+ Animesh
+            <path>
+              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Costco" type="462c0819:PsiDirectoryNode" />
+            </path>
+
+ Developer
  Developer
  Developer
  Developer
@@ -490,6 +501,9 @@ Animesh
   <component name="PropertiesComponent">
  Animesh
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.idea/workspace.xml" />
+ Animesh
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547869203085" />
+
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547868621001" />
 
 Animesh
@@ -501,6 +515,7 @@ Animesh
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547420265355" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547413998775" />
 
+ Developer
  Developer
  Developer
     <property name="last_opened_file_path" value="$USER_HOME$/hasib/AutomationP1" />
@@ -716,7 +731,7 @@ Animesh
     <frame x="10" y="23" width="1667" height="964" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990619" visible="true" weight="0.2495356" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990619" visible="true" weight="0.2495356" />
       <window_info id="Structure" order="1" sideWeight="0.50093806" side_tool="true" weight="0.024291499" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -726,6 +741,9 @@ Animesh
       <window_info anchor="bottom" id="Message" order="0" />
 Animesh
       <window_info anchor="bottom" id="Find" order="1" weight="0.3288835" />
+ Animesh
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33737865" />
+
 Animesh
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33737865" />
 
@@ -737,11 +755,15 @@ Animesh
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.046116505" />
 Developer
 Developer
+ Developer
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37655416" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
 
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297362" />
+ Animesh
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" visible="true" weight="0.27063107" />
+
  Animesh
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" weight="0.27063107" />
 
@@ -761,6 +783,7 @@ Animesh
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" weight="0.18443114" />
 
 Developer
+ Developer
  Developer
  Developer
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50040483" side_tool="true" weight="0.053285968" />
@@ -1563,8 +1586,8 @@ Animesh
     </entry>
     <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="790" column="27" selection-start-line="790" selection-start-column="27" selection-end-line="790" selection-end-column="27" />
+        <state relative-caret-position="255">
+          <caret line="811" column="11" selection-start-line="811" selection-start-column="11" selection-end-line="811" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
