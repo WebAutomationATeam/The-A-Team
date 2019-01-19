@@ -769,6 +769,30 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         orderstatus.click();}
 
+    //Accessibility
+    @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[3]/ul/li[14]/a")
+    public static WebElement accessibility;
+    public void clickAccessibility(){accessibility.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        accessibility.click();}
+
+    //Supplier Diversity
+    @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[2]/ul[2]/li[5]/a")
+    public static WebElement supplierdiversity;
+    public void clickSupplierDiversity(){supplierdiversity.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        supplierdiversity.click();}
+
+    //Author Signings
+    @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[4]/ul/li[5]/a")
+    public static WebElement authorsignings;
+    public void clickAuthorSignings(){authorsignings.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        authorsignings.click();}
+
 
     public List webElementList(){
         List<WebElement> webElements = new ArrayList<>();

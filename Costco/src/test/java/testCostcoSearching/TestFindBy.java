@@ -67,7 +67,7 @@ public class TestFindBy extends SearchFindBy {
     public void clickCart(){cart.click();}
 
     @Test
-    public void clickCashCard(){cashcard.click();}
+    public void clickCashCard(){fitbit.click();}
 
     @Test
     public void clickAppliances(){appliances.click();}
@@ -155,9 +155,6 @@ public class TestFindBy extends SearchFindBy {
 
     @Test
     public void clickJobs(){jobs.click();}
-
-    @Test
-    public void clickCashCardBalance(){cashcard.click();}
 
     @Test
     public void clickGasoline(){gasoline.click();}
