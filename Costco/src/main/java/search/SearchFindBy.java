@@ -738,7 +738,7 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         gasoline.click();}
 
-    //Email offer                   *** 90 cases ***
+    //Email offer
     public void costcogetemailoffer(){
         typeOnElementNEnter("#footer-email-offer", "animesh.rahman@gmail.com");
         clickElement("//*[@id=\"email-signup-dropdown\"]");
@@ -817,7 +817,21 @@ public class SearchFindBy extends CommonAPI {
                 getName()));
         blossomjeju.click();}
 
+    //RefreshSkin Therapy
+    @FindBy(xpath = "//*[@id=\"slick-slide714\"]/div/p/a[2]")
+    public static WebElement refreshskintherapy;
+    public void clickRefreshSkinTherapy(){refreshskintherapy.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        refreshskintherapy.click();}
 
+    //FeedBack                      *** 101 cases ***
+    @FindBy(xpath = "//*[@id=\"opinionLabFooterLink\"]")
+    public static WebElement feedback;
+    public void clickFeedBack(){feedback.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        feedback.click();}
 
     public List webElementList(){
         List<WebElement> webElements = new ArrayList<>();
