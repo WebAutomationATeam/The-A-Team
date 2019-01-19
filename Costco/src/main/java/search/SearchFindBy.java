@@ -744,6 +744,32 @@ public class SearchFindBy extends CommonAPI {
         clickElement("//*[@id=\"email-signup-dropdown\"]");
         navigateBack();
     }
+
+    //Employee Site
+    @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[1]/ul/li[13]/a")
+    public static WebElement employeesite;
+    public void clickEmployeeSite(){employeesite.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        employeesite.click();}
+
+    //Preventing Fraud
+    @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[3]/ul/li[8]/a")
+    public static WebElement preventingfraud;
+    public void clickPreventingFraud(){preventingfraud.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        preventingfraud.click();}
+
+    //Order Status
+    @FindBy(xpath = "//*[@id=\"footer-list\"]/div/div[3]/ul/li[7]/a")
+    public static WebElement orderstatus;
+    public void clickOrderStatus(){orderstatus.click();
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().
+                getName()));
+        orderstatus.click();}
+
+
     public List webElementList(){
         List<WebElement> webElements = new ArrayList<>();
         webElements.add(searchButton);
