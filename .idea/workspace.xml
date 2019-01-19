@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4afb391c-0b28-4e72-abd6-df7660a395fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Costco/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/Extent-Report/ExtentReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,20 +47,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="756" column="67" selection-start-line="756" selection-start-column="67" selection-end-line="756" selection-end-column="67" />
+            <state relative-caret-position="176">
+              <caret line="790" column="27" selection-start-line="790" selection-start-column="27" selection-end-line="790" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -82,6 +75,7 @@
       <find>wait</find>
       <find>navi</find>
       <find>poi</find>
+      <find>get</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,7 +106,6 @@
         <option value="$PROJECT_DIR$/HBO/src/test/java/web/TestCreateAccount.java" />
         <option value="$PROJECT_DIR$/Costco/src/test/java/webTest/TestHomePage.java" />
         <option value="$PROJECT_DIR$/HBO/src/test/java/web/TestCreateAccount.java" />
-        <option value="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/database/XlxsDataReader.java" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/database/XlsDataReader.java" />
         <option value="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestXlsxReader.java" />
@@ -140,6 +133,7 @@
         <option value="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestXLSXReader.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Costco/src/main/java/search/ReadCostcoWebElements.java" />
+        <option value="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java" />
         <option value="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" />
       </list>
     </option>
@@ -209,32 +203,6 @@
               <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
               <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
-              <item name="Costco" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
-              <item name="Costco" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
-              <item name="Costco" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
-              <item name="Costco" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -242,7 +210,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547834763366" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.idea/workspace.xml" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547868621001" />
     <property name="last_opened_file_path" value="$USER_HOME$/hasib/AutomationP1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15429688" />
@@ -374,9 +343,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_animesh_Desktop_The-A-Team_Costco_src_test_resourse_CostcoTestRunner_xml - 2019.01.17 at 18h 02m 11s.xml">
-      <configuration name="/Users/animesh/Desktop/The-A-Team/Costco/src/test/resourse/CostcoTestRunner.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_Users_animesh_Desktop_The-A-Team_Costco_src_test_resourse_CostcoTestRunner_xml - 2019.01.17 at 20h 00m 03s.xml">
       <configuration name="/Users/animesh/Desktop/The-A-Team/Costco/src/test/resourse/CostcoTestRunner.xml" configurationId="TestNG" />
     </history-entry>
@@ -404,6 +370,9 @@
     <history-entry file="_Users_animesh_Desktop_The-A-Team_Costco_src_test_resourse_CostcoTestRunner_xml - 2019.01.17 at 20h 17m 45s.xml">
       <configuration name="/Users/animesh/Desktop/The-A-Team/Costco/src/test/resourse/CostcoTestRunner.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="_Users_animesh_Desktop_The-A-Team_Costco_src_test_resourse_CostcoTestRunner_xml - 2019.01.18 at 22h 24m 05s.xml">
+      <configuration name="/Users/animesh/Desktop/The-A-Team/Costco/src/test/resourse/CostcoTestRunner.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -418,7 +387,7 @@
     <frame x="10" y="23" width="1667" height="964" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990619" visible="true" weight="0.14551084" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990619" visible="true" weight="0.2495356" />
       <window_info id="Structure" order="1" sideWeight="0.50093806" side_tool="true" weight="0.024291499" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -427,12 +396,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3288835" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33737865" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33737865" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37655416" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297362" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" visible="true" weight="0.27063107" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" weight="0.27063107" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50040483" side_tool="true" weight="0.053285968" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32853717" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32281554" />
@@ -716,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Generic/secret.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -828,15 +790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10654">
-          <caret selection-end-line="1012" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Costco/src/test/resourse/CostcoTestRunner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="58" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="58" />
+        <state relative-caret-position="210">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -847,10 +802,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Costco/src/test/resourse/CostcoTestRunner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="756" column="67" selection-start-line="756" selection-start-column="67" selection-end-line="756" selection-end-column="67" />
+        <state relative-caret-position="176">
+          <caret line="790" column="27" selection-start-line="790" selection-start-column="27" selection-end-line="790" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
