@@ -87,17 +87,17 @@ public class HomePage extends CommonAPI {
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         searchFreeEpisodes.click();}
 
-    @FindBy (css = "body > main > div.producteducationband.basecomponent > div > div > div.components\\2f Band--maxWidth > div > div.bands\\2f ProductEducation--pane1 > div.bands\\2f ProductEducation--ctaContainer > div > a > span")
+    @FindBy (className = "components/BasicButton--children")
     public WebElement HBOToday;
     public void clickHBOToday(){
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HBOToday.click();}
 
-    @FindBy (css = "body > main > div:nth-child(4) > div > div > div.components\\2f Band--maxWidth > div.modules\\2f cards\\2f BasicCard--containers > div.modules\\2f cards\\2f BasicCard--tabletContainer > section > div > button.components\\2f CarouselButton--container.components\\2f CarouselButton--next > div > span > span > svg")
+    @FindBy (xpath = "/html/body/main/div[6]/div/div/div[1]/div[2]/div/button[2]/div/span/span/svg/g/g/g/polygon")
     public WebElement nextSlide;
     public void clickNextSlide(){nextSlide.click();}
 
-    @FindBy (css = "body > main > div.footerband.basecomponent > div > div > footer > div.modules\\2f FollowHbo--darkGray > div > div > ul > li:nth-child(1) > a")
+    @FindBy (xpath = "//a[@title='facebook']")
     public WebElement fbPage;
     public void getFbPage(){
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
