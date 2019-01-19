@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list default="true" id="719e21dc-eeed-46dd-9e38-aa7830362a3a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/secret.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/secret.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/database/ConnectToSqlDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/database/ConnectToSqlDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/database/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/database/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ebay/src/test/java/ReadText/TestReadTextDropDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/ebay/src/test/java/ReadText/TestReadTextDropDown.java" afterDir="false" />
     <list default="true" id="4afb391c-0b28-4e72-abd6-df7660a395fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/Generic/target/" />
     <ignored path="$PROJECT_DIR$/Costco/target/" />
+    <ignored path="$PROJECT_DIR$/Generic/target/" />
+    <ignored path="$PROJECT_DIR$/ebay/target/" />
     <ignored path="$PROJECT_DIR$/HBO/target/" />
-    <ignored path="$PROJECT_DIR$/Alibaba/target/" />
     <ignored path="$PROJECT_DIR$/CitiBank/target/" />
     <ignored path="$PROJECT_DIR$/ebay/target/" />
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
@@ -27,16 +34,57 @@
       <FILTER>web.*</FILTER>
     </SUITE>
   </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="175" />
-  </component>
   <component name="FileEditorManager">
+Animesh
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+ Animesh
+
+
+    <leaf>
+      Developer
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Costco/src/test/resourse/CostcoTestRunner.xml">
+
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ebay/.credentials/sheets-googleapis/StoredCredential">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Generic/src/main/java/database/ConnectToSqlDB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1294">
+              <caret line="366" column="49" selection-start-line="366" selection-start-column="49" selection-end-line="366" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1501#1509#0" expanded="true" />
+                <element signature="e#2049#2057#0" expanded="true" />
+                <element signature="e#2942#2950#0" expanded="true" />
+                <element signature="e#3299#3307#0" expanded="true" />
+                <element signature="e#6238#6246#0" expanded="true" />
+              </folding>
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
           <provider selected="true" editor-type-id="text-editor">
+ Animesh
             <state relative-caret-position="212">
               <caret line="833" column="29" selection-start-line="833" selection-start-column="29" selection-end-line="833" selection-end-column="29" />
+
+            <state relative-caret-position="300">
+              <caret line="20" column="58" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+ Developer
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="811" column="11" selection-start-line="811" selection-start-column="11" selection-end-line="811" selection-end-column="11" />
+ Developer
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,26 +92,74 @@
           </provider>
         </entry>
       </file>
+ Animesh
+
+ Animesh
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+
+ Animesh
+
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Costco/src/main/java/searchDB/XlsxDataReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+ Developer
+            </state>
+          </provider>
+        </entry>
+      </file>
+ Animesh
+
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java">
+        <entry file="file://$PROJECT_DIR$/Generic/src/main/java/database/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+              <folding>
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+              </folding>
+        <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestPage.java">
+
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+ Developer
+ Developer
+ Developer
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+
       <find>screenshot</find>
       <find>icebox</find>
       <find>logg</find>
       <find>desiredCa</find>
       <find>scr</find>
       <find>wait</find>
+ Animesh
       <find>navi</find>
       <find>poi</find>
+ Animesh
       <find>get</find>
+
+      <find>student</find>
+      <find>select</find>
+ Developer
+ Developer
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -72,6 +168,30 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+ Animesh
+
+        <option value="$PROJECT_DIR$/Generic/src/main/java/database/sql.java" />
+        <option value="$PROJECT_DIR$/ebay/src/main/java/datasource/SearchPage.java" />
+        <option value="$PROJECT_DIR$/ebay/src/test/java/dataBaseSearch/TestSearchPage.java" />
+        <option value="$PROJECT_DIR$/ebay/src/main/java/datasource/DatabaseOperation.java" />
+        <option value="$PROJECT_DIR$/ebay/src/test/java/DataDrivenDataReader/ExcelSearch.java" />
+        <option value="$PROJECT_DIR$/ebay/src/main/java/DataDrivenDataReader/ExcelSearch.java" />
+        <option value="$PROJECT_DIR$/ebay/src/test/java/DataDrivenDataReader/TestExcelSearch.java" />
+        <option value="$PROJECT_DIR$/Generic/src/main/java/utility/ExcelDataReader.java" />
+        <option value="$PROJECT_DIR$/ebay/src/test/java/GoogleSheetReader/GoogleSheets.java" />
+        <option value="$PROJECT_DIR$/ebay/src/main/java/GoogleSheetReader/GoogleSheets.java" />
+        <option value="$PROJECT_DIR$/ebay/src/test/java/GoogleSheetReader/TestGoogleSheetPages.java" />
+        <option value="$PROJECT_DIR$/Generic/src/main/java/googleAPIs/GoogleSheetReader.java" />
+        <option value="$PROJECT_DIR$/ebay/src/main/java/EBayMotors/EBayMotors.java" />
+        <option value="$PROJECT_DIR$/ebay/src/main/java/ReadList/ReadDropDown.java" />
+        <option value="$PROJECT_DIR$/Generic/secret.properties" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Generic/src/main/java/database/ConnectToSqlDB.java" />
+        <option value="$PROJECT_DIR$/Generic/src/main/java/database/User.java" />
+        <option value="$PROJECT_DIR$/ebay/src/test/java/ReadText/TestReadTextDropDown.java" />
+        <option value="$PROJECT_DIR$/HBO/src/main/java/search/DatabaseOperation.java" />
+
+ Developer
         <option value="$PROJECT_DIR$/HBO/src/test/java/web/Listeners.java" />
         <option value="$PROJECT_DIR$/HBO/src/main/java/basic/Kids.java" />
         <option value="$PROJECT_DIR$/ebay/src/test/java/EBayFashionPage/TestSellOnEbay.java" />
@@ -124,13 +244,6 @@
         <option value="$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java" />
         <option value="$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java" />
       </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -188,14 +301,199 @@
         <subPane>
           <expand>
             <path>
-              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
               <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="CitiBank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="ebay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+Animesh
+
+
+              <item name="googleSheet" type="462c0819:PsiDirectoryNode" />
+            </path>
+ Animesh
+
+            <path>
+              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Costco" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              Developer
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+
+              <item name="ReadText" type="462c0819:PsiDirectoryNode" />
+            </path>
+Animesh
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="googleAPIs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="HBO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="driver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+ Animesh
+
+            <path>
+              <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+ Animesh
             <path>
               <item name="A-Team" type="b2602c69:ProjectViewProjectNode" />
               <item name="The-A-Team" type="462c0819:PsiDirectoryNode" />
               <item name="Costco" type="462c0819:PsiDirectoryNode" />
             </path>
+
+ Developer
+ Developer
+ Developer
+ Developer
           </expand>
           <select />
         </subPane>
@@ -203,8 +501,29 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+ Animesh
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.idea/workspace.xml" />
+ Animesh
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547869678177" />
+
+ Animesh
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547869203085" />
+
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547868621001" />
+
+Animesh
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547834763366" />
+
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547696210338" />
+
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.idea/workspace.xml" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547420265355" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547413998775" />
+
+ Developer
+ Developer
+ Developer
+ Developer
     <property name="last_opened_file_path" value="$USER_HOME$/hasib/AutomationP1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15429688" />
@@ -212,12 +531,33 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+ Animesh
+
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Costco" />
+      <recent name="C:\Users\Rob Dos\Desktop\Robin\The-A-Team\HBO\src\test" />
+      <recent name="C:\Users\Rob Dos\IdeaProjects\ATeam\Generic\src\test" />
+    </key>
+ Developer
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/driver" />
       <recent name="$PROJECT_DIR$/Costco" />
       <recent name="$PROJECT_DIR$/Generic/src/main/resourses" />
       <recent name="C:\Users\Rob Dos\Desktop\Robin\The-A-Team\HBO\src\test" />
       <recent name="C:\Users\Rob Dos\IdeaProjects\ATeam\driver" />
+
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ReadList" />
+      <recent name="ReadText" />
+      <recent name="googleAPIs" />
+      <recent name="GoogleSheetReader" />
+      <recent name="DataDrivenDataReader" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmed\Desktop\The-A-Team\Generic" />
+      <recent name="C:\Users\ahmed\Desktop\The-A-Team\ebay" />
+      <recent name="C:\Users\ahmed\Desktop\The-A-Team\Generic\src\main\java" />
+
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Costco" />
@@ -237,6 +577,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="ConnectToSqlDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="database.ConnectToSqlDB" />
+      <module name="Generic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
   <component name="RunManager" selected="TestNG./Users/animesh/Desktop/The-A-Team/Costco/src/test/resourse/CostcoTestRunner.xml">
     <configuration name="TestDB" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Costco" />
@@ -314,6 +664,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConnectToSqlDB" />
         <item itemvalue="TestNG./Users/animesh/Desktop/The-A-Team/Costco/src/test/resourse/CostcoTestRunner.xml" />
         <item itemvalue="TestNG.TestDB" />
         <item itemvalue="TestNG.TestLogin" />
@@ -335,6 +686,12 @@
     </task>
     <servers />
   </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990619" visible="true" weight="0.23288591" />
+
   <component name="TestHistory">
     <history-entry file="_Users_animesh_Desktop_The-A-Team_Costco_src_test_resourse_CostcoTestRunner_xml - 2019.01.17 at 20h 00m 03s.xml">
       <configuration name="/Users/animesh/Desktop/The-A-Team/Costco/src/test/resourse/CostcoTestRunner.xml" configurationId="TestNG" />
@@ -388,13 +745,57 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
+Animesh
       <window_info anchor="bottom" id="Find" order="1" weight="0.3288835" />
+ Animesh
       <window_info anchor="bottom" id="Run" order="2" weight="0.33737865" />
+
+Animesh
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33737865" />
+
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33737865" />
+
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19688386" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.046116505" />
+Developer
+Developer
+ Developer
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37655416" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297362" />
+ Animesh
       <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" visible="true" weight="0.12742719" />
+
+ Animesh
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" visible="true" weight="0.27063107" />
+
+ Animesh
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" weight="0.27063107" />
+
+ Animesh
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" visible="true" weight="0.27063107" />
+
+Animesh
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" visible="true" weight="0.27063107" />
+
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" weight="0.23802164" />
+
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" weight="0.3696884" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50040483" side_tool="true" weight="0.053285968" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3285968" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3243626" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" weight="0.18443114" />
+
+Developer
+ Developer
+ Developer
+ Developer
+ Developer
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50040483" side_tool="true" weight="0.053285968" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32853717" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32281554" />
@@ -409,7 +810,23 @@
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32955465" />
       <window_info anchor="right" id="Maven Executor" order="8" />
       <window_info anchor="right" id="Maven-2 Build" order="9" />
+
       <window_info anchor="right" id="Maven" order="10" weight="0.3380805" />
+
+      <window_info anchor="right" id="Maven" order="10" weight="0.17516778" />
+      <window_info anchor="right" id="Mongo Explorer" order="11" weight="0.32955465" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/resources/HBOTestRunner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+      <window_info anchor="right" id="Maven" order="10" weight="0.1757085" />
+
       <window_info anchor="right" id="Mongo Explorer" order="11" weight="0.32955465" />
     </layout>
     <layout-to-restore>
@@ -485,6 +902,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestHome.java">
       <provider selected="true" editor-type-id="text-editor" />
+
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/database/DataReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-949">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestHBONowSignIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestFreeEpisodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/database/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/CreateAccount.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -496,7 +943,22 @@
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java">
+
+    <entry file="file://$PROJECT_DIR$/Costco/src/test/java/webTest/TestHomePage.java" />
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestHome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/Util/TestLogger.java">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="135" selection-start-line="135" selection-end-line="135" />
@@ -506,16 +968,74 @@
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestFreeEpisodes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="746">
           <caret line="177" column="43" selection-start-line="177" selection-start-column="43" selection-end-line="177" selection-end-column="43" />
+
+    <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestFindBy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Costco/src/main/java/searchDB/DBOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchLogin.java">
+    <entry file="file://$PROJECT_DIR$/ebay/src/main/java/EBayElectronics/ShopElectronicsSalesEvents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/java/TestSearch/TestDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestCreateAccount.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -523,12 +1043,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/Listeners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+          Animesh
+    <entry file="file://$PROJECT_DIR$/Generic/secret.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="55" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+Developer
     <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/ReadAmexWebElements.java" />
     <entry file="file://$PROJECT_DIR$/Generic/src/main/resourses/credentials.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -541,12 +1076,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-157">
           <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/AllFreeEpisodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1189">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/CreateAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="47" column="58" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HBONowSignIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+
     <entry file="file://$PROJECT_DIR$/Costco/Costco.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -574,6 +1136,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1388">
           <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchFindBy.java">
+
+    <entry file="file://$PROJECT_DIR$/HBO/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="512" column="102" selection-start-line="512" selection-start-column="48" selection-end-line="512" selection-end-column="102" />
+          <folding>
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
+            <element signature="e#1665#1666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestCreateAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -582,7 +1178,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Costco/Extent-Report/ExtentReport.html">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="-4711" />
+
+        <state relative-caret-position="-847">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Costco/src/main/java/searchDB/XlsxDataReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-437">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/main/java/datasource/SearchPage.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/test/java/dataBaseSearch/TestSearchPage.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/main/java/datasource/DatabaseOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="-440" />
+
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Generic/pom.xml">
@@ -602,12 +1227,40 @@
         </state>
       </provider>
     </entry>
+Animesh
     <entry file="file://$PROJECT_DIR$/Costco/pom.xml">
+
+    <entry file="file://$PROJECT_DIR$/Costco/src/main/java/search/SearchPage.java">
+Developer
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
         </state>
       </provider>
+
+    <entry file="file://$PROJECT_DIR$/ebay/src/test/java/DataDrivenDataReader/ExcelSearch.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/main/java/DataDrivenDataReader/ExcelSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/test/java/GoogleSheetReader/GoogleSheets.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/main/java/GoogleSheetReader/GoogleSheets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestHBONowSignIn.java">
+      <provider selected="true" editor-type-id="text-editor" />
+
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/loader/BuiltinClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -648,17 +1301,50 @@
         </state>
       </provider>
     </entry>
+Animesh
     <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+
+    <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestGoogleSheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/utility/ExcelDataReader.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/utility/GoogleSheetReader.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/test/java/DataDrivenDataReader/TestExcelSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        <state relative-caret-position="15">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
+
+Developer
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+Animesh
     <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestDB.java">
+
+    <entry file="file://$PROJECT_DIR$/Costco/src/main/java/googleSheet/GoogleSheetsPage.java">
+
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/search/DatabaseOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestFreeEpisodes.java">
+
+Developer
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
@@ -668,7 +1354,106 @@
         </state>
       </provider>
     </entry>
+Animesh
     <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestGoogleSheet.java">
+
+    <entry file="file://$PROJECT_DIR$/Costco/src/test/java/testCostcoSearching/TestXLSXReader.java">
+
+    <entry file="file://$PROJECT_DIR$/ebay/src/test/java/GoogleSheetReader/TestGoogleSheetPages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="7" selection-start-line="9" selection-start-column="4" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-719" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/test/java/ReadText/TestReadTextDropDown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="7" selection-start-line="6" selection-start-column="4" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/secret.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/main/java/ReadList/ReadDropDown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/src/main/java/EBayMotors/EBayMotors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/resources/client_secret.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/googleAPIs/GoogleSheetReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay/.credentials/sheets-googleapis/StoredCredential">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/database/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding>
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/database/ConnectToSqlDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1294">
+          <caret line="366" column="49" selection-start-line="366" selection-start-column="49" selection-end-line="366" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1501#1509#0" expanded="true" />
+            <element signature="e#2049#2057#0" expanded="true" />
+            <element signature="e#2942#2950#0" expanded="true" />
+            <element signature="e#3299#3307#0" expanded="true" />
+            <element signature="e#6238#6246#0" expanded="true" />
+    <entry file="file://$PROJECT_DIR$/HBO/src/test/java/web/TestCreateAccount.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBO/src/main/java/basic/HBONowSignIn.java">
+
+ Developer
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
@@ -820,92 +1605,5 @@
       </provider>
     </entry>
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>HBO</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: cglib:cglib-nodep:2.1_3</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
-  </component>
 </project>
+        
