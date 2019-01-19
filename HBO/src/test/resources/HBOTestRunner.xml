@@ -19,7 +19,8 @@
             <!--<class name="web.TestHBONowSignIn"/>-->
             <!--<class name="TestSearch.TestDB"/>-->
             <!--<class name="web.TestReadXlsx"/>-->
-            <class name="TestSearch.TestGoogleSheet"/>
+            <!--<class name="TestSearch.TestGoogleSheet"/>-->
+            <class name="web.TestSports"/>
         </classes>
     </test>
 
