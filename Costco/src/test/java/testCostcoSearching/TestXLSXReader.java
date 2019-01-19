@@ -1,7 +1,6 @@
 package testCostcoSearching;
 
 import base.CommonAPI;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -15,7 +14,7 @@ public class TestXLSXReader extends CommonAPI {
         ReadCostcoWebElements readCostcoWebElements;
 
         @BeforeMethod
-        public void setUP(WebDriver driver){
+        public void webElement(){
             readCostcoWebElements = PageFactory.initElements(driver,ReadCostcoWebElements.class);
 
         }
