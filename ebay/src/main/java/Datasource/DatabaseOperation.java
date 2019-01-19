@@ -1,12 +1,10 @@
 package Datasource;
 
 import database.ConnectToSqlDB;
-
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
 public class DatabaseOperation extends ConnectToSqlDB {
     static ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
     public static void insertDataIntoDB(){
@@ -21,13 +19,13 @@ public class DatabaseOperation extends ConnectToSqlDB {
         itemsList.add("Tools");
         return itemsList;
     }
+    //Read from the database to send it to the search page
     public List<String> getItemsListFromDB()throws Exception, IOException, SQLException, ClassNotFoundException {
         List<String> list = new ArrayList<>();
         list = connectToSqlDB.readDataBase("ItemList", "items");
         return list;
     }
     public static void main(String[] args) throws Exception {
-        //insertDataIntoDB();
         ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
         insertDataIntoDB();
         List<String> list = connectToSqlDB.readDataBase("ItemList","items");

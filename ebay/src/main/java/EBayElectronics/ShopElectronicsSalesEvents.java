@@ -4,7 +4,6 @@ import Util.TestLogger;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 public class ShopElectronicsSalesEvents extends CommonAPI {
     @FindBy(xpath = ("//*[@id=\"mainContent\"]/div[1]/ul/li[5]/a"))
     public static WebElement ViewElectronics;
@@ -24,21 +23,25 @@ public class ShopElectronicsSalesEvents extends CommonAPI {
     public void ClickViewCertifiedRefurbish() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
+        ClickViewElectronics();
         ViewCertifiedRefurbish.getText();
     }
     public void ClickViewHomeInstallation() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
+        ClickViewElectronics();
         ViewHomeInstallation.click();
     }
     public void ClickViewAllTechDeals() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
+        ClickViewElectronics();
         ViewAllTechDeals.click();
     }
     public void ClickViewLaptopUnder399() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
+        ClickViewElectronics();
         ViewLaptopUnder399.click();
     }
 }

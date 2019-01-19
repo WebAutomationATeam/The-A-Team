@@ -11,7 +11,6 @@ public class SellOnEbay extends CommonAPI {
     public static WebElement ViewConsignItem;
     @FindBy(xpath = ("//*[@id=\"w1-w4\"]/ul/li[2]/a"))
     public static WebElement ViewSellDirect;
-
     public void ClickViewConsignItem() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));

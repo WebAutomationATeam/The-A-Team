@@ -1,15 +1,14 @@
 package MainPage;
 
+import Util.TestLogger;
 import base.CommonAPI;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 public class SearchEBay extends CommonAPI {
     @FindBy(how = How.XPATH, using ="//*[@id=\"gh-ac\"]")
     public static WebElement searchInputWebElement;
@@ -33,6 +32,8 @@ public class SearchEBay extends CommonAPI {
         getSearchInputWebElement().clear();
     }
     public void searchItemsAndSubmitButton() throws IOException, InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         List<String> list = getItemValue();
         for(int i=0; i<list.size(); i++) {
             searchFor(list.get(i));

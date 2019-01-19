@@ -20,19 +20,16 @@ public class TestElectronicsSalesEvents extends ShopElectronicsSalesEvents {
     //User should be able to click on Certified Refurbish
     @Test
     public void testCertifiedRefurbish(){
-        shopElectronicsSalesEvents.ClickViewElectronics();
         shopElectronicsSalesEvents.ClickViewCertifiedRefurbish();
     }
     //User should be able to click on Laptop under $399
     @Test
     public void testLaptopUnder399(){
-        shopElectronicsSalesEvents.ClickViewElectronics();
         shopElectronicsSalesEvents.ClickViewLaptopUnder399();
     }
     //User should be able to click on All tech deals
     @Test
     public void testAllTechDeals(){
-        shopElectronicsSalesEvents.ClickViewElectronics();
         shopElectronicsSalesEvents.ClickViewAllTechDeals();
     }
 

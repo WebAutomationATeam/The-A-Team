@@ -1,9 +1,9 @@
 package SeleniumCheckOut;
 
+import Util.TestLogger;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 public class ItemCheckOut extends CommonAPI {
     @FindBy(css = ("#firstName"))
     public static WebElement FirstName;
@@ -31,6 +31,8 @@ public class ItemCheckOut extends CommonAPI {
         DoneButton.click();
     }
     public void ChecOutPage(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         SendFirstName();
         SendLastName();
         SendEmail();

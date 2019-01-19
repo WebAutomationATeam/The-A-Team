@@ -2,12 +2,11 @@ package KeyWordDriven;
 
 import DataDrivenDataReader.ExcelSearch;
 import MainPage.SignInUser;
+import Util.TestLogger;
 import base.CommonAPI;
 import org.openqa.selenium.InvalidArgumentException;
 import org.openqa.selenium.support.PageFactory;
-
 import java.io.IOException;
-
 public class KeyWordDriven extends CommonAPI {
     SignInUser objOfHomePage = PageFactory.initElements(driver, SignInUser.class);
     ExcelSearch objOfByInputFromExls = PageFactory.initElements(driver, ExcelSearch.class);
@@ -48,6 +47,8 @@ public class KeyWordDriven extends CommonAPI {
         }
     }
     public void selectFeature() throws IOException, InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         String[] keyword = objOfByInputFromExls.getDataFromSignInKeyword("Key.xls");
         for (int i = 0; i < keyword.length; i++) {
             selectAction(keyword[i]);

@@ -4,7 +4,6 @@ import Util.TestLogger;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 public class TestSellOnEbay extends SellOnEbay  {
     SellOnEbay sellOnEbay;
     @BeforeMethod

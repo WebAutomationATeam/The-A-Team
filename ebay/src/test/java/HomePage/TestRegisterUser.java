@@ -1,13 +1,13 @@
 package HomePage;
 
 import MainPage.RegisterUser;
+import Util.TestLogger;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.Iterator;
 import java.util.Set;
-
 public class TestRegisterUser extends RegisterUser {
     RegisterUser register;
     @BeforeMethod
@@ -17,24 +17,24 @@ public class TestRegisterUser extends RegisterUser {
     //User should be able to click on register user button
     @Test
     public void testViewRegister() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         register.ClickViewRegisterUser();
         driver.navigate().back();
     }
     //User should be able to create account with proper information
     @Test
     public void testCreateAccount() throws InterruptedException {
-        register.ClickViewRegisterUser();
-        Thread.sleep(3000);
-        register.InputRegisterFirstName();
-        register.InputRegisterLastName();
-        register.InputRegisterEmail();
-        register.ClickCreateAccountButton();
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
+        register.TestRegisterUserAccount();
         driver.navigate().back();
     }
     ////User should be able to click on click on continue facebook button
     @Test
     public void testFacebookContinueButton() {
-        register.ClickViewRegisterUser();
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         register.ClickFacebookContinueButton();
         String parent = driver.getWindowHandle();
         Set<String> s1 = driver.getWindowHandles();
@@ -49,7 +49,8 @@ public class TestRegisterUser extends RegisterUser {
     //User should be able to click on continue to google button
     @Test
     public void testGoogleContinueButton () {
-        register.ClickViewRegisterUser();
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         register.ClickGoogleContinueButton();
         String parent = driver.getWindowHandle();
         Set<String> s1 = driver.getWindowHandles();

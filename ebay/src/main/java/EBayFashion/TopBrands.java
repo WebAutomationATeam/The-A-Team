@@ -1,8 +1,8 @@
 package EBayFashion;
+import Util.TestLogger;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 public class TopBrands extends CommonAPI {
     @FindBy(xpath = ("//*[@id=\"mainContent\"]/div[1]/ul/li[4]/a"))
     public static WebElement ViewFashion;
@@ -58,108 +58,159 @@ public class TopBrands extends CommonAPI {
     public static WebElement ViewVictoriaSecret;
     @FindBy(xpath = ("//*[@id=\"w1-w1\"]/ul/li[26]/a"))
     public static WebElement ViewZara;
-
     public void ClickViewAdidas() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewAdidas.click();
     }
     public void ClickViewAirJordan() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewAirJordan.click();
     }
     public void ClickViewAnthropologie() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewAnthropologie.click();
     }
     public void ClickViewCalvinKlein() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewCalvinKlein.click();
     }
     public void ClickViewChanel() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewChanel.click();
     }
     public void ClickViewCoach() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewCoach.click();
     }
     public void ClickViewDavidYurman() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewDavidYurman.click();
     }
     public void ClickViewFreePeople() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewFreePeople.click();
     }
     public void ClickViewGucci() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewGucci.click();
     }
     public void ClickViewInvicta() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewInvicta.click();
     }
     public void ClickViewJCrew() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewJCrew.click();
     }
     public void ClickViewLevis() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewLevis.click();
     }
     public void ClickViewLouisVuitton() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewLouisVuitton.click();
     }
     public void ClickViewLuluMelon() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewLuluMelon.click();
     }
     public void ClickViewMadeWell() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewMadeWell.click();
     }
     public void ClickViewMichaelKors() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewMichaelKors.click();
     }
     public void ClickViewNike() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewNike.click();
     }
     public void ClickViewOmega() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewOmega.click();
     }
     public void ClickViewRalphLauren() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewRalphLauren.click();
     }
     public void ClickViewRayBan() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewRayBan.click();
     }
     public void ClickViewSupreme() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewSupreme.click();
     }
     public void ClickViewRolex() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewRolex.click();
     }
     public void ClickViewToryBurch() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewToryBurch.click();
     }
     public void ClickViewUnderArmour() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewUnderArmour.click();
     }
     public void ClickViewVictoriaSecret() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewVictoriaSecret.click();
     }
     public void ClickViewZara() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewZara.click();
     }

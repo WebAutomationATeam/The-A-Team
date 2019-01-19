@@ -10,11 +10,11 @@
     <parameter name="url" value="https://www.ebay.com/"/>
     <test name = "Test">
         <classes>
-            <!--<class name="HomePage.TestPageElement"/>
+           <class name="HomePage.TestPageElement"/>
             <class name="HomePage.TestSearchEBay"/>
-            <class name="HomePage.TestRegisterUser"/>-->
+            <class name="HomePage.TestRegisterUser"/>
             <class name="HomePage.TestSignInUser"/>
-            <!--<class name="EBayMotorsPage.TestEBayMotors"/>
+            <class name="EBayMotorsPage.TestEBayMotors"/>
             <class name="EBayFashionPage.TestCategory"/>
             <class name="EBayFashionPage.TestExploreInterests"/>
             <class name="EBayFashionPage.TestSalesEvents"/>
@@ -27,7 +27,8 @@
             <class name="SeleniumCheckOutPage.TestItemCheckOut"/>
             <class name="dataBaseSearch.TestSearchPage"/>
             <class name="GoogleSheetReader.TestGoogleSheet"/>
-            <class name="DataDrivenDataReader.TestExcelSearch"/>-->
+            <class name="DataDrivenDataReader.TestExcelSearch"/>
+            <class name="KeyWordDrivenPage.TestKeyWordDriven"/>
         </classes>
     </test>
 </suite>

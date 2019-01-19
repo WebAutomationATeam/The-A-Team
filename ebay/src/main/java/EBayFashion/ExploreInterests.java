@@ -1,9 +1,9 @@
 package EBayFashion;
 
+import Util.TestLogger;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 public class ExploreInterests extends CommonAPI {
     @FindBy(xpath = ("//*[@id=\"mainContent\"]/div[1]/ul/li[4]/a"))
     public static WebElement ViewFashion;
@@ -25,39 +25,54 @@ public class ExploreInterests extends CommonAPI {
     public static WebElement ViewMensBasics;
     @FindBy(xpath = "//*[@id=\"w1-w3\"]/ul/li[10]/a")
     public static WebElement ViewMensGrooming;
-
     public void ClickViewFashion() {
         ViewFashion.click();
     }
     public void ClickViewWomensTrends() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewWomensTrends.click();
     }
     public void ClickViewWomensHeadToToeDenim() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewWomensHeadToToeDenim.click();
     }
     public void ClickViewWomensBasic() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewWomensBasic.click();
     }
     public void ClickViewWomensLuxeBags() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewWomensLuxeBags.click();
     }
     public void ClickViewMensSneaker() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewMensSneaker.click();
     }
     public void ClickViewMensStreetStyle() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewMensStreetStyle.click();
     }
     public void ClickViewMensBasics() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewMensBasics.click();
     }
     public void ClickViewMensGrooming() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         ViewFashion.click();
         ViewMensGrooming.click();
     }

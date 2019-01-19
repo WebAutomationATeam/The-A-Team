@@ -1,6 +1,7 @@
 package KeyWordDrivenPage;
 
 import KeyWordDriven.KeyWordDriven;
+import Util.TestLogger;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -14,7 +15,9 @@ public class TestKeyWordDriven extends KeyWordDriven {
         objOfKeyWordDriven = PageFactory.initElements(driver, KeyWordDriven.class);
     }
     @Test
-    public void testSignInWithInvalidIdAndPassword() throws IOException, InterruptedException {
+    public void testKeyWord() throws IOException, InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         objOfKeyWordDriven.selectFeature();
     }
 }

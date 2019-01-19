@@ -1,15 +1,13 @@
 package DataDrivenDataReader;
 
+import Util.TestLogger;
 import base.CommonAPI;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utility.ExcelDataReader;
-
 import java.io.IOException;
-
 import static org.openqa.selenium.support.How.XPATH;
-
 public class ExcelSearch extends CommonAPI {
     @FindBy(how = XPATH, using ="//*[@id=\"gh-ac\"]")
     public static WebElement searchBox;
@@ -33,6 +31,8 @@ public class ExcelSearch extends CommonAPI {
     }
     //Search Product using Excel data
     public String[] searchProduct(String fileName) throws IOException, InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         String[] searchItem = getExcelData(fileName);
         String[] actual = new String[searchItem.length];
         for (int i = 0; i < searchItem.length; i++) {
@@ -44,7 +44,7 @@ public class ExcelSearch extends CommonAPI {
     }
     public String[] getDataFromSignInKeyword(String fileName) throws IOException {
         String path = "../eBay/data/" + fileName;
-        String[] output = dtr.colReader(path, 2); //col 2 = email
+        String[] output = dtr.colReader(path, 2); //col 2 = steps for keyword Driven Data
         return output;
     }
 }

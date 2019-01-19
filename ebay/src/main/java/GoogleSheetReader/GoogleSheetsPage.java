@@ -1,16 +1,17 @@
 package GoogleSheetReader;
 
+import Util.TestLogger;
 import base.CommonAPI;
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.model.ValueRange;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import static googleApi.GoogleSheetReader.getSheetsService;
 import static org.openqa.selenium.support.How.CSS;
-
 public class GoogleSheetsPage extends CommonAPI {
     String spreadsheetId = "1G4HDqbno6QFb5LGhF-iqzB1ANBSbhCDzKwFHvJfrgYA";
     String range = "Sheet1!A1:Z1000";
@@ -48,7 +49,6 @@ public class GoogleSheetsPage extends CommonAPI {
         for (List row : col2Value) {
             inputValueInTextBoxByWebElement(user, row.get(0).toString());
             inputValueInTextBoxByWebElement(password, row.get(1).toString());
-            //actual.add(getCurrentPageTitle());
             actual.add(getTextByWebElement(logInErrorMesage));
             System.out.println(getTextByWebElement(logInErrorMesage));
             clearInputBox(user);
@@ -57,8 +57,11 @@ public class GoogleSheetsPage extends CommonAPI {
         return actual;
     }
     public void testGoogleSheet() throws Exception{
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         clickLogIn();
         List<String> actualItems = signInByInvalidIdPass();
         List<List<Object>> expectedItems = getSpreadSheetRecords();
+        Assert.assertEquals(actualItems,expectedItems);
     }
 }

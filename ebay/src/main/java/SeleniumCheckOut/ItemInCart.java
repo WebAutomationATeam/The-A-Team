@@ -1,11 +1,10 @@
 package SeleniumCheckOut;
 
+import Util.TestLogger;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 public class ItemInCart extends CommonAPI {
-
     @FindBy(css = ("#gh-ac"))
     public static WebElement SearchSelenium;
     public void FindSelenium() {
@@ -20,8 +19,8 @@ public class ItemInCart extends CommonAPI {
     @FindBy(xpath = ("//*[@id=\"srp-river-results-listing2\"]/div/div[2]/a/h3"))
     public static WebElement ClickSelenium;
     public void ClickSelenium(){
-        //Double Click Technique
-        /*Actions action = new Actions(driver);
+        /*//Double Click Technique
+        Actions action = new Actions(driver);
         WebElement btn;
         btn = driver.findElement(By.xpath("//*[@id=\"srp-river-results-listing1\"]/div/div[2]/a"));
         action.doubleClick(btn).perform();*/
@@ -38,6 +37,8 @@ public class ItemInCart extends CommonAPI {
         GuestCheckOut.click();
     }
     public void SeleniumInCart() throws Exception{
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         FindSelenium();
         ClickSearchButton();
         ClickSelenium();

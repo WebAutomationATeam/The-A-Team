@@ -272,6 +272,7 @@ public class CommonAPI {
     }
     @BeforeSuite
     public void extentSetup(ITestContext context) {
+        ExtentManager.setOutputDirectory(context);
         extent = ExtentManager.getInstance();
     }
 
@@ -328,12 +329,17 @@ public class CommonAPI {
 
         File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
        try {
-            FileUtils.copyFile(file, new File(System.getProperty("C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\HBO\\screenshots\\") +screenshotName+" "+df.format(date)+".png"));
+           FileUtils.copyFile(file, new File(System.getProperty("user.dir")+ "C:\\Users\\ahmed\\Desktop\\The-A-Team\\ebay\\screenshots"+screenshotName+" "+df.format(date)+".png"));
             System.out.println("Screenshot captured");
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot "+e.getMessage());;
         }
         driver.quit();
+    }
+    //Taking Screen shots
+    public void takeScreenShot()throws IOException {
+        File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(file,new File("screenShots.png"));
     }
 
     /*public void waitToBeVisible(WebElement element){

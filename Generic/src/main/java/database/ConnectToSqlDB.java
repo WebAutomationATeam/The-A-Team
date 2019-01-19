@@ -380,11 +380,10 @@ public class ConnectToSqlDB {
         return list;
     }
 
-    public static void main(String[] args)throws IOException, SQLException, ClassNotFoundException, Exception {
+   /* public static void main(String[] args)throws IOException, SQLException, ClassNotFoundException, Exception {
 
         List<User> list = readUserProfileFromSqlTable();
         for(User user:list){
             System.out.println(user.getItems());
-        }
+        }*/
     }
-}
