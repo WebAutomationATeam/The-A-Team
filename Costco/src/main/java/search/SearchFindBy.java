@@ -5,7 +5,6 @@ import base.CommonAPI;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import searchDB.XlsxDataReader;
 
 import java.util.ArrayList;
@@ -14,7 +13,7 @@ import java.util.List;
 public class SearchFindBy extends CommonAPI {
 
     //SearchButton
-    @FindBy(how = How.XPATH, using = "//input[@id='search-field']")
+    @FindBy(xpath = "//input[@id='search-field']")
     public WebElement searchButton;
     public WebElement getSearchButton() {
         return searchButton;
@@ -26,7 +25,7 @@ public class SearchFindBy extends CommonAPI {
     }
 
     //Costco All Button
-    @FindBy(how = How.XPATH, using = "//select[@id='search-dropdown-select']")
+    @FindBy(xpath = "//select[@id='search-dropdown-select']")
     public WebElement getCostcoAll;
     public WebElement getGetCostcoAll() {
         return getCostcoAll;
@@ -38,7 +37,7 @@ public class SearchFindBy extends CommonAPI {
     }
 
     //Signin
-    @FindBy(how = How.XPATH, using = "#header_sign_in")
+    @FindBy(xpath = "#header_sign_in")
     public WebElement signIn;
     public WebElement getSignIn() {
         return signIn;
