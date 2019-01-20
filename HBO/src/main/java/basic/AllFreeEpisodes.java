@@ -1,10 +1,8 @@
 package basic;
 
 import base.CommonAPI;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,85 +14,85 @@ public class AllFreeEpisodes extends CommonAPI {
     @FindBy(xpath = "/html/body/main/div[2]/div/div/div[1]/div[1]/div[1]/div[2]/h1/a")
     public WebElement sopranos;
 
-    @FindBy (css = "body > main > div.carouselband.basecomponent > div > div > div.components\\2f Modal--modalWrapper > section > div > div > div.modules\\2f VideoPlayerOverlay--modalPlayer > div > div > div > div.__player-placeholder-container.__player-placeholder-container--fadein > div.__player-placeholder-box > div > div.__player-placeholder-play-button")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement playSopranos;
 
     @FindBy (xpath = "/html/body/main/div[4]/div/div/div[1]/div[2]/div[2]/div/div[1]/div/a/img")
     public WebElement theIceBox;
 
-    @FindBy (xpath = "/html/body/main/div[4]/div/div/div[3]/section/div/div/div[2]/div/div/div/div[3]/div[2]/div/div[1]")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement playIceBox;
 
     @FindBy (xpath = "/html/body/main/div[4]/div/div/div[3]/section/div/div/div[2]/div/div/div/div[5]/div/div/div/form/input")
     public WebElement inputEmail;
 
-    @FindBy (xpath = "/html/body/main/div[4]/div/div/div[3]/section/div/div/div[2]/div/div/div/div[5]/div/div/div/form/div[1]/button")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement pressPlay;
 
     @FindBy (xpath = "/html/body/main/div[4]/div/div/div[1]/div[2]/div[1]/section/div/div/div/div[2]/div/a/img")
     public WebElement westWorld;
 
-    @FindBy (css = "body > main > div.carouselband.basecomponent > div > div > div.components\\2f Modal--modalWrapper > section > div > div > div.modules\\2f VideoPlayerOverlay--modalPlayer > div > div > div > div.__player-placeholder-container.__player-placeholder-container--fadein > div.__player-placeholder-box > div > div.__player-placeholder-play-button")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement playWestWorld;
 
     @FindBy (xpath = "/html/body/main/div[4]/div/div/div[1]/div[2]/div[2]/div/div[3]/div/a/img")
     public WebElement barry;
 
-    @FindBy (css = "body > main > div.carouselband.basecomponent > div > div > div.components\\2f Modal--modalWrapper > section > div > div > div.modules\\2f VideoPlayerOverlay--modalPlayer > div > div > div > div.__player-placeholder-container.__player-placeholder-container--fadein > div.__player-placeholder-box > div > div.__player-placeholder-play-button")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement playBarry;
 
     @FindBy (xpath = "/html/body/main/div[7]/div/div/div[1]/div[2]/div[2]/section/div/div/div/div[1]/div/a/img")
     public WebElement sally4Ever;
 
-    @FindBy (css = "body > main > div.carouselband.basecomponent > div > div > div.components\\2f Modal--modalWrapper > section > div > div > div.modules\\2f VideoPlayerOverlay--modalPlayer > div > div > div > div.__player-placeholder-container.__player-placeholder-container--fadein > div.__player-placeholder-box > div > div.__player-placeholder-play-button")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement playSally4Ever;
 
     @FindBy (xpath = "/html/body/main/div[7]/div/div/div[1]/div[2]/div[1]/section/div/div/div/div[2]/div/a/img")
     public WebElement podSaveAmerica;
 
-    @FindBy (css = "body > main > div.carouselband.basecomponent > div > div > div.components\\2f Modal--modalWrapper > section > div > div > div.modules\\2f VideoPlayerOverlay--modalPlayer > div > div > div > div.__player-placeholder-container.__player-placeholder-container--fadein > div.__player-placeholder-box > div > div.__player-placeholder-play-button")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement playPodSaveAmerica;
 
     @FindBy (xpath = "/html/body/main/div[7]/div/div/div[1]/div[2]/div[1]/section/div/div/div/div[3]/div/a/img")
     public WebElement sharpObjects;
 
-    @FindBy (css = "body > main > div.carouselband.basecomponent > div > div > div.components\\2f Modal--modalWrapper > section > div > div > div.modules\\2f VideoPlayerOverlay--modalPlayer > div > div > div > div.__player-placeholder-container.__player-placeholder-container--fadein > div.__player-placeholder-box > div > div.__player-placeholder-play-button")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement playSharpObjects;
 
     @FindBy (xpath = "/html/body/main/div[7]/div/div/div[1]/div[2]/div[1]/section/div/div/div/div[4]/div/a/img")
     public WebElement animals;
 
-    @FindBy (css = "body > main > div.carouselband.basecomponent > div > div > div.components\\2f Modal--modalWrapper > section > div > div > div.modules\\2f VideoPlayerOverlay--modalPlayer > div > div > div > div.__player-placeholder-container.__player-placeholder-container--fadein > div.__player-placeholder-box > div > div.__player-placeholder-play-button")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement playAnimals;
 
     @FindBy (xpath = "/html/body/main/div[7]/div/div/div[1]/div[2]/div[1]/section/div/div/div/div[5]/div/a/img")
     public WebElement srAvila;
 
-    @FindBy (css = "body > main > div.carouselband.basecomponent > div > div > div.components\\2f Modal--modalWrapper > section > div > div > div.modules\\2f VideoPlayerOverlay--modalPlayer > div > div > div > div.__player-placeholder-container.__player-placeholder-container--fadein > div.__player-placeholder-box > div > div.__player-placeholder-play-button")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement playSrAvila;
 
     @FindBy (xpath = "/html/body/main/div[7]/div/div/div[1]/div[2]/div[1]/section/div/div/div/div[6]/div/a/img")
     public WebElement veep;
 
-    @FindBy (css="body > main > div.carouselband.basecomponent > div > div > div.components\\2f Modal--modalWrapper > section > div > div > div.modules\\2f VideoPlayerOverlay--modalPlayer > div > div > div > div.__player-placeholder-container.__player-placeholder-container--fadein > div.__player-placeholder-box > div > div.__player-placeholder-play-button")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement playVeep;
 
     @FindBy (xpath = "/html/body/main/div[7]/div/div/div[1]/div[2]/div[1]/section/div/div/div/div[7]/div/a/img")
     public WebElement hereAndNow;
 
-    @FindBy (css = "body > main > div.carouselband.basecomponent > div > div > div.components\\2f Modal--modalWrapper > section > div > div > div.modules\\2f VideoPlayerOverlay--modalPlayer > div > div > div > div.__player-placeholder-container.__player-placeholder-container--fadein > div.__player-placeholder-box > div > div.__player-placeholder-play-button")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement playHereAndNow;
 
     @FindBy (xpath = "/html/body/main/div[7]/div/div/div[1]/div[2]/div[1]/section/div/div/div/div[8]/div/a/img")
     public WebElement theNightOf;
 
-    @FindBy (css = "body > main > div.carouselband.basecomponent > div > div > div.components\\2f Modal--modalWrapper > section > div > div > div.modules\\2f VideoPlayerOverlay--modalPlayer > div > div > div > div.__player-placeholder-container.__player-placeholder-container--fadein > div.__player-placeholder-box > div > div.__player-placeholder-play-button")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement playTheNightOf;
 
     @FindBy (xpath = "/html/body/main/div[7]/div/div/div[1]/div[2]/div[1]/section/div/div/div/div[9]/div/a/img")
     public WebElement room104;
 
-    @FindBy (css = "body > main > div.carouselband.basecomponent > div > div > div.components\\2f Modal--modalWrapper > section > div > div > div.modules\\2f VideoPlayerOverlay--modalPlayer > div > div > div > div.__player-placeholder-container.__player-placeholder-container--fadein > div.__player-placeholder-box > div > div.__player-placeholder-play-button")
+    @FindBy (xpath = "//div[@class='__player-placeholder-play-button']")
     public WebElement playRoom104;
 
     public WebElement getFreeEpisodes() {
@@ -213,7 +211,6 @@ public class AllFreeEpisodes extends CommonAPI {
         playRoom104.click();
         return playRoom104;
     }
-
     public List list(){
         List<WebElement> webElements = new ArrayList<>();
         webElements.add(sopranos);
@@ -229,6 +226,7 @@ public class AllFreeEpisodes extends CommonAPI {
         webElements.add(hereAndNow);
         webElements.add(theNightOf);
         webElements.add(room104);
+
         List<String > text = new ArrayList<>();
         for(int i = 0; i<webElements.size();i++){
             text.add(webElements.get(i).getText());
@@ -253,4 +251,5 @@ public class AllFreeEpisodes extends CommonAPI {
         expectedShowsName.add("Room 104");
         return expectedShowsName;
     }
+
 }
