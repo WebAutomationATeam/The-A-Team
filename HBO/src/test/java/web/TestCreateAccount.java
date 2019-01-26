@@ -19,26 +19,20 @@ public class TestCreateAccount extends CreateAccount {
     public void test()throws Exception{
         ca.clickGetHBO();
         ca.getStartYourFreeTrial();
-<<<<<<< HEAD
 
         String parent = driver.getWindowHandle();
         Set<String> s1 = driver.getWindowHandles();
         Iterator<String> I1 = s1.iterator();
 
-=======
 
-        String parent = driver.getWindowHandle();
-        Set<String> s1 = driver.getWindowHandles();
-        Iterator<String> I1 = s1.iterator();
 
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
         while (I1.hasNext()) {
             String child_window = I1.next();
             if (!parent.equals(child_window)) {
                 driver.switchTo().window(child_window);
                 Thread.sleep(3000);
                 ca.getEmail();
-<<<<<<< HEAD
+
                 //email.getText();
                 ca.getPassWord();
                 //passWord.getText();
@@ -48,20 +42,17 @@ public class TestCreateAccount extends CreateAccount {
                 //lastName.getText();
                 ca.getZipCode();
                 //zipCode.getText();
-=======
+
                 ca.getPassWord();
                 ca.getFirstName();
                 ca.getLastName();
                 ca.getZipCode();
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
+
                 ca.getAgreeToTerms();
                 Thread.sleep(3000);
                 ca.getClickOnCreateAccount();
             }
-<<<<<<< HEAD
 
-=======
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
         }
     }
     @Test
@@ -79,10 +70,7 @@ public class TestCreateAccount extends CreateAccount {
                 driver.switchTo().window(child_window);
                 Thread.sleep(3000);
                 ca.invalidEmail();
-<<<<<<< HEAD
-                //email.getText();
-=======
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
+
                 ca.getPassWord();
                 ca.getFirstName();
                 ca.getLastName();
@@ -108,7 +96,7 @@ public class TestCreateAccount extends CreateAccount {
                 driver.switchTo().window(child_window);
                 Thread.sleep(3000);
                 ca.getEmail();
-<<<<<<< HEAD
+
                 //email.getText();
                 ca.invalidPassword();
                 //passWord.getText();
@@ -118,12 +106,11 @@ public class TestCreateAccount extends CreateAccount {
                 //lastName.getText();
                 ca.getZipCode();
                 //zipCode.getText();
-=======
                 ca.invalidPassword();
                 ca.getFirstName();
                 ca.getLastName();
                 ca.getZipCode();
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
+
                 ca.getAgreeToTerms();
                 Thread.sleep(3000);
                 ca.getClickOnCreateAccount();
@@ -145,7 +132,7 @@ public class TestCreateAccount extends CreateAccount {
                 driver.switchTo().window(child_window);
                 Thread.sleep(3000);
                 ca.getEmail();
-<<<<<<< HEAD
+
                 //email.getText();
                 ca.getPassWord();
                 //passWord.getText();
@@ -155,12 +142,12 @@ public class TestCreateAccount extends CreateAccount {
                 //lastName.getText();
                 ca.getZipCode();
                 //zipCode.getText();
-=======
+
                 ca.getPassWord();
                 ca.emptyFirstName();
                 ca.getLastName();
                 ca.getZipCode();
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
+
                 ca.getAgreeToTerms();
                 Thread.sleep(3000);
                 ca.getClickOnCreateAccount();
@@ -182,7 +169,7 @@ public class TestCreateAccount extends CreateAccount {
                 driver.switchTo().window(child_window);
                 Thread.sleep(3000);
                 ca.getEmail();
-<<<<<<< HEAD
+
                 //email.getText();
                 ca.getPassWord();
                 //passWord.getText();
@@ -192,12 +179,12 @@ public class TestCreateAccount extends CreateAccount {
                 //lastName.getText();
                 ca.getZipCode();
                 //zipCode.getText();
-=======
+
                 ca.getPassWord();
                 ca.getFirstName();
                 ca.emptyLastName();
                 ca.getZipCode();
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
+
                 ca.getAgreeToTerms();
                 Thread.sleep(3000);
                 ca.getClickOnCreateAccount();

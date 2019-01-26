@@ -147,11 +147,8 @@ public void clickOnLogo () {
         return list;
     }
 
-<<<<<<< HEAD
    XlsxDataReader xlData = new XlsxDataReader("C:\\Users\\Rob Dos\\Documents\\JAVA\\HomePageHBO.xlsx");
-=======
-   XlsxDataReader xlData = new XlsxDataReader("C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\HBO\\src\\test\\HomePageHBO.xlsx");
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
+
     public List expectedWebElement(){
         int rowcount = xlData.getRowCount("Sheet1");
         List<String> expect = new ArrayList<>();

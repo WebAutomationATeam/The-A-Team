@@ -1,4 +1,5 @@
 package database;
+
 public class User {
     String items;
     public User(){}

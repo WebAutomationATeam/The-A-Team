@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
 <suite name="CitiBank Automation Script " parallel="false">
-
     <!--<parameter name="useCloudEnv" value="false"/>-->
     <!--<parameter name="cloudEnvName" value="browserstack"/>-->
     <!--<parameter name="os" value="OS X"/>-->
     <!--<parameter name="os_version" value="Sierra"/>-->
     <!--<parameter name="browserName" value="${browserName}"/>-->
     <!--<parameter name="browserVersion" value="53.0"/>-->
-
     <parameter name="url" value="https://www.citi.com"/>
     <test name = "CitiBank Home">
         <classes>
             <class name="TestBankingOpt"/>
-            <class name="TestCitiGoldOpt"/>
-            <class name="TestCreditCardOpt"/>
-            <class name="TestInvestingOpt"/>
-            <class name="TestLendingOpt"/>
-            <class name="TestMainSearchOpt"/>
+            <!--<class name="TestATMBranchOpt"/>-->
+            <!--<class name="TestCitiGoldOpt"/>-->
+            <!--<class name="TestCreditCardOpt"/>-->
+            <!--<class name="TestInvestingOpt"/>-->
+            <!--<class name="TestLendingOpt"/>-->
+            <!--<class name="TestMainSearchOpt"/>-->
+            <!--<class name="testDataBases.TestGoogleSheet"/>-->
+            <!--<class name="testDataBases.TestDataBase"/>-->
+            <!--<class name="testDataBases.TestXlsxReader"/>-->
+            <!--<class name="testFrontPage.TestTopHeader"/>-->
+            <!--<class name="testFrontPage.TestBankingChannels"/>-->
+            <!--<class name="testFrontPage.TestInformations"/>-->
+            <!--<class name="testFrontPage.TestFooter"/>-->
+            <!--<class name="testFrontPage.TestSignOn"/>-->
+
         </classes>
     </test>
 

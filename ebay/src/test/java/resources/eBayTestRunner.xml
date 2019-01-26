@@ -22,12 +22,8 @@
             <class name="EBayFashionPage.TestSalesEvents"/>
             <class name="EBayFashionPage.TestSellOnEbay"/>
             <class name="EBayFashionPage.TestTopBrands"/>
-<<<<<<< HEAD
-=======
             <class name="EBayElectronicsPage.TestShopByCategory"/>
             <class name="EBayElectronicsPage.TestElectronicsSalesEvents"/>
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
-
         </classes>
     </test>
 

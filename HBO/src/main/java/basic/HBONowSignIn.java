@@ -1,15 +1,13 @@
 package basic;
 
 import base.CommonAPI;
-<<<<<<< HEAD
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-=======
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
 
 public class HBONowSignIn extends CommonAPI {
 
@@ -35,24 +33,14 @@ public class HBONowSignIn extends CommonAPI {
         signInTab.click();
         return signInTab;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
     public WebElement getHboNowLogo() {
         hboNowLogo.click();
         return hboNowLogo;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
     public WebElement getHboNowSignInTab() {
         hboNowSignInTab.click();
         return hboNowSignInTab;
     }
-<<<<<<< HEAD
-
     public WebElement getEnterEmailAddress() {
         enterEmailAddress.sendKeys("john@gmail.com");
         return enterEmailAddress;
@@ -62,8 +50,6 @@ public class HBONowSignIn extends CommonAPI {
         enterPassword.sendKeys("abcd1234");
         return enterPassword;
     }
-
-=======
     public WebElement getEnterEmailAddress(String email) {
         enterEmailAddress.sendKeys("email",email);
         return enterEmailAddress;
@@ -72,19 +58,13 @@ public class HBONowSignIn extends CommonAPI {
         enterPassword.sendKeys("password",password);
         return enterPassword;
     }
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
     public WebElement getClickOnSignIn() {
         clickOnSignIn.click();
         return clickOnSignIn;
     }
-<<<<<<< HEAD
-
-
-=======
     public void errorMessage() {
         String actualText = driver.findElement(By.xpath("//*[@id=\"Viewport\"]/div[1]/div[5]/div/div[1]/div[2]/span/span")).getText();
         String expectedText = "The email address or password is incorrect. Please try again.";
         Assert.assertEquals(actualText,expectedText);
     }
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
 }

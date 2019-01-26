@@ -12,7 +12,7 @@ public class DatabaseOperation extends ConnectToSqlDB {
     public static void insertDataIntoDB(){
         List<String> list = getItemValue();
         connectToSqlDB = new ConnectToSqlDB();
-        //connectToSqlDB.insertStringDataFromArrayListToSqlTable(list,"ItemList","items");
+        connectToSqlDB.insertStringDataFromArrayListToSqlTable(list,"ItemList","items");
     }
     public static List<String> getItemValue(){
         List<String> itemsList = new ArrayList<String>();
@@ -26,12 +26,17 @@ public class DatabaseOperation extends ConnectToSqlDB {
         list = connectToSqlDB.readDataBase("ItemList", "items");
         return list;
     }
-    public static void main(String[] args) throws Exception {
-        //insertDataIntoDB();
-        ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+
+    public static void main(String[] args) {
         insertDataIntoDB();
-        List<String> list = connectToSqlDB.readDataBase("ItemList","items");
-        for(String st:list){
+        ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+        List<String> list = null;
+        try {
+            list = connectToSqlDB.readDataBase("itemList", "items");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        for (String st : list) {
             System.out.println(st);
         }
     }

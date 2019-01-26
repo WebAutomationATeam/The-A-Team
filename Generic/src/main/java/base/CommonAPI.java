@@ -50,15 +50,14 @@ public class CommonAPI {
     public void setUp (@Optional ("useCloudEnv")boolean useCloudEnv, @Optional ("cloudEnvName") String cloudEnvName,@Optional("url") String url, @Optional ("browser") String browser, @Optional ("browservVersion") String browserVersion,
                        @Optional ("OS") String OS, @Optional ("os_version") String os_version) throws IOException {
         //change the path of chrome driver for your own module
-<<<<<<< HEAD
-        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
-<<<<<<< HEAD
+
+        System.setProperty("webdriver.chrome.driver","/Users/apple/IdeaProjects/The-A-Team/driver/chromedriver");
+
         //System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
         getLocalDriver(OS, browser,browserVersion);
-=======
-=======
-        System.setProperty("webdriver.chrome.driver","/Users/animesh/Desktop/The-A-Team/driver/chromedriver");
->>>>>>> a529c9827d7d306fe37fac262211d47e2ae6a828
+
+//        System.setProperty("webdriver.chrome.driver","/Users/animesh/Desktop/The-A-Team/driver/chromedriver");
+
 //        System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
         if(useCloudEnv==true){
             if(cloudEnvName.equalsIgnoreCase("browserstack")) {
@@ -69,7 +68,7 @@ public class CommonAPI {
         }else{
             getLocalDriver(OS, browser,browserVersion);
         }
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
+
         driver = new ChromeDriver();
         logger.setLevel(Level.INFO);
         logger.info("Test is running on local env");
@@ -244,11 +243,7 @@ public class CommonAPI {
             action.moveToElement(element).perform();
         }
     }
-
     //public static ExtentReports extent;
-
-
-
     public void mouseHoverByXpath(String locator) {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
@@ -300,19 +295,14 @@ public class CommonAPI {
        if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
        }
-<<<<<<< HEAD
+
     }
+
     @AfterSuite
     public void generateReport() {
         extent.close();
     }
-=======
-    }
-    @AfterSuite
-    public void generateReport() {
-        extent.close();
-    }
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
+
     private Date getTime(long millis) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);
@@ -324,28 +314,27 @@ public class CommonAPI {
         Date date = new Date();
         df.format(date);
 
-<<<<<<< HEAD
-        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
         /*try {
             FileUtils.copyFile(file, new File("C:\\Users\\Rob Dos\\Desktop\\Screenshots1\\" +screenshotName+" "+df.format(date)+".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }*/
-=======
+
         File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
+
        try {
             FileUtils.copyFile(file, new File(System.getProperty("C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\HBO\\screenshots\\") +screenshotName+" "+df.format(date)+".png"));
             System.out.println("Screenshot captured");
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot "+e.getMessage());;
         }
-<<<<<<< HEAD
+
         driver.quit();
 
-=======
+
         //driver.quit();
->>>>>>> 01e18172936f8ceefb041d3702bec46faf7e9d33
+
     }
 
     public void waitToBeVisible(WebElement element){
@@ -392,8 +381,8 @@ public class CommonAPI {
         }
         return text;
     }
-    /*@AfterMethod
+    @AfterMethod
     public void afterMethod() {
         driver.quit();
-    }*/
+    }
 }
