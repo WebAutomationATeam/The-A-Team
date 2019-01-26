@@ -11,7 +11,7 @@ public class HBONowSignIn extends CommonAPI {
     @FindBy (xpath = "/html/body/main/div[1]/div/div/header/div[1]/div/div[3]/ul/li[3]/div/span")
     public WebElement signInTab;
 
-    @FindBy (xpath = "/html/body/main/div[1]/div/div/header/div[1]/div/div[3]/ul/li[3]/div/div/div[4]/div/div[1]/div[1]/div/a/span")
+    @FindBy (xpath = "//span[@class='components/BasicButton--children']")
     public WebElement hboNowLogo;
 
     @FindBy (xpath = "//*[@id=\"Viewport\"]/div[1]/div[4]/div/div[7]/div/div[2]")

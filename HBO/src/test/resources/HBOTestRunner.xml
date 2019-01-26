@@ -5,19 +5,25 @@
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="saucelabs"/>
+    <parameter name="key" value="118d3467-a8af-4a02-85f6-e46667550259"/>
+    <parameter name="userName" value="rdas91"/>
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="Windows 10"/>
-    <parameter name="browser" value="Google Chrome"/>
+    <parameter name="browser" value="chrome"/>
     <parameter name="browserVersion" value="71.0.3578.98"/>
     <parameter name="url" value="https://www.hbo.com/"/>
 
     <test name = "Test">
         <classes>
-            <!--<class name="web.TestHome"/>
-            <class name="web.TestCreateAccount"/>
-            <class name="web.TestFreeEpisodes"/>
-            <class name="web.TestHBONowSignIn"/>-->
-            <class name="TestSearch.TestDB"/>
+            <!--<class name="web.TestHome"/>-->
+            <!--<class name="web.TestCreateAccount"/>-->
+            <!--<class name="web.TestFreeEpisodes"/>-->
+            <!--<class name="web.TestHBONowSignIn"/>-->
+            <!--<class name="TestSearch.TestDB"/>-->
+            <!--<class name="web.TestReadXlsx"/>-->
+            <!--<class name="TestSearch.TestGoogleSheet"/>-->
+            <!--<class name="web.TestSports"/>-->
+            <class name="TestSearch.KeywordDrivenTest"/>
         </classes>
     </test>
 

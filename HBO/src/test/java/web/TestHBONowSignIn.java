@@ -15,7 +15,7 @@ public class TestHBONowSignIn extends HBONowSignIn {
     @BeforeMethod
     public void initializeElement(){ hbo= PageFactory.initElements(driver, HBONowSignIn.class); }
 
-    @DataProvider(name="DP")
+   @DataProvider(name="DP")
     public Object[][] getTestData() throws Exception{
         File filepath = new File(System.getProperty("C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\HBO\\src\\test\\HomePageHBO.xlsx"));
         ex = new XlsxDataReader("");

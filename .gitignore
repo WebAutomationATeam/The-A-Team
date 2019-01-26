@@ -1,9 +1,8 @@
 .idea
 .iml
 Target/
-*.credentials
 *screenshots
 *.DS_Store
 git
 
-.gitignore
+

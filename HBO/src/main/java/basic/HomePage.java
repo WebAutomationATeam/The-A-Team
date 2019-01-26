@@ -13,7 +13,7 @@ import java.util.List;
 
 public class HomePage extends CommonAPI {
 
-    public static void sendKeys(WebElement webElement, String elementName, String keys){
+    /*public static void sendKeys(WebElement webElement, String elementName, String keys){
         webElement.clear();
         TestLogger.log("Send keys to "+ elementName);
         webElement.sendKeys(keys);
@@ -24,34 +24,35 @@ public class HomePage extends CommonAPI {
         String actualText = webElement.getText();
         TestLogger.log("Actual text : " + webElementName);
         return actualText;
-    }
+    }*/
 
-@FindBy (how =How.XPATH, using = "/html/body/main/div[1]/div/div/header/div[1]/div/div[2]/div/div/div")
-public  WebElement searchButton;
-public  WebElement getSearchButton() {return searchButton;}
-public void clickOnSearchButton () {
+    @FindBy (how =How.XPATH, using = "/html/body/main/div[1]/div/div/header/div[1]/div/div[2]/div/div/div")
+    public  WebElement searchButton;
+    public  WebElement getSearchButton() {return searchButton;}
+    public void clickOnSearchButton () {
     TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
     getSearchButton().click();}
 
-@FindBy (how = How.XPATH, using = "/html/body/main/div[1]/div/div/header/div[1]/div/div[3]/div/a/span")
-public  WebElement getHBO;
-public  WebElement getGetHBO() {return getHBO;}
-public void clickonGetHBO () {
+    @FindBy (how = How.XPATH, using = "/html/body/main/div[1]/div/div/header/div[1]/div/div[3]/div/a/span")
+    public  WebElement getHBO;
+    public  WebElement getGetHBO() {return getHBO;}
+    public void clickonGetHBO () {
     TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
    getGetHBO().click(); }
 
-@FindBy (how = How.XPATH, using = "//div[@class='bands/MainNavigation--stickyBar']//span[@class='components/Tooltip--label']")
-public WebElement signIn;
-public WebElement getSignIn() {return signIn;}
-public void clickOnSignIn() {
+    @FindBy (how = How.XPATH, using = "//div[@class='bands/MainNavigation--stickyBar']//span[@class='components/Tooltip--label']")
+    public WebElement signIn;
+    public WebElement getSignIn() {return signIn;}
+    public void clickOnSignIn() {
     TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
     getSignIn();}
 
-@FindBy (css="body > main > div.navigationband.basecomponent > div > div > header > div.components\\2f Band--maxWidth > div > div.bands\\2f MainNavigation--leftSlot > span > a > svg > g > g > path")
-public WebElement HBOLogo;
-public void clickOnLogo () {
+    @FindBy (xpath = "/html/body/main/div[1]/div/div/header/div[1]/div/div[1]/span/a/svg/g/g/path")
+    public WebElement HBOLogo;
+    public void clickOnLogo () {
     TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
     HBOLogo.click(); }
+
     @FindBy(xpath = "//div[contains(@class,'bands/MainNavigation--searchIcon')]")
     public WebElement searchlink;
     public void clicksearchlink(){
@@ -86,36 +87,36 @@ public void clickOnLogo () {
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         searchFreeEpisodes.click();}
 
-    @FindBy (css = "body > main > div.producteducationband.basecomponent > div > div > div.components\\2f Band--maxWidth > div > div.bands\\2f ProductEducation--pane1 > div.bands\\2f ProductEducation--ctaContainer > div > a > span")
-    public static WebElement HBOToday;
+    @FindBy (className = "components/BasicButton--children")
+    public WebElement HBOToday;
     public void clickHBOToday(){
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HBOToday.click();}
 
-    @FindBy (css = "body > main > div:nth-child(4) > div > div > div.components\\2f Band--maxWidth > div.modules\\2f cards\\2f BasicCard--containers > div.modules\\2f cards\\2f BasicCard--tabletContainer > section > div > button.components\\2f CarouselButton--container.components\\2f CarouselButton--next > div > span > span > svg")
-    public static WebElement nextSlide;
+    @FindBy (xpath = "/html/body/main/div[6]/div/div/div[1]/div[2]/div/button[2]/div/span/span/svg/g/g/g/polygon")
+    public WebElement nextSlide;
     public void clickNextSlide(){nextSlide.click();}
 
-    @FindBy (css = "body > main > div.footerband.basecomponent > div > div > footer > div.modules\\2f FollowHbo--darkGray > div > div > ul > li:nth-child(1) > a")
-    public static WebElement fbPage;
+    @FindBy (xpath = "//a[@title='facebook']")
+    public WebElement fbPage;
     public void getFbPage(){
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         fbPage.click();}
 
     @FindBy (xpath = "//a[@title='instagram']")
-    public static WebElement instaPage;
+    public WebElement instaPage;
     public void getInstaPage(){
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         instaPage.click();}
 
     @FindBy (xpath = "//a[@title='twitter']")
-    public static WebElement twitterLogo;
+    public WebElement twitterLogo;
     public void getTwitterPage(){
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         twitterLogo.click();}
 
     @FindBy (xpath = "//a[@title='youtube']")
-    public static WebElement youtubeLogo;
+    public WebElement youtubeLogo;
     public void navigateToYoutubePage(){
         TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         youtubeLogo.click();}
@@ -150,8 +151,8 @@ public void clickOnLogo () {
     public List expectedWebElement(){
         int rowcount = xlData.getRowCount("Sheet1");
         List<String> expect = new ArrayList<>();
-        for(int i = 2; i <= rowcount; i++){
-            expect.add(xlData.getCellData("Sheet1","WebElementName",i));
+        for(int i = 1; i <= rowcount; i++){
+            expect.add(xlData.getCellData("Sheet1","searchButton",i));
         }
         System.out.println(expect);
         return expect;

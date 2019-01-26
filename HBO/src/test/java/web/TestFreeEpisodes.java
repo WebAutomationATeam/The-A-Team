@@ -14,151 +14,98 @@ public class TestFreeEpisodes extends AllFreeEpisodes {
     @Test
     public void navigateToFreeEpisodes(){free.getFreeEpisodes();}
     @Test
-    public void watchSoprano(){
+    public void watchSoprano() throws InterruptedException {
         free.getFreeEpisodes();
         free.getWatchSopranos();
-        try {
-            sleepFor(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.wait(3000);
         free.getPlaySopranos();
         free.getInputEmail();
         free.getPressPlay();
     }
     @Test
-    public void watchTheIceBox(){
+    public void watchTheIceBox() throws InterruptedException {
         free.getFreeEpisodes();
-        //js.executeScript("arguments[0].scrollIntoView();", theIceBox);
         free.getTheIceBox();
-        try {
-            sleepFor(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.wait(3000);
         free.getPlayIceBox();
         free.getInputEmail();
         free.getPressPlay();
     }
     @Test
-    public void watchWestWorld(){
+    public void watchWestWorld() throws InterruptedException {
         free.getFreeEpisodes();
         free.getWestWorld();
-        try {
-            sleepFor(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.wait(3000);
         free.getPlayWestWorld();
     }
     @Test
-    public void watchBarry(){
+    public void watchBarry() throws InterruptedException {
         free.getFreeEpisodes();
         free.getBarry();
-        try {
-            sleepFor(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.wait(3000);
         free.getPlayBarry();
     }
     @Test
-    public void watchSally4Ever(){
+    public void watchSally4Ever() throws InterruptedException {
         free.getFreeEpisodes();
         free.getSally4Ever();
-        try {
-            sleepFor(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.wait(3000);
         free.getPlaySally4Ever();
     }
     @Test
-    public void watchPodSaveAmerica(){
+    public void watchPodSaveAmerica() throws InterruptedException {
         free.getFreeEpisodes();
         free.getPodSaveAmerica();
-        try {
-            sleepFor(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.wait(3000);
         free.getPlayPodSaveAmerica();
     }
     @Test
-    public void watchSharpObjects(){
+    public void watchSharpObjects() throws InterruptedException {
         free.getFreeEpisodes();
         free.getSharpObjects();
-        try {
-            sleepFor(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.wait(3000);
         free.getPlaySharpObjects();
     }
     @Test
-    public void watchAnimals(){
+    public void watchAnimals() throws InterruptedException {
         free.getFreeEpisodes();
         free.getAnimals();
-        try {
-            sleepFor(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.wait(3000);
         free.getPlayAnimals();
     }
     @Test
-    public void watchSrAvila(){
+    public void watchSrAvila() throws InterruptedException {
         free.getFreeEpisodes();
         free.getSrAvila();
-        try {
-            sleepFor(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.wait(3000);
         free.getPlaySrAvila();
     }
     @Test
-    public void watchVeep(){
+    public void watchVeep() throws InterruptedException {
         free.getFreeEpisodes();
         free.getVeep();
-        try {
-            sleepFor(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.wait(3000);
         free.getPlayVeep();
     }
     @Test
-    public void watchHereAndNow(){
+    public void watchHereAndNow() throws InterruptedException {
         free.getFreeEpisodes();
         free.getHereAndNow();
-        try {
-            sleepFor(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.wait(3000);
         free.getPlayHereAndNow();
     }
     @Test
-    public void watchTheNightOf(){
+    public void watchTheNightOf() throws InterruptedException {
         free.getFreeEpisodes();
         free.getTheNightOf();
-        try {
-            sleepFor(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.wait(3000);
         free.getPlayTheNightOf();
     }
     @Test
-    public void watchRoom104(){
+    public void watchRoom104() throws InterruptedException {
         free.getFreeEpisodes();
         free.getRoom104();
-        try {
-            sleepFor(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.wait(3000);
         free.getPlayRoom104();
     }
     @Test

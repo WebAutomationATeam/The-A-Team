@@ -13,7 +13,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
@@ -33,8 +32,8 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
-    public String saucelabs_username = "";
-    public String saucelabs_accesskey = "";
+    public String saucelabs_username = "rdas91";
+    public String saucelabs_accesskey = "118d3467-a8af-4a02-85f6-e46667550259";
     public String browserstack_username= "";
     public String browserstack_accesskey = "";
     public static WebDriver driver=null;
@@ -46,12 +45,12 @@ public class CommonAPI {
 
     @Parameters({"useCloudEnv","cloudEnvName","url", "OS", "os_version","browser", "browserversion"})
     @BeforeMethod
-    public void setUp (@Optional ("useCloudEnv")boolean useCloudEnv, @Optional ("cloudEnvName") String cloudEnvName,@Optional("url") String url, @Optional ("browser") String browser, @Optional ("browservVersion") String browserVersion,
+    public void setUp (@Optional ("useCloudEnv")boolean useCloudEnv, @Optional ("cloudEnvName") String cloudEnvName,@Optional("url") String url, @Optional ("key") String key, @Optional ("browser") String browser, @Optional ("browservVersion") String browserVersion,
                        @Optional ("OS") String OS, @Optional ("os_version") String os_version) throws IOException {
-        //change the path of chrome driver for your own module
-        //System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
         if(useCloudEnv==true){
+            logger.setLevel(Level.INFO);
             if(cloudEnvName.equalsIgnoreCase("browserstack")) {
                 getCloudDriver(cloudEnvName,browserstack_username,browserstack_accesskey,OS,os_version, browser, browserVersion);
             }else if (cloudEnvName.equalsIgnoreCase("saucelabs")){
@@ -76,20 +75,13 @@ public class CommonAPI {
         driver.get(URL);
     }
 
-    public WebDriver getLocalDriver(@Optional String OS, String browser, String browserVersion){
+    public WebDriver getLocalDriver(String OS, String browser, String browserVersion){
         if(browser.equalsIgnoreCase("chrome")){
             if(OS.equalsIgnoreCase("Mac")){
-
                 System.setProperty("webdriver.chrome.driver", "../The-A-Team/driver/chromedriver");
             }else if(OS.equalsIgnoreCase("Windows"))
             {
                 System.setProperty("webdriver.chrome.driver", "..\\The-A-Team\\driver\\chromedriver.exe");
-
-                System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-            }else if(OS.equalsIgnoreCase("Windows"))
-            {
-                System.setProperty("webdriver.chrome.driver", "..\\Generic\\driver\\chromedriver.exe");
-
             }
             driver = new ChromeDriver();}
         return driver;
@@ -308,9 +300,9 @@ public class CommonAPI {
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot "+e.getMessage());;
         }
-        //driver.quit();
+        driver.quit();
     }
-   /* public void waitToBeVisible(WebElement element){
+    /*public void waitToBeVisible(WebElement element){
         wait.until(ExpectedConditions.visibilityOf(element));
     }
     public void waitToBeVisible(String xpathLocator){
@@ -353,8 +345,8 @@ public class CommonAPI {
         }
         return text;
     }
-    /*@AfterMethod
+    @AfterMethod
     public void afterMethod() {
         driver.quit();
-    }*/
+    }
 }

@@ -9,10 +9,31 @@ import java.io.FileInputStream;
 import java.util.Calendar;
 
 public class XlsxDataReader {
+    private static XSSFSheet ExcelWSheet;
+    private static XSSFWorkbook ExcelWBook;
+    private static XSSFCell Cell;
 
-    protected XSSFSheet ExcelWSheet;
+    //This method is to set the File path and to open the Excel file
+    //Pass Excel Path and SheetName as Arguments to this method
+    public static void setExcelFile(String Path,String SheetName) throws Exception
+    {
+        FileInputStream ExcelFile = new FileInputStream(Path);
+        ExcelWBook = new XSSFWorkbook(ExcelFile);
+        ExcelWSheet = ExcelWBook.getSheet(SheetName);
+    }
+
+    //This method is to read the test data from the Excel cell
+    //In this we are passing parameters/arguments as Row Num and Col Num
+    public static String getCellData(int RowNum, int ColNum) throws Exception
+    {
+        Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
+        String CellData = Cell.getStringCellValue();
+        return CellData;
+    }
+
+   /* protected XSSFSheet ExcelWSheet;
     protected XSSFWorkbook ExcelWBook;
-    protected XSSFCell Cell;
+    protected XSSFCell Cell;*/
     protected XSSFRow Row;
 
     public void setExcelFile(String path) throws Exception {
@@ -124,6 +145,7 @@ public class XlsxDataReader {
                     cellText = cal.get(Calendar.DAY_OF_MONTH) + "/" +
                             cal.get(Calendar.MONTH) + 1 + "/" +
                             cellText;
+
                     //System.out.println(cellText);
                 }
                 return cellText;

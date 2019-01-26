@@ -26,7 +26,7 @@ public class CreateAccount extends HomePage {
     public WebElement clickOnCreateAccount;
 
     public void clickGetHBO() { getHBO.click();
-        TestLogger.log("GetHBO Opened");
+    TestLogger.log("GetHBO Opened");
     }
     public void getStartYourFreeTrial() { startYourFreeTrial.click();
     TestLogger.log("New Web Page Opened");}

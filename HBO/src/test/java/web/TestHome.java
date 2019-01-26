@@ -1,16 +1,16 @@
 package web;
 
+import base.CommonAPI;
 import basic.HomePage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
-public class TestHome extends HomePage {
+public class TestHome extends CommonAPI {
 
-    HomePage hp = null;
+    HomePage hp ;
     @BeforeMethod
     public void initializeElement () {
         hp=PageFactory.initElements(driver,HomePage.class);
@@ -24,27 +24,27 @@ public class TestHome extends HomePage {
     @Test
     public void clickLogo () {hp.clickOnLogo();}
     @Test
-    public void clickSearchlink(){searchlink.click();}
+    public void clickSearchlink(){hp.clicksearchlink();}
     @Test
-    public void searchItems(){sendInput();}
+    public void searchItems(){hp.sendInput();}
     @Test
-    public void clickSeries(){findSeries();}
+    public void clickSeries(){hp.findSeries();}
     @Test
-    public void clickMovie(){findMovies();}
+    public void clickMovie(){hp.findMovies();}
     @Test
-    public void clickFreeEpisodes(){getFreeEpisodes();}
+    public void clickFreeEpisodes(){hp.getFreeEpisodes();}
     @Test
-    public void clickGetItToday(){clickHBOToday();}
+    public void clickGetItToday(){hp.clickHBOToday();}
     @Test
-    public void goToNextSlide(){clickNextSlide();}
+    public void goToNextSlide(){hp.clickNextSlide();}
     @Test
-    public void testFbPage(){getFbPage();}
+    public void testFbPage(){hp.getFbPage();}
     @Test
-    public void checkInstaPage(){getInstaPage();}
+    public void checkInstaPage(){hp.getInstaPage();}
     @Test
-    public void viewTwitterPage(){getTwitterPage();}
+    public void viewTwitterPage(){hp.getTwitterPage();}
     @Test
-    public void viewYoutubePage(){navigateToYoutubePage();}
+    public void viewYoutubePage(){hp.navigateToYoutubePage();}
     @Test
     public void webElementName(){
         List actual = hp.webElementList();
