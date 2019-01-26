@@ -25,7 +25,6 @@ public class XlsxDataReader {
             throw (e);
         }
     }// end of setexcelfile
-
     public String[][] getExcelSheetData(String sheetname) throws Exception {
         String[][] data = null;
         String[][] mydata = null;
@@ -73,7 +72,6 @@ public class XlsxDataReader {
             e.printStackTrace();
         }
     }
-
     // returns the row count in a sheet
     public int getRowCount(String sheetName) {
         int index = workbook.getSheetIndex(sheetName);
@@ -85,7 +83,6 @@ public class XlsxDataReader {
             return number;
         }
     }
-
     // returns the data from a cell
     public String getCellData(String sheetName, String colName, int rowNum) {
         try {
@@ -129,7 +126,6 @@ public class XlsxDataReader {
                     cellText = cal.get(Calendar.DAY_OF_MONTH) + "/" +
                             cal.get(Calendar.MONTH) + 1 + "/" +
                             cellText;
-
                     //System.out.println(cellText);
                 }
                 return cellText;

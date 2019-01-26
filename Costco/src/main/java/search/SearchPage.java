@@ -28,3 +28,18 @@ public class SearchPage extends CommonAPI {
         navigateBack();
     }
 }
+//            switch (sActions) {
+//            case "input_Username":
+//                input_Username();
+//                break;
+//            case "input_Password":
+//                input_Password();
+//                break;
+//            case "click_Login":
+//                click_Login();
+//                break;
+//            default:
+//                throw new InvalidArgumentException("Invalid login");
+//        }
+//        System.out.println(sActions);
+//    }
