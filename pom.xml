@@ -14,6 +14,7 @@
         <module>HBO</module>
         <module>CitiBank</module>
         <module>ebay</module>
+        <module>RestAPI</module>
     </modules>
 
     <dependencyManagement>

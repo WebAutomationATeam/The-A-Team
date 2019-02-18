@@ -13,7 +13,6 @@
 
     <test name = "Costco Home">
         <classes>
-            <!--<class name="TestHome"/>-->
             <!--<class name="testCostcoSearching.TestFindBy"/>-->
             <!--<class name="testCostcoSearching.TestLogin"/>-->
             <!--<class name="testCostcoSearching.TestPage"/>-->
