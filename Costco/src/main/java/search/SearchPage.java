@@ -28,6 +28,20 @@ public class SearchPage extends CommonAPI {
         navigateBack();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //            switch (sActions) {
 //            case "input_Username":
 //                input_Username();
