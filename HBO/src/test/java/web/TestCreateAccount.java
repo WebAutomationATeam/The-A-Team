@@ -17,11 +17,9 @@ public class TestCreateAccount extends CreateAccount {
     public void test()throws Exception{
         ca.clickGetHBO();
         ca.getStartYourFreeTrial();
-
         String parent = driver.getWindowHandle();
         Set<String> s1 = driver.getWindowHandles();
         Iterator<String> I1 = s1.iterator();
-
         while (I1.hasNext()) {
             String child_window = I1.next();
             if (!parent.equals(child_window)) {
@@ -42,11 +40,9 @@ public class TestCreateAccount extends CreateAccount {
     public void test1()throws Exception{
         ca.clickGetHBO();
         ca.getStartYourFreeTrial();
-
         String parent = driver.getWindowHandle();
         Set<String> s1 = driver.getWindowHandles();
         Iterator<String> I1 = s1.iterator();
-
         while (I1.hasNext()) {
             String child_window = I1.next();
             if (!parent.equals(child_window)) {
@@ -67,11 +63,9 @@ public class TestCreateAccount extends CreateAccount {
     public void test2()throws Exception{
         ca.clickGetHBO();
         ca.getStartYourFreeTrial();
-
         String parent = driver.getWindowHandle();
         Set<String> s1 = driver.getWindowHandles();
         Iterator<String> I1 = s1.iterator();
-
         while (I1.hasNext()) {
             String child_window = I1.next();
             if (!parent.equals(child_window)) {
@@ -92,11 +86,9 @@ public class TestCreateAccount extends CreateAccount {
     public void test4()throws Exception{
         ca.clickGetHBO();
         ca.getStartYourFreeTrial();
-
         String parent = driver.getWindowHandle();
         Set<String> s1 = driver.getWindowHandles();
         Iterator<String> I1 = s1.iterator();
-
         while (I1.hasNext()) {
             String child_window = I1.next();
             if (!parent.equals(child_window)) {
@@ -117,11 +109,9 @@ public class TestCreateAccount extends CreateAccount {
     public void test5()throws Exception{
         ca.clickGetHBO();
         ca.getStartYourFreeTrial();
-
         String parent = driver.getWindowHandle();
         Set<String> s1 = driver.getWindowHandles();
         Iterator<String> I1 = s1.iterator();
-
         while (I1.hasNext()) {
             String child_window = I1.next();
             if (!parent.equals(child_window)) {

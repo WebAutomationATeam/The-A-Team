@@ -1,7 +1,4 @@
 package web;
-
-import base.CommonAPI;
-import basic.HomePage;
 import basic.ReadXlsx;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -10,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class TestReadXlsx extends CommonAPI {
+public class TestReadXlsx extends ReadXlsx {
 
     ReadXlsx read;
     @BeforeMethod

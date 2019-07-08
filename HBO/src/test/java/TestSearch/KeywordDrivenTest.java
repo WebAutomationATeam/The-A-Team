@@ -8,7 +8,6 @@ import search.Keyword;
 
 public class KeywordDrivenTest extends Keyword {
     Keyword keyword;
-
     @BeforeMethod
     public void intializeElements(){
         keyword = PageFactory.initElements(driver,Keyword.class);

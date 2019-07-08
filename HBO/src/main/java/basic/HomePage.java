@@ -7,24 +7,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class HomePage extends CommonAPI {
-
-    /*public static void sendKeys(WebElement webElement, String elementName, String keys){
-        webElement.clear();
-        TestLogger.log("Send keys to "+ elementName);
-        webElement.sendKeys(keys);
-        TestLogger.log("Keys sent to " + elementName);
-    }
-    public static String getText(WebElement webElement, String webElementName){
-        TestLogger.log("getting Text from " + webElementName);
-        String actualText = webElement.getText();
-        TestLogger.log("Actual text : " + webElementName);
-        return actualText;
-    }*/
 
     @FindBy (how =How.XPATH, using = "/html/body/main/div[1]/div/div/header/div[1]/div/div[2]/div/div/div")
     public  WebElement searchButton;

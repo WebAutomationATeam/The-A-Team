@@ -19,7 +19,5 @@ public class TestDB extends CommonAPI {
         List actual = databaseOperation.getUserDatafromDB();
         List expected = databaseOperation.getHeadersValue1();
         Assert.assertEquals(actual,expected);
-
     }
-
 }

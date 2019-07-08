@@ -1,5 +1,6 @@
 package basic;
 
+import Util.TestLogger;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -96,118 +97,147 @@ public class AllFreeEpisodes extends CommonAPI {
     public WebElement playRoom104;
 
     public WebElement getFreeEpisodes() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         freeEpisodes.click();
         return freeEpisodes;
     }
     public WebElement getWatchSopranos() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         sopranos.click();
         return sopranos;
     }
     public WebElement getPlaySopranos() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         playSopranos.click();
         return playSopranos;
     }
     public WebElement getTheIceBox() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         theIceBox.click();
         return theIceBox;
     }
     public WebElement getPlayIceBox() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         playIceBox.click();
         return playIceBox;
     }
     public WebElement getInputEmail(){
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         inputEmail.sendKeys("roktimrobin@gmail.com");
         return inputEmail;
     }
     public WebElement getPressPlay(){
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         pressPlay.click();
         return pressPlay;
     }
     public WebElement getWestWorld() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         westWorld.click();
         return westWorld;
     }
     public WebElement getPlayWestWorld() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         playWestWorld.click();
         return playWestWorld;
     }
     public WebElement getBarry() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         barry.click();
         return barry;
     }
     public WebElement getPlayBarry() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         playBarry.click();
         return playBarry;
     }
     public WebElement getSally4Ever() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         sally4Ever.click();
         return sally4Ever;
     }
     public WebElement getPlaySally4Ever() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         playSally4Ever.click();
         return playSally4Ever;
     }
     public WebElement getPodSaveAmerica() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         podSaveAmerica.click();
         return podSaveAmerica;
     }
     public WebElement getPlayPodSaveAmerica() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         playPodSaveAmerica.click();
         return playPodSaveAmerica;
     }
     public WebElement getSharpObjects() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         sharpObjects.click();
         return sharpObjects;
     }
     public WebElement getPlaySharpObjects() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         playSharpObjects.click();
         return playSharpObjects;
     }
     public WebElement getAnimals() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         getAnimals().click();
         return animals;
     }
     public WebElement getPlayAnimals() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         playAnimals.click();
         return playAnimals;
     }
     public WebElement getSrAvila() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         srAvila.click();
         return srAvila;
     }
     public WebElement getPlaySrAvila() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         playSrAvila.click();
         return playSrAvila;
     }
     public WebElement getVeep() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         veep.click();
         return veep;
     }
     public WebElement getPlayVeep() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         playVeep.click();
         return playVeep;
     }
     public WebElement getHereAndNow() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         hereAndNow.click();
         return hereAndNow;
     }
     public WebElement getPlayHereAndNow() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         playHereAndNow.click();
         return playHereAndNow;
     }
     public WebElement getTheNightOf() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         theNightOf.click();
         return theNightOf;
     }
     public WebElement getPlayTheNightOf() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         playTheNightOf.click();
         return playTheNightOf;
     }
     public WebElement getRoom104() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         room104.click();
         return room104;
     }
     public WebElement getPlayRoom104() {
+        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         playRoom104.click();
         return playRoom104;
     }

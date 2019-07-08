@@ -43,10 +43,10 @@ public class CommonAPI {
     public static ExtentReports extent;
     public String URL=null;
 
-    @Parameters({"useCloudEnv","cloudEnvName","url", "OS", "os_version","browser", "browserversion"})
+    @Parameters({"useCloudEnv","cloudEnvName","url", "key", "OS", "os_version","browser", "browserversion"})
     @BeforeMethod
-    public void setUp (@Optional ("useCloudEnv")boolean useCloudEnv, @Optional ("cloudEnvName") String cloudEnvName,@Optional("url") String url, @Optional ("key") String key, @Optional ("browser") String browser, @Optional ("browservVersion") String browserVersion,
-                       @Optional ("OS") String OS, @Optional ("os_version") String os_version) throws IOException {
+    public void setUp (@Optional ("useCloudEnv")boolean useCloudEnv, @Optional ("cloudEnvName") String cloudEnvName,@Optional("url") String url, @Optional ("key") String key, @Optional ("browser") String browser,
+                       @Optional ("browservVersion") String browserVersion, @Optional ("OS") String OS, @Optional ("os_version") String os_version) throws Exception {
 
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Rob Dos\\Desktop\\Robin\\The-A-Team\\driver\\chromedriver.exe");
         if(useCloudEnv==true){
@@ -189,6 +189,7 @@ public class CommonAPI {
     public void link (String link, String value) {
         driver.findElement(By.linkText(link)).sendKeys(value, Keys.ENTER);
     }
+
     public List<WebElement> cssSelector (String locator){ //for drop down list options (multiple elements)
         List <WebElement> list = new ArrayList<WebElement>();
         list = driver.findElements(By.cssSelector(locator));
@@ -214,6 +215,7 @@ public class CommonAPI {
     public void typeOnID(String locator, String value){
         driver.findElement(By.id(locator)).sendKeys(value);
     }
+
     public void mouseHoverByCSS(String locator) {
         try {
             WebElement element = driver.findElement(By.cssSelector(locator));

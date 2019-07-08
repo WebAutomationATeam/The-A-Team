@@ -7,7 +7,7 @@
     <parameter name="cloudEnvName" value="saucelabs"/>
     <parameter name="key" value="118d3467-a8af-4a02-85f6-e46667550259"/>
     <parameter name="userName" value="rdas91"/>
-    <parameter name="os" value="Windows"/>
+    <parameter name="OS" value="Windows"/>
     <parameter name="os_version" value="Windows 10"/>
     <parameter name="browser" value="chrome"/>
     <parameter name="browserVersion" value="71.0.3578.98"/>
@@ -21,9 +21,9 @@
             <!--<class name="web.TestHBONowSignIn"/>-->
             <!--<class name="TestSearch.TestDB"/>-->
             <!--<class name="web.TestReadXlsx"/>-->
-            <!--<class name="TestSearch.TestGoogleSheet"/>-->
+            <class name="TestSearch.TestGoogleSheet"/>
             <!--<class name="web.TestSports"/>-->
-            <class name="TestSearch.KeywordDrivenTest"/>
+            <!--<class name="TestSearch.KeywordDrivenTest"/>-->
         </classes>
     </test>
 

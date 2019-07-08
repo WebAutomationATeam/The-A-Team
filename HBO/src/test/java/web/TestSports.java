@@ -1,6 +1,4 @@
 package web;
-
-import basic.AllFreeEpisodes;
 import basic.SportsPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
@@ -11,7 +9,6 @@ public class TestSports extends SportsPage {
     SportsPage sp;
     @BeforeMethod
     public void initializeElement(){ sp= PageFactory.initElements(driver, SportsPage.class); }
-
     @Test
     public void enterSportsHomePage(){
         sp.enterSportsPage();
@@ -36,6 +33,4 @@ public class TestSports extends SportsPage {
     public void slaveNoMore(){
         sp.readAboutSlaves();
     }
-
-
 }

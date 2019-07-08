@@ -6,7 +6,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import java.io.File;
 public class TestHBONowSignIn extends HBONowSignIn {
 
