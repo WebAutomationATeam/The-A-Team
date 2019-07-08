@@ -1,12 +1,10 @@
 package rest;
-
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 
 public class AllEmployeeAPI {
-
     @Test
     public void callAllEmployeeResources() {
         Response response = given().when().get("http://info.venturepulse.org:8080/service-webapp/api/AllEmployeeResources").then().statusCode(200).extract().response();
@@ -39,14 +37,15 @@ public class AllEmployeeAPI {
         Assert.assertEquals(statusCode, 200);
     }
     @Test
-    public void serverErrorbadCallAllEmployee(){
-    Response response = null;
-    int statusCode = 0;
+    public void serverErrorBadCallAllEmployee(){
+        Response response = null;
+        int statusCode = 0;
         try {
-        response = given().when().get("http://info.venturepulse.org:8080/service-webapp/api/AllEmployeeResources88");
-        statusCode = response.getStatusCode();
-    } catch (Exception ex) {
+            response = given().when().get("http://info.venturepulse.org:8080/service-webapp/api/AllEmployeeResources88");
+            statusCode = response.getStatusCode();
+        } catch (Exception ex) {
+        }
+        Assert.assertEquals(statusCode, 404);
     }
-        Assert.assertEquals(statusCode, 200);
-}
+
 }
